@@ -795,7 +795,7 @@
   - type: Flatpack
     entity: Jukebox
   - type: StaticPrice
-    price: 250
+    price: 400 # Corvax-Frontier
 
 # Hoverbikes
 - type: entity

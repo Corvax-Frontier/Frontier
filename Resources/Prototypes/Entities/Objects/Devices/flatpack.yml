@@ -216,3 +216,15 @@
     - state: fax-machine
   - type: Flatpack
     entity: FaxMachineBase
+
+- type: entity # Corvax-Frontier
+  parent: BaseFlatpack
+  id: ShuttleGunPirateCannonFlatpack
+  name: pirate shuttle gun flatpack
+  description: This is a packaged pirate ship cannon.
+  components:
+  - type: Sprite
+    layers:
+    - state: pirate-gun
+  - type: Flatpack
+    entity: ShuttleGunPirateCannon

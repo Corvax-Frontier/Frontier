@@ -25,6 +25,9 @@
   - type: Tag
     tags:
       - SpreaderIgnore
+  - type: Construction
+    graph: AtmosDeviceFanTinyGraph
+    node: FanTiny
 
 - type: entity
   id: AtmosDeviceFanDirectional

@@ -207,3 +207,5 @@ uplink-pirate-greengrenade-name = Зелёная граната
 uplink-pirate-greengrenade-desc = Граната с отвратным газом, от которой в голове становится мутно.
 uplink-pirate-graygrenade-name = Серая граната
 uplink-pirate-graygrenade-desc = Тяжёлая граната, словно пушечное ядро в руке.
+uplink-pirate-shuttle-cannon-pirate-flatpack-name = Упаковка пушки пиратского карабля
+uplink-pirate-shuttle-cannon-pirate-flatpack-desc = Кабум! Новая пушка на ваш корабль! Ну разве не здорово?

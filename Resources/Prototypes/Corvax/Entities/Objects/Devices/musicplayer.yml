@@ -1,0 +1,27 @@
+- type: entity
+  id: MusicPlayer
+  name: Музыкальный плеер
+  parent: BaseItem
+  description: Это маленькое устройство, с кучей установленных песен, может обрадовать Вас даже в пустом космосе!
+  components:
+  - type: Sprite
+    sprite: /Textures/Corvax/Objects/Devices/musicplayer.rsi
+    state: icon
+  - type: Appearance
+  - type: Item
+    size: Small
+  - type: Clothing
+    quickEquip: true
+    slots:
+    - neck
+    - belt
+  - type: Jukebox
+  - type: UserInterface
+    interfaces:
+     enum.JukeboxUiKey.Key:
+       type: JukeboxBoundUserInterface
+  - type: ActivatableUI
+    key: enum.JukeboxUiKey.Key
+  - type: CargoSellBlacklist
+  - type: StaticPrice
+    price: 500

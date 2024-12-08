@@ -1,0 +1,41 @@
+# Author Info
+# GitHub: SurfinNinja1
+# Discord: ???
+
+# Maintainer Info
+# GitHub: ???
+# Discord: ???
+
+# Shuttle Notes:
+#
+- type: vessel
+  id: submarine
+  name: NC Буксир
+  description: Среднегабаритный грузовой шаттл. Рекомендованный состав команды 3-5 человека.
+  price: 75000
+  category: Small
+  group: Shipyard
+  shuttlePath: /Maps/Corvax/Shuttles/Civilian/submarine.yml
+  guidebookPage: ShipyardLoader
+  class:
+  - Cargo
+
+- type: gameMap
+  id: submarine
+  mapName: 'NC Буксир'
+  mapPath: /Maps/Corvax/Shuttles/Civilian/submarine.yml
+  minPlayers: 0
+  stations:
+    submarine:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Буксир {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            Contractor: [ 0, 0 ]
+            Pilot: [ 0, 0 ]
+            Mercenary: [ 0, 0 ]

@@ -4991,6 +4991,13 @@ entities:
       rot: 3.141592653589793 rad
       pos: -1.5,13.5
       parent: 1
+- proto: ComputerTabletopIFF
+  entities:
+  - uid: 7
+    components:
+    - type: Transform
+      pos: 1.5,9.5
+      parent: 1
 - proto: ComputerTabletopSurveillanceCameraMonitor
   entities:
   - uid: 105
@@ -5154,7 +5161,7 @@ entities:
       pos: 4.5,-0.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -7968.0024
+      secondsUntilStateChange: -8047.919
       state: Opening
 - proto: CurtainsPurple
   entities:
@@ -10212,7 +10219,7 @@ entities:
       lastSignals:
         DoorStatus: True
     - type: Door
-      secondsUntilStateChange: -9783.728
+      secondsUntilStateChange: -9863.645
       state: Opening
 - proto: WindowReinforcedDirectional
   entities:

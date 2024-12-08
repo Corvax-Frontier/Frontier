@@ -1,0 +1,97 @@
+- type: entity
+  id: ColiseumMagazineGrenadeEmpty
+  name: grenade cartridge
+  parent: BaseMagazineGrenade
+  components:
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+        - ColiseumGrenade
+  - type: Tag
+    tags:
+    - ColiseumMagazineGrenade
+
+- type: entity
+  id: ColiseumMagazineGrenadeFrag
+  name: сoliseum frag grenade cartridge
+  parent: BaseMagazineGrenade
+  components:
+  - type: BallisticAmmoProvider
+    proto: ColiseumGrenadeFrag
+    whitelist:
+      tags:
+        - ColiseumGrenade
+  - type: Tag
+    tags:
+    - ColiseumMagazineGrenade
+  - type: CargoSellBlacklist
+  - type: StaticPrice
+    price: 400
+
+- type: entity
+  id: ColiseumMagazineGrenadeEMP
+  name: сoliseum EMP grenade cartridge
+  parent: BaseMagazineGrenade
+  components:
+  - type: BallisticAmmoProvider
+    proto: ColiseumGrenadeEMP
+    whitelist:
+      tags:
+        - ColiseumGrenade
+  - type: Tag
+    tags:
+    - ColiseumMagazineGrenade
+  - type: CargoSellBlacklist
+  - type: StaticPrice
+    price: 800
+
+- type: entity
+  id: ColiseumMagazineGrenadeFlash
+  name: сoliseum flash grenade cartridge
+  parent: BaseMagazineGrenade
+  components:
+  - type: BallisticAmmoProvider
+    proto: ColiseumGrenadeFlash
+    whitelist:
+      tags:
+        - ColiseumGrenade
+  - type: Tag
+    tags:
+    - ColiseumMagazineGrenade
+  - type: CargoSellBlacklist
+  - type: StaticPrice
+    price: 400
+
+- type: entity
+  id: ColiseumMagazineGrenadeBlast
+  name: сoliseum blast grenade cartridge
+  parent: BaseMagazineGrenade
+  components:
+  - type: BallisticAmmoProvider
+    proto: ColiseumGrenadeBlast
+    whitelist:
+      tags:
+        - ColiseumGrenade
+  - type: Tag
+    tags:
+    - ColiseumMagazineGrenade
+  - type: CargoSellBlacklist
+  - type: StaticPrice
+    price: 400
+
+- type: entity
+  id: ColiseumMagazineGrenadeBaton
+  name: сoliseum baton grenade cartridge
+  parent: BaseMagazineGrenade
+  components:
+  - type: BallisticAmmoProvider
+    proto: ColiseumGrenadeBaton
+    whitelist:
+      tags:
+        - ColiseumGrenade
+  - type: Tag
+    tags:
+    - ColiseumMagazineGrenade
+  - type: CargoSellBlacklist
+  - type: StaticPrice
+    price: 400

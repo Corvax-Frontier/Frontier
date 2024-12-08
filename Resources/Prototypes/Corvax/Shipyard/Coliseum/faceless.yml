@@ -1,0 +1,25 @@
+﻿- type: vessel
+  id: Faceless
+  name: COL Безликий
+  price: 25000
+  category: Small
+  group: Coliseum
+  shuttlePath: /Maps/Corvax/Shuttles/Coliseum/faceless.yml
+  guidebookPage: Null
+
+- type: gameMap
+  id: Faceless
+  mapName: 'COL Безликий'
+  mapPath: /Maps/Corvax/Shuttles/Coliseum/faceless.yml
+  minPlayers: 0
+  stations:
+    Faceless:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Безликий {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs: {}

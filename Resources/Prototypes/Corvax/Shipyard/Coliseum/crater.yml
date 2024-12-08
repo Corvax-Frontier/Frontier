@@ -1,0 +1,25 @@
+﻿- type: vessel
+  id: Crater
+  name: COL Кратер
+  price: 25000
+  category: Small
+  group: Coliseum
+  shuttlePath: /Maps/Corvax/Shuttles/Coliseum/crater.yml
+  guidebookPage: Null
+
+- type: gameMap
+  id: Crater
+  mapName: 'COL Кратер'
+  mapPath: /Maps/Corvax/Shuttles/Coliseum/crater.yml
+  minPlayers: 0
+  stations:
+    Crater:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Кратер {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs: {}

@@ -1,0 +1,25 @@
+﻿- type: vessel
+  id: Nebulon
+  name: COL Небулон
+  price: 25000
+  category: Small
+  group: Coliseum
+  shuttlePath: /Maps/Corvax/Shuttles/Coliseum/nebulon.yml
+  guidebookPage: Null
+
+- type: gameMap
+  id: Nebulon
+  mapName: 'COL Небулон'
+  mapPath: /Maps/Corvax/Shuttles/Coliseum/nebulon.yml
+  minPlayers: 0
+  stations:
+    Nebulon:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Небулон {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs: {}

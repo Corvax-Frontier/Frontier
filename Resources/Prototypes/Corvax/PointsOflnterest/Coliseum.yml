@@ -1,0 +1,26 @@
+# Author Info
+# GitHub: FireFoxPhoenix
+# Discord: FireFoxPhoenix and autsaider_m
+
+- type: pointOfInterest
+  id: Coliseum
+  name: 'Колизей'
+  rangeMin: 7000
+  rangeMax: 10000
+  IFFColor: "#C71585"
+  gridPath: /Maps/Corvax/POI/coliseum.yml
+
+- type: gameMap
+  id: Coliseum
+  mapName: 'Колизей'
+  mapPath: /Maps/Corvax/POI/coliseum.yml
+  minPlayers: 0
+  stations:
+    Coliseum:
+      stationProto: StandardFrontierOutpost
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Колизей'
+        - type: StationJobs
+          availableJobs: {}
+        - type: StationDeadDropHintExempt

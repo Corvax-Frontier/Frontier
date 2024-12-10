@@ -1,0 +1,32 @@
+- type: vessel
+  id: drozd
+  name: SV Дрозд
+  description: Малогабаритный грузовой шаттл. Рекомендованный состав команды 1-2 человека.
+  price: 9900
+  category: Small
+  group: Scrap
+  shuttlePath: /Maps/Corvax/Shuttles/Scrap/drozd.yml
+  guidebookPage: Null
+  class:
+  - Scrapyard
+  - Civilian
+
+- type: gameMap
+  id: drozd
+  mapName: 'SV Дрозд'
+  mapPath: /Maps/Corvax/Shuttles/Scrap/drozd.yml
+  minPlayers: 0
+  stations:
+    drozd:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Дрозд {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            Contractor: [ 0, 0 ]
+            Pilot: [ 0, 0 ]
+            Mercenary: [ 0, 0 ]

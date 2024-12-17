@@ -1,0 +1,25 @@
+﻿- type: vessel
+  id: Sceleton
+  name: COL Скелет
+  price: 25000
+  category: Small
+  group: Coliseum
+  shuttlePath: /Maps/Corvax/Shuttles/Coliseum/skeleton.yml
+  guidebookPage: Null
+
+- type: gameMap
+  id: Sceleton
+  mapName: 'COL Скелет'
+  mapPath: /Maps/Corvax/Shuttles/Coliseum/skeleton.yml
+  minPlayers: 0
+  stations:
+    Sceleton:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Скелет {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs: {}

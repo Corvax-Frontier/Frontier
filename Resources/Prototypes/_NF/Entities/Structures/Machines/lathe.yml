@@ -795,6 +795,8 @@
       - MagazineBoxRifle
       - CrossbowBolt
       - CrossbowBoltBroadhead
+      - BoxBeanbagKS23 # Corvax-Frontier
+      - BoxLethalshotKS23 # Corvax-Frontier
     ## Mags / Speedloaders / Clips
       - MagazineNovaliteC1Empty
       - MagazineNovaliteC1
@@ -886,6 +888,8 @@
       - MagazineBoxPistolRubber
       - MagazineBoxRifleRubber
       - MagazineShotgunBeanbag
+      - BoxSmokeKS23 # Corvax-Frontier
+      - BoxFlashbangKS23 # Corvax-Frontier
 
 - type: entity
   id: MercenaryTechFabHacked

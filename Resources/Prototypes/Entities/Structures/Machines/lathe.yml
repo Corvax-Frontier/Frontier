@@ -936,6 +936,8 @@
       - WeaponLaserCannon
       - WeaponLaserCarbine
       - WeaponXrayCannon
+      - BoxSmokeKS23 # Corvax-Frontier
+      - BoxFlashbangKS23 # Corvax-Frontier
   - type: MaterialStorage
     whitelist:
       tags:
@@ -988,6 +990,8 @@
         - SpeedLoaderMagnumEmpty
         - SpeedLoaderRifleHeavy # Frontier
         - SpeedLoaderRifleHeavyEmpty # Frontier
+        - BoxBeanbagKS23 # Corvax-Frontier
+        - BoxLethalshotKS23 # Corvax-Frontier
     - type: MaterialStorage
       whitelist:
         tags:

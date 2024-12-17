@@ -585,11 +585,11 @@
           - SecurityUplink
 
 - type: listing # Corvax-Frontier
-  id: UplinkSecurityKS23Flashbang
-  name: uplink-security-magazineks23flashbang-name
-  description: uplink-security-magazineks23flashbang-desc
-  productEntity: BoxMagazineKS23Flashbang
-  icon: { sprite: Objects/Storage/boxes.rsi, state: box }
+  id: UplinkSecurityBoxBeanbagKS23
+  name: uplink-security-boxks23beanbag-name
+  description: uplink-security-boxks23beanbag-desc
+  productEntity: BoxBeanbagKS23
+  icon: { sprite: Corvax/Objects/Storage/boxes.rsi, state: KS23BeanbagDispenser }
   cost:
     FrontierUplinkCoin: 2
   categories:
@@ -601,11 +601,43 @@
           - SecurityUplink
 
 - type: listing # Corvax-Frontier
-  id: UplinkSecurityKS23Smoke
-  name: uplink-security-magazineks23smoke-name
-  description: uplink-security-magazineks23smoke-desc
-  productEntity: BoxMagazineKS23Smoke
-  icon: { sprite: Objects/Storage/boxes.rsi, state: box }
+  id: UplinkSecurityBoxSmokeKS23
+  name: uplink-security-boxks23smoke-name
+  description: uplink-security-boxks23smoke-desc
+  productEntity: BoxSmokeKS23
+  icon: { sprite: Corvax/Objects/Storage/boxes.rsi, state: KS23SmokeDispenser }
+  cost:
+    FrontierUplinkCoin: 3
+  categories:
+    - UplinkSecurityAmmo
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+
+- type: listing # Corvax-Frontier
+  id: UplinkSecurityBoxFlashbangKS23
+  name: uplink-security-boxks23flashbang-name
+  description: uplink-security-boxks23flashbang-desc
+  productEntity: BoxFlashbangKS23
+  icon: { sprite: Corvax/Objects/Storage/boxes.rsi, state: KS23FlashbangDispenser }
+  cost:
+    FrontierUplinkCoin: 3
+  categories:
+    - UplinkSecurityAmmo
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+
+- type: listing # Corvax-Frontier
+  id: UplinkSecurityBoxLethalshotKS23
+  name: uplink-security-boxks23lethal-name
+  description: uplink-security-boxks23lethal-desc
+  productEntity: BoxLethalshotKS23
+  icon: { sprite: Corvax/Objects/Storage/boxes.rsi, state: KS23BaseDispenser }
   cost:
     FrontierUplinkCoin: 2
   categories:

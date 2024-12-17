@@ -2087,3 +2087,90 @@
   - type: Mail
     contents:
     - id: FoodBoxDonut
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseMail
+  id: MailBoomBox
+  suffix: boombox 
+  components:
+    - type: Mail
+      contents:
+        - id: BaseBoomBox
+        - id: BaseBoomBoxTapeSpaceAsshole
+          prob: 0.5
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseMail
+  id: MailBoomBoxTapePack1
+  suffix: boombox
+  components:
+  - type: Mail
+    contents:
+    - id: BaseBoomBoxTapeSpaceOddity
+    - id: BaseBoomBoxTapeSpaceAsshole
+    - id: BaseBoomBoxTapeStarman
+    - id: BaseBoomBoxTapeTheChain
+    - id: BaseBoomBoxTapeSigridEverybodyKnows
+      prob: 0.5
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseMail
+  id: MailBoomBoxTapePack2
+  suffix: boombox
+  components:
+  - type: Mail
+    contents:
+    - id: BaseBoomBoxTapeCantSmile
+    - id: BaseBoomBoxTapeUnderStars
+    - id: BaseBoomBoxTapeComingHome
+    - id: BaseBoomBoxTapeSignals
+    - id: BaseBoomBoxTapeSigridEverybodyKnows
+      prob: 0.5
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseMail
+  id: MailBoomBoxTapePack3
+  suffix: boombox
+  components:
+  - type: Mail
+    contents:
+    - id: BaseBoomBoxTapeDemonKittyRag
+    - id: BaseBoomBoxTapeKissTheSky
+    - id: BaseBoomBoxTapeRetrograde
+    - id: BaseBoomBoxTapeThisAintNoPlaceForNoHero
+    - id: BaseBoomBoxTapeSigridEverybodyKnows
+      prob: 0.5
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseMail
+  id: MailBoomBoxTapePack4
+  suffix: boombox
+  components:
+  - type: Mail
+    contents:
+    - id: BaseBoomBoxTapeMrKittyAfterDark
+    - id: BaseBoomBoxTapeTobyFoxHopesAndDreams
+    - id: BaseBoomBoxTapeTobyFoxMegalovania
+    - id: BaseBoomBoxTapeTobyFoxUndertale
+    - id: BaseBoomBoxTapeSigridEverybodyKnows
+      prob: 0.5
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseMail
+  id: MailBoomBoxTapePack5
+  suffix: boombox
+  components:
+  - type: Mail
+    contents:
+    - id: BaseBoomBoxTapeImagineDragonEnemy
+    - id: BaseBoomBoxTapeKDAVillian
+    - id: BaseBoomBoxTapeRamseyGoodbye
+    - id: BaseBoomBoxTapeSamuelKimGunsForHire
+    - id: BaseBoomBoxTapeSigridEverybodyKnows
+      prob: 0.5

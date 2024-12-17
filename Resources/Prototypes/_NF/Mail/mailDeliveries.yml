@@ -59,6 +59,12 @@
     MailNFThrongler: 0.1
     MailNFUnicycle: 0.5
     MailNFVulpCannon: 0.1
+    MailBoomBox: 1.0 # Corvax
+    MailBoomBoxTapePack1: 0.5 # Corvax
+    MailBoomBoxTapePack2: 0.5 # Corvax
+    MailBoomBoxTapePack3: 0.5 # Corvax
+    MailBoomBoxTapePack4: 0.5 # Corvax
+    MailBoomBoxTapePack5: 0.5 # Corvax
     # Useful
     MailNFATV: 0.9
     MailNFSkeletonMotorcycle: 0.1 # Shares a pool with MailNFATV as a rare variant

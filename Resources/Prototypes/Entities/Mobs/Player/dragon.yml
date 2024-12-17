@@ -121,6 +121,14 @@
     spawned:
     - id: FoodMeatDragon
       amount: 2
+    - id: HeadSkeleton # Corvax
+      amount: 1
+    - id: WeaponCrusher # Corvax
+      amount: 1
+      prob: 0.6
+    - id: MobRandomCargoCorpse # Corvax
+      amount: 1
+      prob: 0.25
   - type: InteractionPopup
     successChance: 0.25 # It's no goose, but you better smell like carp.
     interactSuccessString: petting-success-dragon

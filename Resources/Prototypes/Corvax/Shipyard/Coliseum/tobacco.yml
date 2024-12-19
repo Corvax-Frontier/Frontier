@@ -1,0 +1,25 @@
+﻿- type: vessel
+  id: Tobacco
+  name: COL Табак
+  price: 25000
+  category: Small
+  group: Coliseum
+  shuttlePath: /Maps/Corvax/Shuttles/Coliseum/tobacco.yml
+  guidebookPage: Null
+
+- type: gameMap
+  id: Tobacco
+  mapName: 'COL Табак'
+  mapPath: /Maps/Corvax/Shuttles/Coliseum/tobacco.yml
+  minPlayers: 0
+  stations:
+    Tobacco:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Табак {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs: {}

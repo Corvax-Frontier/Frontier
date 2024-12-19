@@ -1,0 +1,25 @@
+﻿- type: vessel
+  id: Kerefo
+  name: COL Керефо
+  price: 25000
+  category: Small
+  group: Coliseum
+  shuttlePath: /Maps/Corvax/Shuttles/Coliseum/kerefo.yml
+  guidebookPage: Null
+
+- type: gameMap
+  id: Kerefo
+  mapName: 'COL Керефо'
+  mapPath: /Maps/Corvax/Shuttles/Coliseum/kerefo.yml
+  minPlayers: 0
+  stations:
+    Kerefo:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Керефо {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs: {}

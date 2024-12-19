@@ -1,0 +1,25 @@
+﻿- type: vessel
+  id: Dragon
+  name: COL Дракон
+  price: 25000
+  category: Small
+  group: Coliseum
+  shuttlePath: /Maps/Corvax/Shuttles/Coliseum/dragon.yml
+  guidebookPage: Null
+
+- type: gameMap
+  id: Dragon
+  mapName: 'COL Дракон'
+  mapPath: /Maps/Corvax/Shuttles/Coliseum/dragon.yml
+  minPlayers: 0
+  stations:
+    Dragon:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Дракон {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs: {}

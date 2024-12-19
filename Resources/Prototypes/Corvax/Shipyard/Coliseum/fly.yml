@@ -1,0 +1,25 @@
+﻿- type: vessel
+  id: Fly
+  name: COL Муха
+  price: 25000
+  category: Small
+  group: Coliseum
+  shuttlePath: /Maps/Corvax/Shuttles/Coliseum/fly.yml
+  guidebookPage: Null
+
+- type: gameMap
+  id: Fly
+  mapName: 'COL Муха'
+  mapPath: /Maps/Corvax/Shuttles/Coliseum/fly.yml
+  minPlayers: 0
+  stations:
+    Fly:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Муха {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs: {}

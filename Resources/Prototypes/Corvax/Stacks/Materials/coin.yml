@@ -1,0 +1,6 @@
+- type: stack
+  id: ColiseumCoin
+  name: coliseum coin
+  icon: { sprite: _NF/Objects/Specific/Security/frontieruplinkcoin.rsi, state: frontieruplinkcoin }
+  spawn: ColiseumCoin
+  maxCount: 10

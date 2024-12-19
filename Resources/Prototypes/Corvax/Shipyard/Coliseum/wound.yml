@@ -1,0 +1,25 @@
+﻿- type: vessel
+  id: Wound
+  name: COL Рана
+  price: 25000
+  category: Small
+  group: Coliseum
+  shuttlePath: /Maps/Corvax/Shuttles/Coliseum/wound.yml
+  guidebookPage: Null
+
+- type: gameMap
+  id: Wound
+  mapName: 'COL Рана'
+  mapPath: /Maps/Corvax/Shuttles/Coliseum/wound.yml
+  minPlayers: 0
+  stations:
+    Wound:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Рана {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs: {}

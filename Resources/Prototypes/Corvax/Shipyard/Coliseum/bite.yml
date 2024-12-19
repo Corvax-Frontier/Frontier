@@ -1,0 +1,25 @@
+﻿- type: vessel
+  id: Bite
+  name: COL Укус
+  price: 25000
+  category: Small
+  group: Coliseum
+  shuttlePath: /Maps/Corvax/Shuttles/Coliseum/bite.yml
+  guidebookPage: Null
+
+- type: gameMap
+  id: Bite
+  mapName: 'COL Укус'
+  mapPath: /Maps/Corvax/Shuttles/Coliseum/bite.yml
+  minPlayers: 0
+  stations:
+    Bite:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Укус {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs: {}

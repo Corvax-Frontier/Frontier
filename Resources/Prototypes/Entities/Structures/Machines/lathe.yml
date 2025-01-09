@@ -158,6 +158,7 @@
       - LightBulb
       - LedLightBulb
       - DimLightBulb
+      - WarmLightBulb
       - SodiumLightBulb # Frontier
       - ExteriorLightBulb #Frontier
       - Bucket

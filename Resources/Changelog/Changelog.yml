@@ -2,13 +2,6 @@ Order: 1 # Frontier
 Entries:
 - author: ScarKy0
   changes:
-  - message: AI Actions now work.
-    type: Fix
-  id: 7288
-  time: '2024-09-05T12:49:22.0000000+00:00'
-  url: https://github.com/space-wizards/space-station-14/pull/31823
-- author: ScarKy0
-  changes:
   - message: Station AI now has updated icons on the HUD.
     type: Add
   id: 7289
@@ -3933,3 +3926,10 @@ Entries:
   id: 7787
   time: '2025-01-08T01:00:20.0000000+00:00'
   url: https://github.com/space-wizards/space-station-14/pull/34273
+- author: southbridge-fur
+  changes:
+  - message: Warm light bulbs exist now.
+    type: Add
+  id: 7788
+  time: '2025-01-09T08:54:05.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/34324

@@ -137,26 +137,27 @@ public sealed class PaperSystem : EntitySystem
         // only allow editing if there are no stamps or when using a cyberpen
         var editable = entity.Comp.StampedBy.Count == 0 || _tagSystem.HasTag(args.Used, "WriteIgnoreStamps")
                        || _tagSystem.HasTag(args.Used, "NFWriteIgnoreUnprotectedStamps") && !_tagSystem.HasTag(entity, "NFPaperStampProtected"); // Frontier: protected stamps
-        if (_tagSystem.HasTag(args.Used, "Write") && editable)
+        if (_tagSystem.HasTag(args.Used, "Write"))
         {
-            if (entity.Comp.EditingDisabled)
+            if (editable)
             {
-                var paperEditingDisabledMessage = Loc.GetString("paper-tamper-proof-modified-message");
-                _popupSystem.PopupEntity(paperEditingDisabledMessage, entity, args.User);
+                if (entity.Comp.EditingDisabled)
+                {
+                    var paperEditingDisabledMessage = Loc.GetString("paper-tamper-proof-modified-message");
+                    _popupSystem.PopupEntity(paperEditingDisabledMessage, entity, args.User);
 
-                args.Handled = true;
-                return;
-            }
-            var writeEvent = new PaperWriteEvent(entity, args.User);
-            RaiseLocalEvent(args.Used, ref writeEvent);
+                    args.Handled = true;
+                    return;
+                }
+                var writeEvent = new PaperWriteEvent(entity, args.User);
+                RaiseLocalEvent(args.Used, ref writeEvent);
 
-            // Frontier - Restrict writing to entities with ActorComponent, players only
+                // Frontier - Restrict writing to entities with ActorComponent, players only
             if (!TryComp<ActorComponent>(args.User, out var actor))
-                return;
-
-            entity.Comp.Mode = PaperAction.Write;
-            _uiSystem.OpenUi(entity.Owner, PaperUiKey.Key, args.User);
-            UpdateUserInterface(entity);
+                return;entity.Comp.Mode = PaperAction.Write;
+                _uiSystem.OpenUi(entity.Owner, PaperUiKey.Key, args.User);
+                UpdateUserInterface(entity);
+            }
             args.Handled = true;
             return;
         }

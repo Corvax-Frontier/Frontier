@@ -713,6 +713,7 @@
     - NFScrapProcessorCircuitboard # Frontier
     - BlueprintLithographMachineCircuitboard # Frontier
     - CondimentDispenserCircuitboard # Frontier
+    - SalvageMagnetMachineCircuitboard
     dynamicRecipes:
       - ThermomachineFreezerMachineCircuitBoard
       - HellfireFreezerMachineCircuitBoard

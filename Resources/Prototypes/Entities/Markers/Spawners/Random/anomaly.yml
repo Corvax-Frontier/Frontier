@@ -72,5 +72,6 @@
     - AnomalyTrapGravity
     - AnomalyTrapTech
     - AnomalyTrapRock
+    #- AnomalyTrapSanta
     # - AnomalySanta #Remove in 2025 # Frontier
     chance: 1

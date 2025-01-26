@@ -18,31 +18,31 @@
   # This is not roundstart since its a direct upgrade
   - WeaponCrusherGlaive
 
-- type: technology
-  id: DraconicMunitions
-  name: research-technology-draconic-munitions
-  icon:
-    sprite: Objects/Weapons/Guns/Ammunition/Boxes/pistol.rsi
-    state: incendiarydisplay
-  discipline: Arsenal
-  tier: 1
-  cost: 10000
-  recipeUnlocks:
-  - BoxShotgunIncendiary
-  - MagazineRifleIncendiary
-  - MagazinePistolIncendiary
-  - MagazineLightRifleIncendiary
-  - SpeedLoaderMagnumIncendiary
-  - SpeedLoaderRifleHeavyIncendiary # Frontier
-  - MagazineShotgunIncendiary
-  - MagazineBoxPistolIncendiary
-  - MagazineBoxMagnumIncendiary
-  - MagazineBoxLightRifleIncendiary
-  - MagazineBoxRifleIncendiary
-  - MagazineVector22Incendiary #CorvaxFrontier
-  - MagazineBoxVector22Incendiary #CorvaxFrontier
-  - MagazineVector45Incendiary #CorvaxFrontier
-  - MagazineBoxVector45Incendiary #CorvaxFrontier
+#- type: technology
+#  id: DraconicMunitions
+#  name: research-technology-draconic-munitions
+#  icon:
+#    sprite: Objects/Weapons/Guns/Ammunition/Boxes/pistol.rsi
+#    state: incendiarydisplay
+#  discipline: Arsenal
+#  tier: 1
+#  cost: 10000
+#  recipeUnlocks:
+#  - BoxShotgunIncendiary
+#  - MagazineRifleIncendiary
+#  - MagazinePistolIncendiary
+#  - MagazineLightRifleIncendiary
+#  - SpeedLoaderMagnumIncendiary
+#  - MagazineShotgunIncendiary
+#  - MagazineBoxPistolIncendiary
+#  - MagazineBoxMagnumIncendiary
+#  - MagazineBoxLightRifleIncendiary
+#  - MagazineBoxRifleIncendiary
+#  - SpeedLoaderRifleHeavyIncendiary # Frontier
+#  - MagazineVector22Incendiary #CorvaxFrontier
+#  - MagazineBoxVector22Incendiary #CorvaxFrontier
+#  - MagazineVector45Incendiary #CorvaxFrontier
+#  - MagazineBoxVector45Incendiary #CorvaxFrontier
 
 - type: technology
   id: WeaponizedLaserManipulation
@@ -81,30 +81,30 @@
   - MagazineBoxVector45Practice #CorvaxFrontier
   - MagazineVector45Practice #CorvaxFrontier
 
-- type: technology
-  id: UraniumMunitions
-  name: research-technology-uranium-munitions
-  icon:
-    sprite: Objects/Materials/Sheets/other.rsi
-    state: uranium
-  discipline: Arsenal
-  tier: 1
-  cost: 7500
-  recipeUnlocks:
-  - MagazineRifleUranium
-  - MagazinePistolUranium
-  - MagazineLightRifleUranium
-  - SpeedLoaderMagnumUranium
-  - SpeedLoaderRifleHeavyUranium # Frontier
-  - MagazineBoxPistolUranium
-  - MagazineBoxMagnumUranium
-  - MagazineBoxLightRifleUranium
-  - MagazineBoxRifleUranium
-  - BoxShotgunUranium
-  - MagazineBoxVector22Uranium #CorvaxFrontier
-  - MagazineVector22Uranium #CorvaxFrontier
-  - MagazineBoxVector45Uranium #CorvaxFrontier
-  - MagazineVector45Uranium #CorvaxFrontier
+#- type: technology
+#  id: UraniumMunitions
+#  name: research-technology-uranium-munitions
+#  icon:
+#    sprite: Objects/Materials/Sheets/other.rsi
+#    state: uranium
+#  discipline: Arsenal
+#  tier: 1
+#  cost: 7500
+#  recipeUnlocks:
+#  - MagazineRifleUranium
+#  - MagazinePistolUranium
+#  - MagazineLightRifleUranium
+#  - SpeedLoaderMagnumUranium
+#  - MagazineBoxPistolUranium
+#  - MagazineBoxMagnumUranium
+#  - MagazineBoxLightRifleUranium
+#  - MagazineBoxRifleUranium
+#  - BoxShotgunUranium
+#  - SpeedLoaderRifleHeavyUranium # Frontier
+#  - MagazineBoxVector22Uranium #CorvaxFrontier
+#  - MagazineVector22Uranium #CorvaxFrontier
+#  - MagazineBoxVector45Uranium #CorvaxFrontier
+#  - MagazineVector45Uranium #CorvaxFrontier
 
 - type: technology
   id: AdvancedRiotControl
@@ -194,9 +194,11 @@
   - MagazineGrenadeEmpty
   - GrenadeFlash
   - GrenadeBlast
-  - ShuttleGunSvalinnMachineGunCircuitboard
-  - ShuttleGunPerforatorCircuitboard
-  - ShuttleGunFriendshipCircuitboard
+  - GrenadeEMP #Frontier
+  - PowerCageHigh #frontier
+#  - ShuttleGunSvalinnMachineGunCircuitboard # Frontier
+#  - ShuttleGunPerforatorCircuitboard # Frontier
+#  - ShuttleGunFriendshipCircuitboard # Frontier
   technologyPrerequisites:
   - SalvageWeapons
 
@@ -231,21 +233,21 @@
   - WeaponLaserSvalinn
   - NFBlueprintWeaponLaserSvalinn # Frontier
 
-- type: technology
-  id: AdvancedShuttleWeapon
-  name: research-technology-advanced-shuttle-weapon
-  icon:
-    sprite: Objects/Weapons/Guns/Ammunition/Magazine/Grenade/grenade_cartridge.rsi
-    state: icon
-  discipline: Arsenal
-  tier: 3
-  cost: 15000
-  recipeUnlocks:
-  - GrenadeEMP
-  - PowerCageHigh
-  - ShuttleGunDusterCircuitboard
-  technologyPrerequisites:
-  - BasicShuttleArmament
+# - type: technology #Frontier
+#  id: AdvancedShuttleWeapon
+#  name: research-technology-advanced-shuttle-weapon
+#  icon:
+#    sprite: Objects/Weapons/Guns/Ammunition/Magazine/Grenade/grenade_cartridge.rsi
+#    state: icon
+#  discipline: Arsenal
+#  tier: 3
+#  cost: 15000
+#  recipeUnlocks:
+#  - GrenadeEMP
+#  - PowerCageHigh
+#  - ShuttleGunDusterCircuitboard # Frontier
+#  technologyPrerequisites:
+#  - BasicShuttleArmament
 
 - type: technology #Corvax-Frontier
   id: VariousShuttleWeapons

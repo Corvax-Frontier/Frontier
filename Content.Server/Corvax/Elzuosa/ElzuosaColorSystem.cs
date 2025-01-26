@@ -1,15 +1,16 @@
 ﻿using Content.Shared.Humanoid;
 using Content.Shared.Preferences;
 using Robust.Server.GameObjects;
-using Content.Server.GameTicking;
 using Content.Shared.Damage.Components;
 using Content.Shared.Damage.Systems;
 using Content.Shared.Emag.Systems;
 using Content.Shared.IdentityManagement;
 using Content.Shared.Light;
 using Content.Shared.Light.Components;
+using Content.Shared.Nutrition.EntitySystems;
 using Content.Shared.Nutrition.Components;
 using Content.Shared.Popups;
+using Content.Shared.GameTicking;
 
 namespace Content.Server.Corvax.Elzuosa
 {
@@ -19,6 +20,7 @@ namespace Content.Server.Corvax.Elzuosa
         [Dependency] private readonly SharedRgbLightControllerSystem _rgbSystem = default!;
         [Dependency] private readonly SharedPopupSystem _popupSystem = default!;
         [Dependency] private readonly StaminaSystem _stamina = default!;
+        [Dependency] private readonly HungerSystem _hunger = default!;
 
         public bool SelfEmagged;
 
@@ -36,13 +38,14 @@ namespace Content.Server.Corvax.Elzuosa
         public override void Update(float frameTime)
         {
             base.Update(frameTime);
-            var query = EntityQueryEnumerator<ElzuosaColorComponent>();
-            while (query.MoveNext(out var uid, out var elzuosaColorComponent))
+            var query = EntityQueryEnumerator<ElzuosaColorComponent, HungerComponent>();
+            while (query.MoveNext(out var uid, out var elzuosaColorComponent, out var hungerComponent))
             {
 
-                var hunger = EntityManager.EnsureComponent<HungerComponent>(uid).CurrentHunger;
+                var hunger = _hunger.GetHunger(hungerComponent);
                 if (TryComp(uid, out _pointLightComponent))
                     //Да простит меня боженька...
+                    //Я не прощу @Zekins
                     if(hunger <= 50)
                         _pointLightSystem.SetRadius(uid,(float)0.5);
                     else if(hunger <= 55)

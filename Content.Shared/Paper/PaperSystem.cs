@@ -139,13 +139,16 @@ public sealed class PaperSystem : EntitySystem
                        || _tagSystem.HasTag(args.Used, "NFWriteIgnoreUnprotectedStamps") && !_tagSystem.HasTag(entity, "NFPaperStampProtected"); // Frontier: protected stamps
         if (_tagSystem.HasTag(args.Used, "Write"))
         {
-            // Frontier - Restrict writing to entities with ActorComponent, players only
-            if (!TryComp<ActorComponent>(args.User, out var actor))
-                return;
-            // End Frontier
-
             if (editable)
             {
+                // Frontier - Restrict writing to entities with ActorComponent, players only
+                if (!TryComp<ActorComponent>(args.User, out var actor))
+                {
+                    args.Handled = true;
+                    return;
+                }
+                // End Frontier
+
                 if (entity.Comp.EditingDisabled)
                 {
                     var paperEditingDisabledMessage = Loc.GetString("paper-tamper-proof-modified-message");
@@ -162,9 +165,9 @@ public sealed class PaperSystem : EntitySystem
                 return;entity.Comp.Mode = PaperAction.Write;
                 _uiSystem.OpenUi(entity.Owner, PaperUiKey.Key, args.User);
                 UpdateUserInterface(entity);
+                args.Handled = true;
+                return;
             }
-            args.Handled = true;
-            return;
         }
 
         // If a stamp, attempt to stamp paper

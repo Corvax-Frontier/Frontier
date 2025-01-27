@@ -139,6 +139,11 @@ public sealed class PaperSystem : EntitySystem
                        || _tagSystem.HasTag(args.Used, "NFWriteIgnoreUnprotectedStamps") && !_tagSystem.HasTag(entity, "NFPaperStampProtected"); // Frontier: protected stamps
         if (_tagSystem.HasTag(args.Used, "Write"))
         {
+            // Frontier - Restrict writing to entities with ActorComponent, players only
+            if (!TryComp<ActorComponent>(args.User, out var actor))
+                return;
+            // End Frontier
+
             if (editable)
             {
                 if (entity.Comp.EditingDisabled)
@@ -166,13 +171,15 @@ public sealed class PaperSystem : EntitySystem
         if (TryComp<StampComponent>(args.Used, out var stampComp) &&
             !StampDelayed(args.Used)) // Frontier: check stamp is delayed, defer TryStamp
         {
-            var stampInfo = GetStampInfo(stampComp); // Frontier: assign DisplayStampInfo before stamp
+            // Frontier: assign DisplayStampInfo before stamp
+            var stampInfo = GetStampInfo(stampComp);
             if (_tagSystem.HasTag(args.Used, "Write"))
             {
                 TrySign(entity, args.User, args.Used);
             }
             else if (TryStamp(entity, stampInfo, stampComp.StampState))
-            { // End Frontier
+            {
+                // End Frontier: assign DisplayStampInfo before stamp
                 // successfully stamped, play popup
                 var stampPaperOtherMessage = Loc.GetString("paper-component-action-stamp-paper-other",
                         ("user", args.User),

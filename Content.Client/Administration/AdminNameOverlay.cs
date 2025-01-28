@@ -95,7 +95,7 @@ internal sealed class AdminNameOverlay : Overlay
             }
             args.ScreenHandle.DrawString(_font, screenCoordinates+lineoffset, playerInfo.Username, uiScale, playerInfo.Connected ? Color.Yellow : Color.White);
             args.ScreenHandle.DrawString(_font, screenCoordinates, playerInfo.CharacterName, uiScale, playerInfo.Connected ? Color.Aquamarine : Color.White);
-            args.ScreenHandle.DrawString(_font, screenCoordinates + lineoffset * 2, $"Balance: {balance}", uiScale, playerInfo.Connected ? Color.Aquamarine : Color.White); // Frontier
+            args.ScreenHandle.DrawString(_font, screenCoordinates + lineoffset * 3, $"Balance: {balance}", uiScale, playerInfo.Connected ? Color.Aquamarine : Color.White); // Frontier
         }
     }
 }

@@ -42714,7 +42714,7 @@ entities:
       powerLoad: 60
     - type: DamageOnInteract
       isDamageActive: False
-- proto: PresentRandomAsh
+- proto: PresentRandomCoal
   entities:
   - uid: 2147
     components:

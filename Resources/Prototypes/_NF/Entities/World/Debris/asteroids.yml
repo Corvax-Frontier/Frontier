@@ -1,5 +1,5 @@
 ﻿# Asteroid types & loot tables
-# region Asteroid Table
+# region Rock Table
 - type: entity
   id: NFBaseAsteroidDebris
   parent: NFBaseDebris
@@ -13,20 +13,48 @@
     - type: SimpleFloorPlanPopulator
       entries:
         FloorAsteroidSand:
-        - id: NFRockMineralSoft
-          orGroup: rock
-          prob: 1.025
-        - id: NFRockMineralHard
-          orGroup: rock
-          prob: 0.1223
-        # Room
-        - id: NFAsteroidRoomMarker
-          orGroup: rock
-          prob: 0.0002
+          - id: NFRockMineralSoft
+            orGroup: rock
+            prob: 1.025
+          - id: NFRockMineralHard
+            orGroup: rock
+            prob: 0.1223
+          # Room
+          - id: NFAsteroidRoomMarker
+            orGroup: rock
+            prob: 0.0002
     - type: IFF
       flags: HideLabel
       color: "#d67e27"
-# endregion Asteroid Table
+    - type: RandomEntityPopulator
+      entries: &gasDeposits
+      - params:
+          prob: 0.5
+          min: 0
+          max: 2
+          canBeAirSealed: true
+        entries:
+        - id: GasDepositOxygen
+          orGroup: deposit
+        - id: GasDepositNitrogen
+          orGroup: deposit
+        - id: GasDepositCarbonDioxide
+          orGroup: deposit
+        - id: GasDepositPlasma
+          orGroup: deposit
+        - id: GasDepositAmmonia
+          orGroup: deposit
+        - id: GasDepositWaterVapor
+          orGroup: deposit
+        - id: GasDepositNitrousOxide
+          orGroup: deposit
+        - id: GasDepositAir
+          orGroup: deposit
+        - id: GasDepositMuddleEven
+          orGroup: deposit
+        - id: GasDepositMuddlePlasma
+          orGroup: deposit
+# endregion Rock Table
 
 # region Snow Table
 - type: entity
@@ -34,24 +62,26 @@
   parent: NFBaseAsteroidDebris
   abstract: true
   components:
-  - type: BlobFloorPlanBuilder
-    floorTileset:
-    - FloorIce
-  - type: SimpleFloorPlanPopulator
-    entries:
-      FloorIce:
-      - id: NFIceMineralSoft
-        orGroup: rock
-        prob: 0.807
-      - id: NFIceMineralHard
-        orGroup: rock
-        prob: 0.1305
-      # Room
-      - id: NFSnowRoomMarker
-        orGroup: rock
-        prob: 0.0002
-  - type: IFF
-    color: "#d6fffc"
+    - type: BlobFloorPlanBuilder
+      floorTileset:
+      - FloorIce
+    - type: SimpleFloorPlanPopulator
+      entries:
+        FloorIce:
+          - id: NFIceMineralSoft
+            orGroup: rock
+            prob: 0.807
+          - id: NFIceMineralHard
+            orGroup: rock
+            prob: 0.1305
+          # Room
+          - id: NFSnowRoomMarker
+            orGroup: rock
+            prob: 0.0002
+    - type: IFF
+      color: "#d6fffc"
+    - type: RandomEntityPopulator
+      entries: *gasDeposits
 # endregion Snow Table
 
 # region Andesite Table
@@ -60,24 +90,26 @@
   parent: NFBaseAsteroidDebris
   abstract: true
   components:
-  - type: BlobFloorPlanBuilder
-    floorTileset:
-    - FloorCaveDrought
-  - type: SimpleFloorPlanPopulator
-    entries:
-      FloorCaveDrought:
-      - id: NFAndesiteMineralSoft
-        orGroup: rock
-        prob: 0.929
-      - id: NFAndesiteMineralHard
-        orGroup: rock
-        prob: 0.1317
-      # Room
-      - id: NFAndesiteRoomMarker
-        orGroup: rock
-        prob: 0.0003
-  - type: IFF
-    color: "#95c280"
+    - type: BlobFloorPlanBuilder
+      floorTileset:
+      - FloorCaveDrought
+    - type: SimpleFloorPlanPopulator
+      entries:
+        FloorCaveDrought:
+          - id: NFAndesiteMineralSoft
+            orGroup: rock
+            prob: 0.929
+          - id: NFAndesiteMineralHard
+            orGroup: rock
+            prob: 0.1317
+          # Room
+          - id: NFAndesiteRoomMarker
+            orGroup: rock
+            prob: 0.0003
+    - type: IFF
+      color: "#95c280"
+    - type: RandomEntityPopulator
+      entries: *gasDeposits
 # endregion Andesite Table
 
 # region Basalt Table
@@ -86,24 +118,26 @@
   parent: NFBaseAsteroidDebris
   abstract: true
   components:
-  - type: BlobFloorPlanBuilder
-    floorTileset:
-    - FloorBasalt
-  - type: SimpleFloorPlanPopulator
-    entries:
-      FloorBasalt:
-      - id: NFBasaltMineralSoft
-        orGroup: rock
-        prob: 0.905
-      - id: NFBasaltMineralHard
-        orGroup: rock
-        prob: 0.115
-      # Room
-      - id: NFBasaltRoomMarker
-        orGroup: rock
-        prob: 0.0002
-  - type: IFF
-    color: "#b5b5b5"
+    - type: BlobFloorPlanBuilder
+      floorTileset:
+      - FloorBasalt
+    - type: SimpleFloorPlanPopulator
+      entries:
+        FloorBasalt:
+          - id: NFBasaltMineralSoft
+            orGroup: rock
+            prob: 0.905
+          - id: NFBasaltMineralHard
+            orGroup: rock
+            prob: 0.115
+          # Room
+          - id: NFBasaltRoomMarker
+            orGroup: rock
+            prob: 0.0002
+    - type: IFF
+      color: "#b5b5b5"
+    - type: RandomEntityPopulator
+      entries: *gasDeposits
 # endregion Basalt Table
 
 # region Sand Table
@@ -112,24 +146,26 @@
   parent: NFBaseAsteroidDebris
   abstract: true
   components:
-  - type: BlobFloorPlanBuilder
-    floorTileset:
-    - FloorLowDesert
-  - type: SimpleFloorPlanPopulator
-    entries:
-      FloorLowDesert:
-      - id: NFSandMineralSoft
-        orGroup: rock
-        prob: 0.899
-      - id: NFSandMineralHard
-        orGroup: rock
-        prob: 0.1227
-      # Room
-      - id: NFSandRoomMarker
-        orGroup: rock
-        prob: 0.0002
-  - type: IFF
-    color: "#cad17b"
+    - type: BlobFloorPlanBuilder
+      floorTileset:
+      - FloorLowDesert
+    - type: SimpleFloorPlanPopulator
+      entries:
+        FloorLowDesert:
+          - id: NFSandMineralSoft
+            orGroup: rock
+            prob: 0.899
+          - id: NFSandMineralHard
+            orGroup: rock
+            prob: 0.1227
+          # Room
+          - id: NFSandRoomMarker
+            orGroup: rock
+            prob: 0.0002
+    - type: IFF
+      color: "#cad17b"
+    - type: RandomEntityPopulator
+      entries: *gasDeposits
 # endregion Sand Table
 
 # region Chromite Table
@@ -138,24 +174,26 @@
   parent: NFBaseAsteroidDebris
   abstract: true
   components:
-  - type: BlobFloorPlanBuilder
-    floorTileset:
-    - FloorChromite
-  - type: SimpleFloorPlanPopulator
-    entries:
-      FloorChromite:
-      - id: NFChromiteMineralSoft
-        orGroup: rock
-        prob: 0.8225
-      - id: NFChromiteMineralHard
-        orGroup: rock
-        prob: 0.11175
-      # Room
-      - id: NFChromiteRoomMarker
-        orGroup: rock
-        prob: 0.0002
-  - type: IFF
-    color: "#8178cc"
+    - type: BlobFloorPlanBuilder
+      floorTileset:
+      - FloorChromite
+    - type: SimpleFloorPlanPopulator
+      entries:
+        FloorChromite:
+          - id: NFChromiteMineralSoft
+            orGroup: rock
+            prob: 0.8225
+          - id: NFChromiteMineralHard
+            orGroup: rock
+            prob: 0.11175
+          # Room
+          - id: NFChromiteRoomMarker
+            orGroup: rock
+            prob: 0.0002
+    - type: IFF
+      color: "#8178cc"
+    - type: RandomEntityPopulator
+      entries: *gasDeposits
 # endregion Chromite Table
 
 # region AsteroidRock Table
@@ -164,24 +202,26 @@
   parent: NFBaseAsteroidDebris
   abstract: true
   components:
-  - type: BlobFloorPlanBuilder
-    floorTileset:
-    - FloorAsteroidSand
-  - type: SimpleFloorPlanPopulator
-    entries:
-      FloorAsteroidSand:
-      - id: NFAsteroidMineralSoft
-        orGroup: rock
-        prob: 1.392
-      - id: NFAsteroidMineralHard
-        orGroup: rock
-        prob: 0.1682
-      # Room
-      - id: NFAsteroidRockRoomMarker
-        orGroup: rock
-        prob: 0.0002
-  - type: IFF
-    color: "#BF8C5C"
+    - type: BlobFloorPlanBuilder
+      floorTileset:
+        - FloorAsteroidSand
+    - type: SimpleFloorPlanPopulator
+      entries:
+        FloorAsteroidSand:
+          - id: NFAsteroidMineralSoft
+            orGroup: rock
+            prob: 1.392
+          - id: NFAsteroidMineralHard
+            orGroup: rock
+            prob: 0.1682
+          # Room
+          - id: NFAsteroidRockRoomMarker
+            orGroup: rock
+            prob: 0.0002
+    - type: IFF
+      color: "#BF8C5C"
+    - type: RandomEntityPopulator
+      entries: *gasDeposits
 # endregion AsteroidRock Table
 
 # region Scrap Table
@@ -190,20 +230,20 @@
   parent: NFBaseAsteroidDebris
   abstract: true
   components:
-  - type: BlobFloorPlanBuilder
-    floorTileset:
-    - Lattice
-  - type: SimpleFloorPlanPopulator
-    entries:
-      Lattice:
-      - id: NFScrapMineralSoft
-        orGroup: rock
-        prob: 0.77
-      - id: WallSolidRust
-        orGroup: rock
-        prob: 0.05
-  - type: IFF
-    color: "#fcdec7"
+    - type: BlobFloorPlanBuilder
+      floorTileset:
+      - Lattice
+    - type: SimpleFloorPlanPopulator
+      entries:
+        Lattice:
+          - id: NFScrapMineralSoft
+            orGroup: rock
+            prob: 0.77
+          - id: WallSolidRust
+            orGroup: rock
+            prob: 0.05
+    - type: IFF
+      color: "#fcdec7"
 # endregion Scrap Table
 
 # region Asteroid Entities

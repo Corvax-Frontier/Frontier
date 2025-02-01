@@ -19,6 +19,7 @@ public enum ShipyardConsoleUiKey : byte
     Scrap,
     Sr,
     // Add ships to this key if they are only available from mothership consoles. Shipyards using it are inherently empty and are populated using the ShipyardListingComponent.
+    Coliseum, // Corvax-Frontier
     Custom
 }
 

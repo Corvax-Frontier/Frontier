@@ -26,5 +26,6 @@
         - ArtifactFragment
         - Ore
   - type: Dumpable
+  - type: NFOreBag # Frontier
   - type: StaticPrice #CorvaxFrontier
     price: 8 #CorvaxFrontier

@@ -13,7 +13,7 @@
     whitelist:
       tags:
         - CartridgeVector22
-    capacity: 50
+    capacity: 33
   - type: Item
     size: Small
   - type: ContainerContainer

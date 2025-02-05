@@ -30,50 +30,50 @@
   - type: StaticPrice
     price: 30
 
-- type: entity #FrontierCorvax
-  parent: MagazineBoxVector45
-  id: MagazineBoxVector45Incendiary
-  name: ammunition box (.45 ACP incendiary)
-  components:
-  - type: BallisticAmmoProvider
-    proto: CartridgeVector45Incendiary
-  - type: Sprite
-    layers:
-    - state: base  
-      map: ["enum.GunVisualLayers.Base"]
-    - state: mag-1
-      map: ["enum.GunVisualLayers.Mag"]
-    - state: incendiary
+# - type: entity FrontierCorvax
+#   parent: MagazineBoxVector45
+#   id: MagazineBoxVector45Incendiary
+#   name: ammunition box (.45 ACP incendiary)
+#   components:
+#   - type: BallisticAmmoProvider
+#     proto: CartridgeVector45Incendiary
+#   - type: Sprite
+#     layers:
+#     - state: base  
+#       map: ["enum.GunVisualLayers.Base"]
+#     - state: mag-1
+#       map: ["enum.GunVisualLayers.Mag"]
+#     - state: incendiary
 
-- type: entity #FrontierCorvax
-  parent: MagazineBoxVector45
-  id: MagazineBoxVector45Practice
-  name: ammunition box (.45 ACP practice)
-  components:
-  - type: BallisticAmmoProvider
-    proto: CartridgeVector45Practice
-  - type: Sprite
-    layers:
-    - state: base
-      map: ["enum.GunVisualLayers.Base"]
-    - state: mag-1
-      map: ["enum.GunVisualLayers.Mag"]
-    - state: practice
+# - type: entity FrontierCorvax
+#   parent: MagazineBoxVector45
+#   id: MagazineBoxVector45Practice
+#   name: ammunition box (.45 ACP practice)
+#   components:
+#   - type: BallisticAmmoProvider
+#     proto: CartridgeVector45Practice
+#   - type: Sprite
+#     layers:
+#     - state: base
+#       map: ["enum.GunVisualLayers.Base"]
+#     - state: mag-1
+#       map: ["enum.GunVisualLayers.Mag"]
+#     - state: practice
 
-- type: entity #FrontierCorvax
-  parent: MagazineBoxVector45
-  id: MagazineBoxVector45Uranium
-  name: ammunition box (.45 ACP uranium)
-  components:
-  - type: BallisticAmmoProvider
-    proto: CartridgeVector45Uranium
-  - type: Sprite
-    layers:
-    - state: base
-      map: ["enum.GunVisualLayers.Base"]
-    - state: mag-1
-      map: ["enum.GunVisualLayers.Mag"]
-    - state: uranium
+# - type: entity FrontierCorvax
+#   parent: MagazineBoxVector45
+#   id: MagazineBoxVector45Uranium
+#   name: ammunition box (.45 ACP uranium)
+#   components:
+#   - type: BallisticAmmoProvider
+#     proto: CartridgeVector45Uranium
+#   - type: Sprite
+#     layers:
+#     - state: base
+#       map: ["enum.GunVisualLayers.Base"]
+#     - state: mag-1
+#       map: ["enum.GunVisualLayers.Mag"]
+#     - state: uranium
 
 - type: entity #FrontierCorvax
   parent: BaseItem
@@ -105,47 +105,47 @@
     zeroVisible: false
   - type: Appearance
 
-- type: entity #FrontierCorvax
-  parent: MagazineBoxVector22
-  id: MagazineBoxVector22Incendiary
-  name: ammunition box (.22 LR incendiary)
-  components:
-  - type: BallisticAmmoProvider
-    proto: CartridgeVector22Incendiary
-  - type: Sprite
-    layers:
-    - state: base
-      map: ["enum.GunVisualLayers.Base"]
-    - state: mag-1
-      map: ["enum.GunVisualLayers.Mag"]
-    - state: incendiary
+# - type: entity FrontierCorvax
+#   parent: MagazineBoxVector22
+#   id: MagazineBoxVector22Incendiary
+#   name: ammunition box (.22 LR incendiary)
+#   components:
+#   - type: BallisticAmmoProvider
+#     proto: CartridgeVector22Incendiary
+#   - type: Sprite
+#     layers:
+#     - state: base
+#       map: ["enum.GunVisualLayers.Base"]
+#     - state: mag-1
+#       map: ["enum.GunVisualLayers.Mag"]
+#     - state: incendiary
 
-- type: entity #FrontierCorvax
-  parent: MagazineBoxVector22
-  id: MagazineBoxVector22Practice
-  name: ammunition box (.22 LR practice)
-  components:
-  - type: BallisticAmmoProvider
-    proto: CartridgeVector22Practice
-  - type: Sprite
-    layers:
-    - state: base
-      map: ["enum.GunVisualLayers.Base"]
-    - state: mag-1
-      map: ["enum.GunVisualLayers.Mag"]
-    - state: practice
+# - type: entity FrontierCorvax
+#   parent: MagazineBoxVector22
+#   id: MagazineBoxVector22Practice
+#   name: ammunition box (.22 LR practice)
+#   components:
+#   - type: BallisticAmmoProvider
+#     proto: CartridgeVector22Practice
+#   - type: Sprite
+#     layers:
+#     - state: base
+#       map: ["enum.GunVisualLayers.Base"]
+#     - state: mag-1
+#       map: ["enum.GunVisualLayers.Mag"]
+#     - state: practice
 
-- type: entity #FrontierCorvax
-  parent: MagazineBoxVector22
-  id: MagazineBoxVector22Uranium
-  name: ammunition box (.22 LR uranium)
-  components:
-  - type: BallisticAmmoProvider
-    proto: CartridgeVector22Uranium
-  - type: Sprite
-    layers:
-    - state: base
-      map: ["enum.GunVisualLayers.Base"]
-    - state: mag-1
-      map: ["enum.GunVisualLayers.Mag"]
-    - state: uranium
+# - type: entity FrontierCorvax
+#   parent: MagazineBoxVector22
+#   id: MagazineBoxVector22Uranium
+#   name: ammunition box (.22 LR uranium)
+#   components:
+#   - type: BallisticAmmoProvider
+#     proto: CartridgeVector22Uranium
+#   - type: Sprite
+#     layers:
+#     - state: base
+#       map: ["enum.GunVisualLayers.Base"]
+#     - state: mag-1
+#       map: ["enum.GunVisualLayers.Mag"]
+#     - state: uranium

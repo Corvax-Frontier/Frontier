@@ -9,38 +9,38 @@
         Piercing: 7
         Blunt: 4
 
-- type: entity #FrontierCorvax
-  id: BulletVector22Incendiary
-  parent: BaseBulletIncendiary
-  name: bullet .22 LR (incendiary)
-  components:
-  - type: Projectile
-    damage:
-      types:
-        Blunt: 1
-        Heat: 1
+# - type: entity FrontierCorvax
+#   id: BulletVector22Incendiary
+#   parent: BaseBulletIncendiary
+#   name: bullet .22 LR (incendiary)
+#   components:
+#   - type: Projectile
+#     damage:
+#       types:
+#         Blunt: 1
+#         Heat: 1
 
-- type: entity #FrontierCorvax
-  id: BulletVector22Practice
-  name: bullet .22 LR (practice)
-  parent: BaseBulletPractice
-  components:
-  - type: Projectile
-    damage:
-      types:
-        Blunt: 1
+# - type: entity FrontierCorvax
+#   id: BulletVector22Practice
+#   name: bullet .22 LR (practice)
+#   parent: BaseBulletPractice
+#   components:
+#   - type: Projectile
+#     damage:
+#       types:
+#         Blunt: 1
 
-- type: entity #FrontierCorvax
-  id: BulletVector22Uranium
-  name: bullet .22 LR (uranium)
-  parent: BaseBulletUranium
-  components:
-  - type: Projectile
-    damage:
-      types:
-        Piercing: 1
-        Blunt: 1
-        Radiation: 1
+# - type: entity FrontierCorvax
+#   id: BulletVector22Uranium
+#   name: bullet .22 LR (uranium)
+#   parent: BaseBulletUranium
+#   components:
+#   - type: Projectile
+#     damage:
+#       types:
+#         Piercing: 1
+#         Blunt: 1
+#         Radiation: 1
 
 - type: entity #FrontierCorvax
   id: BulletVector45
@@ -53,35 +53,35 @@
         Piercing: 17
         Blunt: 6
 
-- type: entity #FrontierCorvax
-  id: BulletVector45Incendiary
-  parent: BaseBulletIncendiary
-  name: bullet .45 ACP (incendiary)
-  components:
-  - type: Projectile
-    damage:
-      types:
-        Blunt: 1
-        Heat: 1
+# - type: entity FrontierCorvax
+#   id: BulletVector45Incendiary
+#   parent: BaseBulletIncendiary
+#   name: bullet .45 ACP (incendiary)
+#   components:
+#   - type: Projectile
+#     damage:
+#       types:
+#         Blunt: 1
+#         Heat: 1
 
-- type: entity #FrontierCorvax
-  id: BulletVector45Practice
-  name: bullet .45 ACP (practice)
-  parent: BaseBulletPractice
-  components:
-  - type: Projectile
-    damage:
-      types:
-        Blunt: 1
+# - type: entity FrontierCorvax
+#   id: BulletVector45Practice
+#   name: bullet .45 ACP (practice)
+#   parent: BaseBulletPractice
+#   components:
+#   - type: Projectile
+#     damage:
+#       types:
+#         Blunt: 1
 
-- type: entity #FrontierCorvax
-  id: BulletVector45Uranium
-  name: bullet .45 ACP (uranium)
-  parent: BaseBulletUranium
-  components:
-  - type: Projectile
-    damage:
-      types:
-        Piercing: 1
-        Blunt: 1
-        Radiation: 1
+# - type: entity FrontierCorvax
+#   id: BulletVector45Uranium
+#   name: bullet .45 ACP (uranium)
+#   parent: BaseBulletUranium
+#   components:
+#   - type: Projectile
+#     damage:
+#       types:
+#         Piercing: 1
+#         Blunt: 1
+#         Radiation: 1

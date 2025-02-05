@@ -460,14 +460,14 @@
       - LauncherSyringe
       - MiniSyringe
       # End DeltaV additions
-      - MagazineBoxVector22Incendiary #CorvaxFrontier
-      - MagazineBoxVector22Uranium #CorvaxFrontier
-      - MagazineVector22Incendiary #CorvaxFrontier
-      - MagazineVector22Uranium #CorvaxFrontier
-      - MagazineBoxVector45Incendiary #CorvaxFrontier
-      - MagazineBoxVector45Uranium #CorvaxFrontier
-      - MagazineVector45Incendiary #CorvaxFrontier
-      - MagazineVector45Uranium #CorvaxFrontier
+      # - MagazineBoxVector22Incendiary CorvaxFrontier
+      # - MagazineBoxVector22Uranium CorvaxFrontier
+      # - MagazineVector22Incendiary CorvaxFrontier
+      # - MagazineVector22Uranium CorvaxFrontier
+      # - MagazineBoxVector45Incendiary CorvaxFrontier
+      # - MagazineBoxVector45Uranium CorvaxFrontier
+      # - MagazineVector45Incendiary CorvaxFrontier
+      # - MagazineVector45Uranium CorvaxFrontier
 
 - type: entity
   id: ProtolatheHyperConvection

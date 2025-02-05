@@ -20,7 +20,7 @@
     - suitStorage
     - Belt
   - type: Gun
-    fireRate: 12
+    fireRate: 18
     selectedMode: FullAuto
     soundGunshot:
       path: /Audio/Corvax/Weapons/Guns/Gunshots/Vector22.ogg

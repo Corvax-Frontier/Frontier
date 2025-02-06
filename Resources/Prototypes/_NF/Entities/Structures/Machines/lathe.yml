@@ -736,6 +736,8 @@
       - MagazineBoxRifleRubber
       - BoxBeanbagKS23 # Corvax-Frontier
       - BoxLethalshotKS23 # Corvax-Frontier
+      - MagazineBoxVector22 # Corvax-Frontier
+      - MagazineBoxVector45 # Corvax-Frontier
     ## Mags / Speedloaders / Clips
       - MagazineNovaliteC1Empty
       - MagazineNovaliteC1
@@ -758,6 +760,8 @@
       - MagazinePistolRubber
       - MagazineLightRifleRubber
       - MagazineShotgunBeanbag
+      - MagazineVector45 # Corvax-Frontier
+      - MagazineVector22 # Corvax-Frontier
     dynamicRecipes:
     # Shared lathe recipes
     ## Advanced tools

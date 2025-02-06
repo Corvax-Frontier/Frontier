@@ -72,7 +72,7 @@
   - type: Gun
     minAngle: 2
     maxAngle: 8
-    fireRate: 4.2
+    fireRate: 5
     selectedMode: SemiAuto
     soundGunshot:
       path: /Audio/Corvax/Weapons/Guns/Gunshots/Vector45.ogg
@@ -102,4 +102,4 @@
     zeroVisible: true
   - type: Appearance
   - type: StaticPrice
-    price: 1033
+    price: 800

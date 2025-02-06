@@ -5,7 +5,8 @@
     WeaponBrassKnuckles: 1 
     WeaponLaserPistolNF: 1 
     WeaponRifleGestio: 1 
-    WeaponRifleNovaliteC1: 1 
+    WeaponRifleNovaliteC1: 1
+    WeaponSubMachineGunVector45: 1 #FrontierCorvax 
     WeaponShotgunDoubleBarreled: 1
     WeaponRevolverArgenti: 1
     WeaponPistolUniversal: 1
@@ -21,10 +22,12 @@
     MagazineBoxPistolRubber: 2
     MagazineBoxMagnum: 2
     MagazineBoxMagnumRubber: 2
+    MagazineBoxVector45: 2 #FrontierCorvax 
     SpeedLoaderRifleHeavyEmpty: 1
     MagazineNovaliteC1Empty: 1
     MagazineLightRifleLowCapacityEmpty: 1
     MagazinePistolEmpty: 1
+    MagazineVector45Empty: 1 #FrontierCorvax 
   emaggedInventory:
     WeaponPistolViper: 1
 
@@ -36,6 +39,7 @@
     WeaponLaserPistolNF: 4294967295
     WeaponRifleGestio: 4294967295
     WeaponRifleNovaliteC1: 4294967295
+    WeaponSubMachineGunVector45: 4294967295 #FrontierCorvax 
     WeaponShotgunDoubleBarreled: 4294967295
     WeaponRevolverArgenti: 4294967295
     WeaponPistolUniversal: 4294967295
@@ -51,9 +55,11 @@
     MagazineBoxPistolRubber: 4294967295
     MagazineBoxMagnum: 4294967295
     MagazineBoxMagnumRubber: 4294967295
+    MagazineBoxVector45: 4294967295 #FrontierCorvax 
     SpeedLoaderRifleHeavyEmpty: 4294967295
     MagazineNovaliteC1Empty: 4294967295
     MagazineLightRifleLowCapacityEmpty: 4294967295
     MagazinePistolEmpty: 4294967295
+    MagazineVector45Empty: 4294967295 #FrontierCorvax 
   emaggedInventory:
     WeaponPistolViper: 1

@@ -15,6 +15,9 @@
 #          nameGenerator:
 #            !type:NanotrasenNameGenerator
 #            prefixCreator: '14'
+        - type: CP14StationAdditionalMap
+          mapPaths:
+          - /Maps/Corvax/POI/coliseum.yml
         - type: ExtraStationInformation
           iconPath: /Textures/Logo/logo.png
           stationSubtext: 'frontier-lobby-frontier-subtext'

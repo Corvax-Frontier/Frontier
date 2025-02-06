@@ -1,0 +1,6 @@
+- type: latheRecipe
+  id: ColiseumCoinExchangerRecipe
+  result: SpaceCash25000
+  completetime: 1
+  materials:
+    ColiseumCoin: 1

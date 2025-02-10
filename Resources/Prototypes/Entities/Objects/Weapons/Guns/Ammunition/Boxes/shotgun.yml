@@ -29,7 +29,8 @@
       steps: 5
       zeroVisible: false
     - type: Appearance
-
+    - type: StaticPrice
+      price: 125 #CorvaxFrontier
 # Shotgun Shells
 - type: entity
   parent: AmmoProviderShotgunShell

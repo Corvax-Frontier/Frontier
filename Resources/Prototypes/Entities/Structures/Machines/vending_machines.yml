@@ -1402,7 +1402,7 @@
   #   guides: # Frontier: removed guidebook entry
   #   - Salvage # Frontier: removed guidebook entry
   - type: MarketModifier # Frontier
-    mod: 15 # Frontier
+    mod: 150 # Frontier
 
 - type: entity
   parent: VendingMachine

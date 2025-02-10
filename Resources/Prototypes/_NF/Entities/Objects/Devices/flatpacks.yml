@@ -24,8 +24,8 @@
 - type: entity
   parent: BaseNFFlatpack
   id: EngineeringTechFabFlatpack
-  name: engineering techfab flatpack
-  description: A flatpack used for constructing an engineering techfab.
+  name: engineering tech fab flatpack
+  description: A flatpack used for constructing an engineering tech fab.
   components:
   - type: Flatpack
     entity: EngineeringTechFab
@@ -302,8 +302,8 @@
 - type: entity
   parent: UniformPrinterFlatpack
   id: ServiceTechFabFlatpack
-  name: service techfab flatpack
-  description: A flatpack used for constructing a service techfab.
+  name: service tech fab flatpack
+  description: A flatpack used for constructing a service tech fab.
   components:
   - type: Flatpack
     entity: ServiceTechFab
@@ -399,13 +399,13 @@
 - type: entity
   parent: BaseNFFlatpack
   id: MedicalTechFabFlatpack
-  name: medical techfab flatpack
-  description: A flatpack used for constructing a medical techfab.
+  name: medical tech fab flatpack
+  description: A flatpack used for constructing a medical tech fab.
   components:
   - type: Flatpack
     entity: MedicalTechFab
   - type: StaticPrice
-    price: 250
+    price: 600
   - type: Sprite
     layers:
     - state: medical_lathe
@@ -472,6 +472,8 @@
   components:
   - type: Flatpack
     entity: ChemistryHotplate
+  - type: StaticPrice
+    price: 250
 
 - type: entity
   parent: MedicalTechFabFlatpack
@@ -805,8 +807,8 @@
 - type: entity
   parent: TubaInstrumentFlatpack
   id: DawInstrumentFlatpack
-  name: DAW flatpack
-  description: A flatpack containing a digital audio workstation.
+  name: daw flatpack
+  description: A flatpack containing a daw.
   components:
   - type: Flatpack
     entity: DawInstrument
@@ -816,8 +818,8 @@
 - type: entity
   parent: UniformPrinterFlatpack
   id: NfsdTechFabFlatpack
-  name: NFSD techfab flatpack
-  description: A flatpack used for constructing an NFSD techfab.
+  name: nfsd tech fab flatpack
+  description: A flatpack used for constructing a nfsd tech fab.
   components:
   - type: Flatpack
     entity: NfsdTechFab
@@ -867,7 +869,7 @@
 - type: entity
   parent: HoverbikeFlatpack
   id: HoverbikeNfsdFlatpack
-  name: NFSD hoverbike flatpack
+  name: nfsd hoverbike flatpack
   description: A flatpack used for constructing a hoverbike. Keys already slotted in the ignition.
   components:
   - type: Flatpack
@@ -1026,23 +1028,3 @@
     entity: VendingMachineChemicals
   - type: StaticPrice
     price: 2000
-
-    #DoC Console
-
-- type: entity
-  parent: BaseNFFlatpack
-  id: StationAdministrationConsoleFlatpack
-  name: station administration console flatpack
-  description: A flatpack used for constructing a station administration console for Medical Dispatch.
-  components:
-  - type: Flatpack
-    entity: ComputerTabletopStationAdminBankATMMedical
-  - type: Sprite
-    layers:
-    - state: medical_console
-  - type: StaticPrice
-    price: 0
-  - type: CargoSellBlacklist
-  - type: Item
-    shape:
-    - 0,0,1,1

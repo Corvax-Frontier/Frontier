@@ -237,7 +237,8 @@
             max: 1
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
-
+    - type: StaticPrice
+      price: 7 #CorvaxFrontier
 - type: entity
   name: broken floodlight
   id: FloodlightBroken

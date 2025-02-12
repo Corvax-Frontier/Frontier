@@ -15,7 +15,7 @@
   description: Малогабаритный добывающий шаттл. Рекомендованный состав команды 1-3 человека.
   price: 24500
   category: Small
-  group: Shipyard
+  group: Salvage
   shuttlePath: /Maps/Corvax/Shuttles/Salvage/prospector.yml
   guidebookPage: ShipyardProspector
   class:

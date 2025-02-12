@@ -119,6 +119,8 @@
           Quantity: 30
   - type: Tag
     tags: []
+  - type: StaticPrice #CorvaxFrontier
+    price: 75
 
 - type: entity
   id: RadiumChemistryVial

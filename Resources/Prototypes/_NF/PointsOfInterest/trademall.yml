@@ -11,11 +11,11 @@
 - type: pointOfInterest
   id: TradeMall
   parent: BasePOI
-  name: Trade Mall
+  name: Торговая Станция #CorvaxFrontier
   minimumDistance: 1500
   maximumDistance: 2500
   spawnGroup: MarketStation
-  gridPath: /Maps/_NF/POI/trademall.yml
+  gridPath: /Maps/Corvax/POI/trademall.yml # СorvaxFrontier
   addComponents:
   - type: IFF
     color: "#37C837"
@@ -25,8 +25,8 @@
 
 - type: gameMap
   id: TradeMall
-  mapName: 'Trade Mall'
-  mapPath: /Maps/_NF/POI/trademall.yml
+  mapName: 'Торговая Станция' #CorvaxFrontier
+  mapPath: /Maps/Corvax/POI/trademall.yml # СorvaxFrontier
   minPlayers: 0
   stations:
     TradeMall:

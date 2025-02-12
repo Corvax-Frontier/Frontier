@@ -442,7 +442,7 @@
     onlyAffectsMobs: false
     injectOnly: true
   - type: StaticPrice
-    price: 500
+    price: 300
   - type: Tag
     tags: []
 
@@ -550,3 +550,5 @@
     - id: Hypopen
     sound:
       path: /Audio/Effects/unwrap.ogg
+  - type: StaticPrice #CorvaxFrontier
+    price: 500 

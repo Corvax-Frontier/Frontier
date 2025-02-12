@@ -95,15 +95,15 @@
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2
         whitelist:
-          tags:
-            - MagazineLightRifle
+          tags: #CorvaxFrontier
+            - MagazineLightRifleLow
       gun_chamber:
         name: Chamber
         startingItem: CartridgeLightRifle
         priority: 1
         whitelist:
           tags:
-            - CartridgeLightRifle
+            - CartridgeLightRifleLow
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot

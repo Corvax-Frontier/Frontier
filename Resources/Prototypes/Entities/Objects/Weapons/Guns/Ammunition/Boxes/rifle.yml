@@ -22,7 +22,9 @@
     steps: 4
     zeroVisible: false
   - type: Appearance
-
+  - type: StaticPrice #CorvaxFrontier
+    price: 125
+    
 # Boxes
 - type: entity
   parent: BaseMagazineBoxRifle

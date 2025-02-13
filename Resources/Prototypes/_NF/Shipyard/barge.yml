@@ -6,40 +6,41 @@
 # GitHub: ???
 # Discord: ???
 
-# # Shuttle Notes:
-# #
-# - type: vessel
-  # id: Barge
-  # name: NC Barge
-  # description: A medium shipping vessel repurposed into a salvage bar.
-  # price: 47000 # Appraises for 42901, margin of ~10% - TODO: fix these values, getting tests to pass - Whatstone
-  # category: Medium
-  # group: Shipyard
-  # shuttlePath: /Maps/_NF/Shuttles/barge.yml
-  # guidebookPage: ShipyardBarge
-  # class:
-  # - Cargo
-  # - Salvage
-  # engine:
-  # - Solar
-  # - Plasma
+# Shuttle Notes:
+#
+- type: vessel
+  id: Barge
+  parent: BaseVessel
+  name: NC Barge
+  description: A medium shipping vessel repurposed into a salvage bar.
+  price: 49000 # Appraises for 42901, margin of ~10% - TODO: fix these values, getting tests to pass - Whatstone
+  category: Medium
+  group: Shipyard
+  shuttlePath: /Maps/_NF/Shuttles/barge.yml
+  guidebookPage: ShipyardBarge
+  class:
+  - Cargo
+  - Salvage
+  engine:
+  - Solar
+  - Plasma
 
-# - type: gameMap
-  # id: Barge
-  # mapName: 'NC Barge'
-  # mapPath: /Maps/_NF/Shuttles/barge.yml
-  # minPlayers: 0
-  # stations:
-    # Barge:
-      # stationProto: StandardFrontierVessel
-      # components:
-        # - type: StationNameSetup
-          # mapNameTemplate: 'Barge {1}'
-          # nameGenerator:
-            # !type:NanotrasenNameGenerator
-            # prefixCreator: '14'
-        # - type: StationJobs
-          # availableJobs:
-            # Contractor: [ 0, 0 ]
-            # Pilot: [ 0, 0 ]
-            # Mercenary: [ 0, 0 ]
+- type: gameMap
+  id: Barge
+  mapName: 'NC Barge'
+  mapPath: /Maps/_NF/Shuttles/barge.yml
+  minPlayers: 0
+  stations:
+    Barge:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Barge {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            Contractor: [ 0, 0 ]
+            Pilot: [ 0, 0 ]
+            Mercenary: [ 0, 0 ]

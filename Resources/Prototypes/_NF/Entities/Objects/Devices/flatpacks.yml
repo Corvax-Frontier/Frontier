@@ -405,7 +405,7 @@
   - type: Flatpack
     entity: MedicalTechFab
   - type: StaticPrice
-    price: 250
+    price: 600  #CorvaxFrontier
   - type: Sprite
     layers:
     - state: medical_lathe
@@ -472,6 +472,8 @@
   components:
   - type: Flatpack
     entity: ChemistryHotplate
+  - type: StaticPrice #CorvaxFrontier
+    price: 250 #CorvaxFrontier
 
 - type: entity
   parent: MedicalTechFabFlatpack

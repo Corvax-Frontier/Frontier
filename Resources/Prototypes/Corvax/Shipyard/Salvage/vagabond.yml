@@ -16,7 +16,7 @@
   description: Среднегабаритный добывающий-грузовой шаттл. Рекомендуемый состав команды 3-6 человек.
   price: 60000
   category: Medium
-  group: Shipyard
+  group: Salvage
   shuttlePath: /Maps/Corvax/Shuttles/Salvage/vagabond.yml
   guidebookPage: ShipyardVagabond
   class:

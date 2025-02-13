@@ -15,7 +15,7 @@
     SalvageTechfabNFFlatpack: 4294967295 # Infinite
     ScrapProcessorFlatpack: 4294967295 # Infinite
     ServiceTechFabFlatpack: 4294967295 # Infinite
-#    MedicalTechFabFlatpack: 4294967295 # Infinite
+    MedicalTechFabFlatpack: 4294967295 # Infinite  #CorvaxFrontier
     MaterialReclaimerFlatpack: 4294967295 # Infinite
 #    UniformPrinterFlatpack: 6 # Loadouts are a thing
     CutterMachineFlatpack: 4294967295 # Infinite
@@ -28,3 +28,4 @@
     AirlockShuttleFlatpack: 4294967295 # Infinite
     AirlockGlassShuttleFlatpack: 4294967295 # Infinite
     ComputerWithdrawBankATMFlatpack: 4294967295 # Infinite
+    ChemistryHotplateFlatpack: 4294967295 # Infinite  #CorvaxFrontier

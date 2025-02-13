@@ -610,6 +610,9 @@
   id: VendingMachineCiviMedPlus
   name: CiviMed Plus
   description: CiviMed Plus, distributing lifesaving meds harder than the rocks you break! Miners, DON'T DIE!
+  components:  #CorvaxFrontier
+  - type: MarketModifier  #CorvaxFrontier
+    mod: 40  #CorvaxFrontier
 
 - type: entity
   parent: [BaseCiviMedVend, BaseStructureDisableAnchoring, BaseStructureIndestructible, VendingMachineWallmount]

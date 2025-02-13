@@ -50,7 +50,7 @@
         layer:
         - MachineLayer
   - type: StaticPrice
-    price: 15500
+    price: 16000  #CorvaxFrontier
 
 - type: entity
   parent: CrateTradeBaseSecure
@@ -76,7 +76,7 @@
         layer:
         - MachineLayer
   - type: StaticPrice
-    price: 31000
+    price: 33000  #CorvaxFrontier
 
 - type: entity
   parent:
@@ -122,7 +122,7 @@
   - type: Sprite
     sprite: _NF/Structures/Storage/Crates/contraband1_crate.rsi
   - type: StaticPrice
-    price: 3000
+    price: 1000  #CorvaxFrontier
 
 - type: entity
   parent: CrateTradeBaseSecureContraband
@@ -134,7 +134,7 @@
   - type: Sprite
     sprite: _NF/Structures/Storage/Crates/contraband2_crate.rsi
   - type: StaticPrice
-    price: 5000
+    price: 1700  #CorvaxFrontier
 
 - type: entity
   parent: CrateTradeBaseSecureContraband
@@ -146,7 +146,7 @@
   - type: Sprite
     sprite: _NF/Structures/Storage/Crates/contraband3_crate.rsi
   - type: StaticPrice
-    price: 7500
+    price: 2500  #CorvaxFrontier
 
 - type: entity
   parent: CrateTradeBaseSecureContraband
@@ -159,7 +159,7 @@
   - type: Sprite
     sprite: _NF/Structures/Storage/Crates/donkco_crate.rsi
   - type: StaticPrice
-    price: 15000
+    price: 5000  #CorvaxFrontier
 
 - type: entity
   parent: CrateTradeBaseSecureContraband
@@ -172,7 +172,7 @@
   - type: Sprite
     sprite: _NF/Structures/Storage/Crates/cybersun_crate.rsi
   - type: StaticPrice
-    price: 15000
+    price: 5000  #CorvaxFrontier
 
 - type: entity
   parent: CrateSecgear

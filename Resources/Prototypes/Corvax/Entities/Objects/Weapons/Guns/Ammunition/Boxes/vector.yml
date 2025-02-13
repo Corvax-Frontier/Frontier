@@ -27,8 +27,8 @@
     steps: 2
     zeroVisible: false
   - type: Appearance
-  - type: StaticPrice
-    price: 30
+  - type: StaticPrice #FrontierCorvax
+    price: 125
 
 - type: entity #FrontierCorvax
   parent: MagazineBoxVector45

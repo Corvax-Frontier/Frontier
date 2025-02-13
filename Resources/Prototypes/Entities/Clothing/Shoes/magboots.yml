@@ -109,7 +109,8 @@
   - type: Item
     sprite: null
     size: Normal
-
+  - type: StaticPrice #CorvaxFrontier
+    price: 200 
 - type: entity
   id: ActionToggleMagboots
   name: Toggle Magboots

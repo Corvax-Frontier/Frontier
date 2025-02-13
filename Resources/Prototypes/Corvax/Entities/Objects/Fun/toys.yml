@@ -25,3 +25,29 @@
     state: holy
   - type: UseDelay
     delay: 2.0
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieNekoArk
+  name: Neko Ark
+  description: With lowe from Anenerbe CORP.
+  components:
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/Corvax/Effects/buranya.ogg
+  - type: EmitSoundOnCollide
+    sound:
+      path: /Audio/Corvax/Effects/doridori.ogg
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/Corvax/Effects/buranya.ogg
+  - type: Sprite
+    sprite: /Textures/Corvax/Objects/Fun/nekoark.rsi
+    state: icon
+    scale: 0.8, 0.8
+    rotation: 35
+  - type: UseDelay
+    delay: 5.0
+  - type: Construction
+    graph: PlushieNekoArk
+    node: NekoArk

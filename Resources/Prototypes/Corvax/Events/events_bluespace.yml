@@ -76,6 +76,5 @@
           linearDamping: 999999
         paths:
         - /Maps/Corvax/Bluespace/sindi.yml
-        - /Maps/Corvax/Bluespace/Arcadia.yml
     rewardAccounts:
       Nfsd: 1.0

@@ -15,7 +15,7 @@
   description: Среднегабаритный добывающий шаттл. Рекомендуемый состав команды 2-6 человек.
   price: 52200 # ~45370$ on mapinit + ~6805$ from 15% markup
   category: Small
-  group: Shipyard
+  group: Salvage
   shuttlePath: /Maps/Corvax/Shuttles/Salvage/kestrel.yml
   guidebookPage: ShipyardKestrel
   class:

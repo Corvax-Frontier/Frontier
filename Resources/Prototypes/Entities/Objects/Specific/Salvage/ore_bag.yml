@@ -26,3 +26,5 @@
         - ArtifactFragment
         - Ore
   - type: Dumpable
+  - type: StaticPrice #CorvaxFrontier
+    price: 8 #CorvaxFrontier

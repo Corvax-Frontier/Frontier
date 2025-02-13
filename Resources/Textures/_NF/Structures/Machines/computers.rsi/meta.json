@@ -1,7 +1,7 @@
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
-  "copyright": "shipyard_security and shipyard made by Potato1234_x, black market versions by terezi4real on github, medical versions by sungyandy, piratebounty* by @gentlebutter, sr by Tych0thesynth on github",
+  "copyright": "shipyard_security and shipyard made by Potato1234_x, black market versions by terezi4real on github, medical versions by sungyandy, piratebounty* by @gentlebutter, sr by Tych0thesynth on github, shipyard_mining by autsaider_m",
   "copyright": "contraband by gentlebutter, animated by whatston3; cargo_market, cargo_sale, shuttle_records, station_atm by whatston3",
   "size": {
     "x": 32,
@@ -413,6 +413,36 @@
             0.5
           ]
         ]
+    },
+    {
+      "name": "shipyard_mining",
+      "directions": 4,
+      "delays": [
+        [
+          1.0,
+          0.3,
+          1.0,
+          0.3
+        ],
+        [
+          1.0,
+          0.3,
+          1.0,
+          0.3
+        ],
+        [
+          1.0,
+          0.3,
+          1.0,
+          0.3
+        ],
+        [
+          1.0,
+          0.3,
+          1.0,
+          0.3
+        ]
+      ]
     }
   ]
 }

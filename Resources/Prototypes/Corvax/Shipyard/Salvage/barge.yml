@@ -15,7 +15,7 @@
   description: Среднегабаритный добывающий шаттл. Рекомендованный размер команды 3-6 человек.
   price: 48300
   category: Medium
-  group: Shipyard
+  group: Salvage
   shuttlePath: /Maps/Corvax/Shuttles/Salvage/barge.yml
   guidebookPage: Null
   class:

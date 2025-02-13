@@ -11,7 +11,7 @@
 - type: pointOfInterest
   id: Trade
   parent: BasePOI
-  name: Торговый Аванпост
+  name: Торговая Станция #CorvaxFrontier
   minimumDistance: 1500
   maximumDistance: 2500
   spawnGroup: MarketStation
@@ -25,7 +25,7 @@
 
 - type: gameMap
   id: Trade
-  mapName: 'Торговый Аванпост'
+  mapName: 'Торговая Станция' #CorvaxFrontier
   mapPath: /Maps/_NF/POI/trade.yml
   minPlayers: 0
   stations:

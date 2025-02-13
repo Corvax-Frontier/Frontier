@@ -5,7 +5,7 @@
   description: Среднегабаритный шахтерский шаттл. Рекомендованный состав команды 1-6 человек.
   price: 60000
   category: Medium
-  group: Shipyard
+  group: Salvage
   shuttlePath: /Maps/Corvax/Shuttles/Salvage/Pot.yml
   class:
   - Salvage

@@ -1,3 +1,5 @@
+ent-ComputerShipyardColiseum = консоль верфи колизея
+    .desc = Купи шаттл и в бой! Сзади консоли имеется записка - "проспонсировано лучшими мапперами на свете". Стоп, кто такие мапперы...
 ent-ComputerShipyardMercenary = консоль верфи наёмников
     .desc = Пустая консоль
 ent-ComputerShipyardSalvage = консоль верфи шахтёров

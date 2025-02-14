@@ -52,7 +52,7 @@
             - PowerCell
             - PowerCellSmall
           store: powercell
-          name: a powercell
+          name: a-powercell #Corvax-Frontier
           icon:
             sprite: "Objects/Power/power_cells.rsi"
             state: "medium"

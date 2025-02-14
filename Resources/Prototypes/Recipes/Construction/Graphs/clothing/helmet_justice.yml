@@ -7,7 +7,7 @@
     - to: helmet
       steps:
       - tag: SecurityHelmet
-        name: security helmet
+        name: security-helmet
         icon:
           sprite: Clothing/Head/Helmets/security.rsi
           state: icon

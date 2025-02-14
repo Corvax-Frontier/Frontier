@@ -189,12 +189,16 @@ namespace Content.Client.Construction.UI
                 || _playerManager.LocalEntity == null
                 || _whitelistSystem.IsWhitelistFail(recipe.EntityWhitelist, _playerManager.LocalEntity.Value))
                     continue;
+                //Corvax-Frontier start
+                var recipeName = recipe.Name.ToLowerInvariant();
+                var localizedRecipeName = Loc.GetString($"recipe-{recipe.ID}-name").ToLowerInvariant();
 
                 if (!string.IsNullOrEmpty(search))
                 {
-                    if (!recipe.Name.ToLowerInvariant().Contains(search.Trim().ToLowerInvariant()))
+                    var searchLower = search.Trim().ToLowerInvariant();
+                    if (!recipeName.Contains(searchLower) && !localizedRecipeName.Contains(searchLower))
                         continue;
-                }
+                }  //Corvax-Frontier start
 
                 if (!isEmptyCategory)
                 {
@@ -335,10 +339,16 @@ namespace Content.Client.Construction.UI
         {
             _constructionView.ClearRecipeInfo();
 
+            //Corvax-Frontier start
+            var localizedName = Loc.TryGetString($"recipe-{prototype.ID}-name", out var name) ? name : prototype.Name;
+
+            var localizedDescription = Loc.TryGetString($"recipe-{prototype.ID}-desc", out var desc) ? desc : prototype.Description;
+
             _constructionView.SetRecipeInfo(
-                prototype.Name, prototype.Description, _spriteSystem.Frame0(prototype.Icon),
+                localizedName, localizedDescription, _spriteSystem.Frame0(prototype.Icon),
                 prototype.Type != ConstructionType.Item,
-                !_favoritedRecipes.Contains(prototype));
+                !_favoritedRecipes.Contains(prototype)
+            ); //Corvax-Frontier end
 
             var stepList = _constructionView.RecipeStepList;
             GenerateStepList(prototype, stepList);
@@ -374,7 +384,7 @@ namespace Content.Client.Construction.UI
             return new(itemList)
             {
                 Metadata = recipe,
-                Text = recipe.Name,
+                Text = Loc.TryGetString($"recipe-{recipe.ID}-name", out var name) ? name : recipe.Name,  //Corvax-Frontier
                 Icon = _spriteSystem.Frame0(recipe.Icon),
                 TooltipEnabled = true,
                 TooltipText = recipe.Description,

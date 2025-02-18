@@ -29,4 +29,13 @@
   id: ShellKS23
 
 - type: Tag
+  id: ColiseumGrenade
+
+- type: Tag
+  id: ColiseumMagazineGrenade
+
+- type: Tag
+  id: ColiseumCoin
+  
+- type: Tag
   id: SolarAssemblyFlatpack

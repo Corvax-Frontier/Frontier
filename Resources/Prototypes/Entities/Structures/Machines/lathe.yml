@@ -413,6 +413,8 @@
       - ServiceSelectiveDropper # Frontier
       - PlantAnalyzer # Frontier
       - JanicartFlatpack # Frontier
+      - JetpackMining # Corvax-Frontier
+      - ClothingShoesBootsJetBoots # Corvax-Frontier
   - type: EmagLatheRecipes
     emagDynamicRecipes:
       - BoxBeanbag
@@ -477,6 +479,184 @@
   components:
   - type: Sprite
     sprite: Structures/Machines/protolathe_hypercon.rsi
+  - type: Lathe
+    idleState: icon
+    runningState: building
+    materialUseMultiplier: 0.5
+    timeMultiplier: 1.5
+    #    staticRecipes: Corvax-Frontier
+    #    - LargeBeaker
+    #    - Dropper
+    #    - ClothingEyesGlassesChemical
+    dynamicRecipes:
+      - PowerDrill
+      - MiningDrill
+      - MiningDrillDiamond
+      - AnomalyScanner
+      - AnomalyLocator
+      - AnomalyLocatorWide
+      - ShipyardRCD # Frontier
+      - ShipyardRCDAmmo # Frontier
+      - Scalpel
+      - Retractor
+      - Cautery
+      - Drill
+      - WeaponParticleDecelerator
+      - HoloprojectorField
+      - Saw
+      - Hemostat
+      - CryostasisBeaker
+      - SyringeCryostasis
+      - Syringe
+      - Implanter
+      - PillCanister
+      - ChemistryEmptyBottle01
+      - AdvancedCapacitorStockPart
+      - AdvancedMatterBinStockPart
+      - NanoManipulatorStockPart
+      - SuperCapacitorStockPart
+      - SuperMatterBinStockPart
+      - PicoManipulatorStockPart
+      - AdvMopItem
+      - WeaponSprayNozzle
+      - ClothingBackpackWaterTank
+      - MegaSprayBottle
+      - TimerTrigger
+      - ChemicalPayload
+      - FlashPayload
+      - Signaller
+      - SignallerAdvanced
+      - SignalTrigger
+      - VoiceTrigger
+      - Igniter
+      - HandHeldMassScanner
+      - PowerCellMicroreactor
+      - PowerCellMedium
+      - PowerCellHigh
+      - PowerCellMicroreactor
+      - WeaponPistolCHIMP
+      - ClothingMaskWeldingGas
+      - MineralScannerEmpty
+      - AdvancedMineralScannerEmpty
+      - WeaponGauntletGorilla
+      - SynthesizerInstrument
+      - RPED
+      - ClothingShoesBootsMagSci
+      - NFClothingShoesBootsMoon # Frontier ClothingShoesBootsMoon<NFClothingShoesBootsMoon
+      - ClothingShoesBootsSpeed
+      - NodeScanner
+      - HolofanProjector
+      - BluespaceBeaker
+      - SyringeBluespace
+      - JugBluespace # Frontier
+      - VialBluespace # Frontier
+      - Jug
+      - ReinforcedJug # Frontier
+      - WeaponCrusher
+      - WeaponCrusherDagger
+      - WeaponCrusherGlaive
+      - WeaponForceGun
+      - WeaponLaserSvalinn
+      - WeaponProtoKineticAccelerator
+      - WeaponTetherGun
+      - ClothingBackpackHolding
+      - ClothingBackpackSatchelHolding
+      - ClothingBackpackDuffelHolding
+      - ClothingBackpackMessengerHolding
+      - WelderExperimental
+      - JawsOfLife
+      - FauxTileAstroGrass
+      - FauxTileMowedAstroGrass
+      - FauxTileJungleAstroGrass
+      - FauxTileAstroIce
+      - FauxTileAstroSnow
+      - OreBagOfHolding
+      - DeviceQuantumSpinInverter
+      - PlantBagOfHolding # DeltaV
+      - FireExtinguisherBluespace # DeltaV
+      - UtilityBeltChiefEngineer # Frontier
+      - JetpackVoid # Frontier
+      - ClothingShoesBootsMagAdv # Frontier
+      - ClothingOuterHardsuitAtmos # Frontier
+      - ClothingOuterHardsuitEngineering # Frontier
+      - ClothingOuterHardsuitSpatio # Frontier
+      - ClothingOuterHardsuitSalvage # Frontier
+      - ClothingOuterHardsuitClown # Frontier
+      - ClothingOuterHardsuitMime # Frontier
+      - ClothingOuterHardsuitCap # Frontier
+      - ClothingOuterHardsuitEngineeringWhite # Frontier
+      - ClothingOuterHardsuitMedical # Frontier
+      - ClothingOuterHardsuitRd # Frontier
+      - ClothingOuterHardsuitLuxury # Frontier
+      - ClothingOuterHardsuitMercenary # Frontier
+      - ClothingOuterHardsuitPrivateSecurity # Frontier
+      - ClothingOuterHardsuitScaf # Frontier
+      - ClothingOuterHardsuitPilot # Frontier
+      - ClothingOuterHardsuitMaximPrototype # Frontier
+      - ConstructionBagOfHolding # Frontier
+      - ServiceSelectiveDropper # Frontier
+      - PlantAnalyzer # Frontier
+      - JanicartFlatpack # Frontier
+      - JetpackMining # Corvax-Frontier
+      - WeaponMagmiteCrusher # Corvax-Frontier
+      - WeaponMagmiteCrusherGlaive # Corvax-Frontier
+      - WeaponMagmitePlasmaCutter # Corvax-Frontier
+      - ClothingShoesBootsJetBoots # Corvax-Frontier
+  - type: EmagLatheRecipes
+    emagDynamicRecipes:
+      - BoxBeanbag
+      - BoxShotgunIncendiary
+      - BoxShotgunUranium
+      - BoxShellTranquilizer
+      - ExplosivePayload
+      - GrenadeBlast
+      - GrenadeEMP
+      - GrenadeFlash
+      - HoloprojectorSecurity
+      - MagazineBoxLightRifleIncendiary
+      - MagazineBoxLightRifleUranium
+      - MagazineBoxMagnumIncendiary
+      - MagazineBoxMagnumUranium
+      - MagazineBoxPistolIncendiary
+      - MagazineBoxPistolUranium
+      - MagazineBoxRifleIncendiary
+      - MagazineBoxRifleUranium
+      - MagazineGrenadeEmpty
+      - MagazineLightRifleIncendiary
+      - MagazineLightRifleUranium
+      - MagazinePistolIncendiary
+      - MagazinePistolUranium
+      - MagazineRifleIncendiary
+      - MagazineRifleUranium
+      - MagazineShotgunBeanbag
+      - MagazineShotgunIncendiary
+      - MagazineShotgunIncendiary
+      - PortableRecharger
+      - PowerCageHigh
+      - PowerCageMedium
+      - PowerCageSmall
+      - SpeedLoaderMagnumIncendiary
+      - SpeedLoaderMagnumUranium
+      - TelescopicShield
+      - Truncheon
+      - WeaponAdvancedLaser
+      - WeaponLaserCannon
+      - WeaponLaserCarbine
+      - WeaponXrayCannon
+      - SpeedLoaderRifleHeavyIncendiary # Frontier
+      - SpeedLoaderRifleHeavyUranium # Frontier
+      # Begin DeltaV additions
+      - LauncherSyringe
+      - MiniSyringe
+      # End DeltaV additions
+      - MagazineBoxVector22Incendiary #CorvaxFrontier
+      - MagazineBoxVector22Uranium #CorvaxFrontier
+      - MagazineVector22Incendiary #CorvaxFrontier
+      - MagazineVector22Uranium #CorvaxFrontier
+      - MagazineBoxVector45Incendiary #CorvaxFrontier
+      - MagazineBoxVector45Uranium #CorvaxFrontier
+      - MagazineVector45Incendiary #CorvaxFrontier
+      - MagazineVector45Uranium #CorvaxFrontier
   - type: Machine
     board: ProtolatheHyperConvectionMachineCircuitboard
 

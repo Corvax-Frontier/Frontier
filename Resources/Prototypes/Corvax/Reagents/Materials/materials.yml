@@ -1,0 +1,7 @@
+- type: material
+  id: Magmite
+  stackEntity: SheetMagmite1
+  name: materials-magmite
+  icon: { sprite: Corvax/Objects/Materials/Sheets/metal.rsi, state: magmite }
+  color: "#df7126"
+  price: 1

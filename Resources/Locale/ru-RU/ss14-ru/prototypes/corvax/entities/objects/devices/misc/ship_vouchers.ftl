@@ -1,2 +1,2 @@
-ent-ShipVoucherColiseum = ваунчер шаттла колизея
+ent-ShipVoucherColiseum = ваучер шаттла колизея
     .desc = Время для боя. Зачем вы на это решились...

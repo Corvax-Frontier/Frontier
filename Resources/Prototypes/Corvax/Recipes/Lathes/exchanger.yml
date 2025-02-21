@@ -4,3 +4,10 @@
   completetime: 1
   materials:
     ColiseumCoin: 1
+
+- type: latheRecipe
+  id: HolyFoxExchangerRecipe
+  result: HolyPlushieOrangeFox
+  completetime: 1
+  materials:
+    ColiseumCoin: 2

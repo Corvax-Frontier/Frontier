@@ -1,14 +1,14 @@
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
-  "copyright": "Borrowed from the internet",
+  "copyright": "Created bt Autsaider",
   "size": {
-    "x": 64,
-    "y": 64
+    "x": 32,
+    "y": 32
   },
   "states": [
     {
-      "name": "icon"
+      "name": "craft"
     }
   ]
 }

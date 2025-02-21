@@ -44,7 +44,7 @@
   - type: Sprite
     sprite: /Textures/Corvax/Objects/Fun/nekoark.rsi
     state: icon
-    scale: 0.8, 0.8
+    scale: 0.4, 0.4
     rotation: 35
   - type: UseDelay
     delay: 5.0

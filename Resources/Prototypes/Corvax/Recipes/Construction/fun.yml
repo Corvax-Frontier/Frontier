@@ -6,5 +6,5 @@
   targetNode: NekoArk
   category: construction-category-misc
   description: With lowe from Anenerbe CORP.
-  icon: { sprite: /Textures/Corvax/Objects/Fun/nekoark.rsi, state: icon}
+  icon: { sprite: /Textures/Corvax/Objects/Fun/nekoark_craft.rsi, state: craft}
   objectType: Item

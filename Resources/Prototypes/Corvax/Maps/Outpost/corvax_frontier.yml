@@ -15,6 +15,11 @@
 #          nameGenerator:
 #            !type:NanotrasenNameGenerator
 #            prefixCreator: '14'
+        - type: CP14StationAdditionalMap
+          mapPaths:
+          - /Maps/Corvax/POI/coliseum.yml
+          name: Колизей
+          id: coliseum
         - type: ExtraStationInformation
           iconPath: /Textures/Logo/logo.png
           stationSubtext: 'frontier-lobby-frontier-subtext'
@@ -34,3 +39,17 @@
 # Others:
 #            Borg: [ 0, 0 ]
 #            Chaplain: [ 0, 0 ] # Remove this when we fix bible user spawn in some other way.
+
+- type: gameMap
+  id: coliseum
+  mapName: Колизей
+  mapPath: /Maps/Corvax/POI/coliseum.yml
+  minPlayers: 0
+  stations:
+    coliseum:
+      stationProto: StandardFrontierStation
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Колизей'
+        - type: StationJobs
+          availableJobs: {}

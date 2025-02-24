@@ -24,7 +24,7 @@
     - VendingMachineSovietSoda
     # - VendingMachineChang # Frontier: no food vendors, support local chefs
     # - VendingMachineDonut # Frontier: no food vendors, support local chefs
-        - VendingMachineShamblersJuice
+    - VendingMachineShamblersJuice
     - VendingMachinePwrGame
     - VendingMachineDrGibb
     - VendingMachineSoda

@@ -1746,13 +1746,6 @@ entities:
     - type: Transform
       pos: 11.303192,-1.3316066
       parent: 1
-- proto: SalvageSeedSpawnerLow
-  entities:
-  - uid: 106
-    components:
-    - type: Transform
-      pos: 7.5,-0.5
-      parent: 1
   - uid: 179
     components:
     - type: Transform

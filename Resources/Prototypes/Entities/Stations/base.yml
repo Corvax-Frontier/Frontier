@@ -78,7 +78,7 @@
             # stationGrid: false # Frontier
             # addComponents: # Frontier
             # - type: Gravity # Frontier
-            # enabled: true # Frontier
+          # enabled: true # Frontier
           # inherent: true # Frontier
           # protos: # Frontier
           # - VGRoid # Frontier

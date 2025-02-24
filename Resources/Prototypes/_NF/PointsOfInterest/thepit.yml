@@ -20,7 +20,6 @@
   - type: SolarPoweredGrid
     trackOnInit: true
     doNotCull: true
-  addComponents:
   - type: IFF
     color: "#ffa600"
 

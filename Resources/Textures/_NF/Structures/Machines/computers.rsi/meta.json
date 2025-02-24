@@ -281,7 +281,7 @@
             ]
         },
 		{
-            "name": "shipyard_mining.png",
+            "name": "shipyard_mining",
             "directions": 4,
             "delays": [
                 [

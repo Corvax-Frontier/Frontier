@@ -17,6 +17,9 @@
   spawnGroup: Scrapyard
   gridPath: /Maps/_NF/POI/grifty.yml
   addComponents:
+  - type: SolarPoweredGrid
+    trackOnInit: true
+    doNotCull: true
   - type: IFF
     color: "#ffa600"
 

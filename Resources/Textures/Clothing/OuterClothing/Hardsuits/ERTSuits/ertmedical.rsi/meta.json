@@ -1,7 +1,7 @@
 {
     "version": 1,
     "license": "CC-BY-SA-3.0",
-    "copyright": "Created by discord:SOL(Артур)#8162, reptilian made by hqlle(444118014024220672)",
+    "copyright": "Taken from paradisestation at commit https://github.com/ParadiseSS13/Paradise/commit/12c21ced8432015485484b17e311dcceb7c458f6. Vox sprite made by Flareguy, Harpy Variant By Adeinitas, reptilian made by kuro(388673708753027083)",
     "size": {
         "x": 32,
         "y": 32
@@ -9,6 +9,10 @@
     "states": [
         {
             "name": "icon"
+        },
+        {
+            "name": "equipped-OUTERCLOTHING-harpy",
+            "directions": 4
         },
         {
             "name": "equipped-OUTERCLOTHING",
@@ -19,7 +23,7 @@
             "directions": 4
         },
         {
-            "name": "equipped-OUTERCLOTHING-resomi",
+            "name": "equipped-OUTERCLOTHING-vox",
             "directions": 4
         },
         {
@@ -28,10 +32,6 @@
         },
         {
             "name": "inhand-right",
-            "directions": 4
-        },
-        {
-            "name": "equipped-OUTERCLOTHING-vox",
             "directions": 4
         }
     ]

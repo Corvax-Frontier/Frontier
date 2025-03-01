@@ -381,6 +381,8 @@
       reagents:
       - ReagentId: Ichor
         Quantity: 10
+  - type: MercenaryBountyItem # Corvax-Frontier
+    id: MeatDragon
 
 - type: entity
   name: raw rat meat

@@ -34,9 +34,6 @@ space_wind_max_velocity = 22.0
 [game.panic_bunker]
 enabled = false
 
-[game.baby_jail]
-enabled = false
-
 [lookup]
 enlargement_range = 10.0
 

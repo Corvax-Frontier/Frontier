@@ -17,6 +17,9 @@
   spawnGroup: Arena
   gridPath: /Maps/_NF/POI/arena.yml
   addComponents:
+  - type: SolarPoweredGrid
+    trackOnInit: true
+    doNotCull: true
   - type: IFF
     color: "#ffa600"
 

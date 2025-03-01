@@ -29,12 +29,11 @@
         - type: IFF
           color: "#E10F9B"
         - type: Shuttle
-          angularDamping: 999999
-          linearDamping: 999999
         - type: LinkedLifecycleGridParent
         - type: ProtectedGrid
           preventArtifactTriggers: true
         - type: PreventPilot
+        - type: ForceAnchor # Added post-FTL, so anchoring is fine.
         paths:
         - /Maps/Corvax/Bluespace/cache.yml #Corvax-Frontier
     rewardAccounts:
@@ -70,13 +69,11 @@
           inherent: true
         - type: IFF
           color: "#E10F9B"
-        - type: Shuttle
-          angularDamping: 999999
-          linearDamping: 999999
         - type: LinkedLifecycleGridParent
         - type: ProtectedGrid
           preventArtifactTriggers: true
         - type: PreventPilot
+        - type: ForceAnchor
         paths:
         - /Maps/Corvax/Bluespace/vault.yml #Corvax-Frontier
     rewardAccounts:
@@ -113,13 +110,11 @@
           inherent: true
         - type: IFF
           color: "#E10F9B"
-        - type: Shuttle
-          angularDamping: 999999
-          linearDamping: 999999
         - type: LinkedLifecycleGridParent
         - type: ProtectedGrid
           preventArtifactTriggers: true
         - type: PreventPilot
+        - type: ForceAnchor
         paths:
         - /Maps/Corvax/Bluespace/vaultsmall.yml #Corvax-Frontier
     rewardAccounts:
@@ -154,13 +149,11 @@
           inherent: true
         - type: IFF
           color: "#E10F9B"
-        - type: Shuttle
-          angularDamping: 999999
-          linearDamping: 999999
         - type: LinkedLifecycleGridParent
         - type: ProtectedGrid
           preventArtifactTriggers: true
         - type: PreventPilot
+        - type: ForceAnchor
         paths:
         - /Maps/Corvax/Bluespace/syndieftlintercept.yml #Corvax-Frontier
 
@@ -193,13 +186,11 @@
           inherent: true
         - type: IFF
           color: "#E10F9B"
-        - type: Shuttle
-          angularDamping: 999999
-          linearDamping: 999999
         - type: LinkedLifecycleGridParent
         - type: ProtectedGrid
           preventArtifactTriggers: true
         - type: PreventPilot
+        - type: ForceAnchor
         paths:
         - /Maps/Corvax/Bluespace/wizardprobealt.yml #Corvax-Frontier
 
@@ -232,13 +223,11 @@
           inherent: true
         - type: IFF
           color: "#E10F9B"
-        - type: Shuttle
-          angularDamping: 999999
-          linearDamping: 999999
         - type: LinkedLifecycleGridParent
         - type: ProtectedGrid
           preventArtifactTriggers: true
         - type: PreventPilot
+        - type: ForceAnchor
         paths:
         - /Maps/Corvax/Bluespace/bloodmoon.yml #Corvax-Frontier
 
@@ -269,13 +258,11 @@
           enabled: true
           inherent: true
         - type: IFF
-        - type: Shuttle
-          angularDamping: 999999
-          linearDamping: 999999
         - type: LinkedLifecycleGridParent
         - type: ProtectedGrid
           preventArtifactTriggers: true
         - type: PreventPilot
+        - type: ForceAnchor
         paths:
         - /Maps/Corvax/Bluespace/cave.yml #Corvax-Frontier
 

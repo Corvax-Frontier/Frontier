@@ -5353,14 +5353,6 @@ entities:
     - type: Transform
       pos: 3.5,-15.5
       parent: 1
-- proto: RandomItem
-  entities:
-  - uid: 263
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 6.5,-20.5
-      parent: 1
   - uid: 334
     components:
     - type: Transform

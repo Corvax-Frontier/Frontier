@@ -198,6 +198,7 @@ public sealed class NFAdventureRuleSystem : GameRuleSystem<NFAdventureRuleCompon
         List<PointOfInterestPrototype> marketProtos = new();
         List<PointOfInterestPrototype> requiredProtos = new();
         List<PointOfInterestPrototype> optionalProtos = new();
+        List<PointOfInterestPrototype> coliseiProtos = new(); /// Corvax-Frontier
         Dictionary<string, List<PointOfInterestPrototype>> remainingUniqueProtosBySpawnGroup = new();
 
         var currentPreset = _ticker.CurrentPreset?.ID ?? _fallbackPresetID;
@@ -216,6 +217,8 @@ public sealed class NFAdventureRuleSystem : GameRuleSystem<NFAdventureRuleCompon
                 requiredProtos.Add(location);
             else if (location.SpawnGroup == "Optional")
                 optionalProtos.Add(location);
+            else if (location.SpawnGroup == "coliseiStations") /// Corvax-Frontier
+                coliseiProtos.Add(location); /// Corvax-Frontier
             else // the remainder are done on a per-poi-per-group basis
             {
                 if (!remainingUniqueProtosBySpawnGroup.ContainsKey(location.SpawnGroup))
@@ -228,6 +231,7 @@ public sealed class NFAdventureRuleSystem : GameRuleSystem<NFAdventureRuleCompon
         _poi.GenerateRequireds(mapUid, requiredProtos, out component.RequiredPois);
         _poi.GenerateOptionals(mapUid, optionalProtos, out component.OptionalPois);
         _poi.GenerateUniques(mapUid, remainingUniqueProtosBySpawnGroup, out component.UniquePois);
+        _poi.Generatecolisei(mapUid, coliseiProtos, out component.ColiseiPois); /// Corvax-Frontier
 
         base.Started(uid, component, gameRule, args);
 

@@ -21,6 +21,7 @@ public enum ShipyardConsoleUiKey : byte
     Medical,
     // Add ships to this key if they are only available from mothership consoles. Shipyards using it are inherently empty and are populated using the ShipyardListingComponent.
     Custom,
+    Coliseum, // Corvax-Frontier
     Mercenary, // Corvax-Frontier
     Salvage, // Corvax-Frontier
 	Debug // Corvax-Frontier

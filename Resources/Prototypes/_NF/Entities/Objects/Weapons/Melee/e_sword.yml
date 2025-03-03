@@ -68,3 +68,5 @@
     price: 200
   - type: MiningGatheringSoft
   - type: MiningGatheringHard
+  - type: MercenaryBountyItem # Corvax-Frontier
+    id: NFEnergyPickaxe

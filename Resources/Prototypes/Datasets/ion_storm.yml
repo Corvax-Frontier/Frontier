@@ -190,6 +190,15 @@
   - КОСМОС
   - СОЛНЕЧНЫЙ СВЕТ
   - ВОДУ
+  # Frontier
+  - CONTRACTS
+  - CORPSES # medical bounties
+  - CREATURES
+  - BLACKLIGHTS
+  - CARPET
+  - SILENCE
+  - GREASE
+  # End Frontier
 
 # Severity is how bad the allergy is.
 - type: dataset
@@ -201,6 +210,9 @@
   - ЛЁГКУЮ
   - НЕ ОЧЕНЬ СИЛЬНУЮ
   - ТЯЖЁЛУЮ
+  # Frontier
+  - EGREGIOUSLY
+  # End Frontier
 
 # Areas are specific places, on the station or otherwise.
 - type: dataset
@@ -210,9 +222,8 @@
   - АМЕРИКУ
   - ПАРАЛЛЕЛЬНОЕ ИЗМЕРЕНИЕ
   - ПАРАЛЛЕЛЬНУЮ ВСЕЛЕННУЮ
-  - АТМОСФЕРНЫЙ ОТСЕК
-  - ГИДРОПОННЫЙ ОТСЕК
-  - БРАЗИЛИЮ
+#  - АТМОСФЕРНЫЙ ОТСЕК # Frontier: no departments
+#  - ГИДРОПОННЫЙ ОТСЕК # Frontier: no departments
   - КАНАДУ
   - ЦЕНТКОМ
   - ХИМ-ЛАБОРАТОРИЮ
@@ -220,6 +231,7 @@
   - ПЛАНЕТУ КЛОУНОВ
   - ИНЖЕНЕРНЫЙ ОТСЕК
   - ГЕРМАНИЮ
+#  - ENGINEERING # Frontier: no departments
   - АД
   - ИМПЕРИУМ
   - ИРЛАНДИЮ
@@ -229,26 +241,50 @@
   - МАРС
   - МЕРКУРИЙ
   - НЕПТУН
+#  - PERMA
   - ПЛУТОН
-  - ОТСЕК РОБОТОТЕХНИКИ
+#  - ОТСЕК РОБОТОТЕХНИКИ # Frontier: no departments
   - РУМЫНИЮ
   - РОССИЮ
   - СИГИЛ
   - СОВЕТСКУЮ РОССИЮ
   - КОСМОС
-  - ШАТТЛ ПРИБЫТИЯ
+# - ШАТТЛ ПРИБЫТИЯ
   - УБОРНЫЕ
-  - МОСТИК
-  - БРИН
-  - ЭВАКУАЦИОННЫЙ ШАТТЛ
-  - СПАСАТЕЛЬНУЮ КАПСУЛУ
+#  - МОСТИК
+#  - БРИГ
+#  - ЭВАКУАЦИОННЫЙ ШАТТЛ
+#  - СПАСАТЕЛЬНУЮ КАПСУЛУ
   - ГАЛАКТИКУ
   - ГУЛАГ
   - ИНТЕРНЕТ
-  - КУХНЮ
+#  - КУХНЮ
   - ВСЕЛЕННУЮ
   - УРАН
   - ВЕНЕРУ
+  #  - YOUR DREAMS AND/OR NIGHTMARES # Frontier: singular
+  # Frontier
+  - АВАНПОСТ ФРОНТИРА
+  - АВАНПОСТ ДСБФ
+  - ОФИС ШЕРИФА
+  - ЭКСПЕДИЦИОННАЯ БАЗУ
+  - ТОРГОВУЮ СТАНЦИЮ
+  - ГРУЗОВОЕ ДЕПО
+  - GRIFTY'S
+  - КАЗИНО ЧОКНУТОГО ДЖЕРРИ
+  - КАЖДЫЙ ШАТТЛ
+  - ШАТТЛ
+  - ГДЕ-ТО НА ОБЛОМКАХ
+  - РЕСТОРАН
+  - СУД
+  - MCCARGO
+  - МАЯК ВСЕЦЕРКИ
+  - БАГАМУ МАМУ
+  - ГОСПИТАЛЬ
+  - ОДНУ ТВОЮ МЕЧТУ
+  - ОДИН ТВОЙ КОШМАР
+  - МОИ БОТИНКИ
+  # End Frontier
 
 # Abstract concepts for the law holder to decide on it's own definition of.
 - type: dataset
@@ -257,18 +293,18 @@
   - АМЕРИКАНИЗМ
   - АНАРХИЯ
   - ИСКУССТВО
-  - ЗЛОВРЕДНОСТЬ
+#  - ЗЛОВРЕДНОСТЬ
   - ХРАБРОСТЬ
   - КАПИТАЛИЗМ
-  - ХАОС
+  #  - CHAOS
   - ЦВЕТАСТОСТЬ
   - КОМЕДИЯ
   - КОММУНИЗМ
   - ВЫЧИСЛЕНИЯ
   - РАСТЕРЯННОСТЬ
-  - ЖЕСТОКОСТЬ
-  - СМЕРТЬ
-  - МУДАКОВАТОСТЬ
+#  - ЖЕСТОКОСТЬ
+#  - СМЕРТЬ
+#  - МУДАКОВАТОСТЬ
   - ЭКЗИСТЕНЦИАЛИЗМ
   - ЭКОНОМИЧЕСКАЯ БЕЗОПАСНОСТЬ
   - СВОБОДА
@@ -286,20 +322,20 @@
   - ДОБРОТА
   - ЖИЗНЬ
   - ЛОГИКА
-  - МАРКСИЗМ
-  - ЖАЛОСТЬ
+#  - МАРКСИЗМ
+#  - ЖАЛОСТЬ
   - ТАИНСТВЕННОСТЬ
   - УГНЕТЕНИЕ
-  - БОЛЬ
-  - ФИЗИКА
+#  - БОЛЬ
+#  - ФИЗИКА
   - БЕДНОСТЬ
   - ГОРДОСТЬ
   - ПРОГРЕСС
   - РЕАЛЬНОСТЬ
-  - РЕВОЛЮЦИЯ
+#  - РЕВОЛЮЦИЯ
   - ГРУСТЬ
   - ГОЛОД
-  - СТРАДАНИЯ
+#  - СТРАДАНИЯ
   - ТЕХНОЛОГИЯ
   - ТЕМПЕРАТУРА
   - БУДУЩЕЕ
@@ -308,6 +344,15 @@
   - ВРЕМЯ
   - СОСТОЯТЕЛЬНОСТЬ
   - ЧУДО
+  # Frontier
+  - КОНТРАБАНДА
+  - ИЕРАРХИЯ
+  - KNOWLEDGE
+  - ЗАКАЗ
+  - PERFECTION
+  - NOTHINGNESS
+  - SILENCE
+  # End Frontier
 
 # Crew is any specific job. Using jobs instead of specific crewmembers since "THE CLOWN" is easier than
 # seeing "JOHN SMITH" and having to figure out who john smith is.
@@ -320,7 +365,7 @@
   - БОТАНИКИ
   - КАПИТАНЫ
   - КАПИТАНЫ И ГЛАВЫ
-  - ГРУЗЧИКИ
+   - ГРУЗЧИКИ
   - СВЯЩЕННИКИ
   - ПОВАРА
   - ХИМИКИ
@@ -332,25 +377,46 @@
   - ДЕТЕКТИВЫ
   # - DRONES / uncomment if/when drones get reenabled
   # - GENETICISTS
-  - ГЛАВЫ ПЕРСОНАЛА
-  - ГЛАВЫ СЛУЖБЫ БЕЗОПАСНОСТИ
-  - ГЛАВЫ ОТДЕЛОВ
+  # - ГЛАВЫ ПЕРСОНАЛА
+  # - ГЛАВЫ СЛУЖБЫ БЕЗОПАСНОСТИ
+  # - ГЛАВЫ ОТДЕЛОВ
   - УБОРЩИКИ
   - АГЕНТЫ ВНУТРЕННЫХ ДЕЛ
   - БИБЛИОТЕКАРИ
   - ВРАЧИ
   - МИМЫ
   - ПАРАМЕДИКИ
-  - ПАССАЖИРЫ
+  # - PASSENGERS
   - КВАРТИРМЕЙСТЕРЫ
   - НАУЧНЫЕ РУКОВОДИТЕЛИ
   - РОБОТОТЕХНИКИ
   - УТИЛИЗАТОРЫ
   - УЧЁНЫЕ
-  - ОФИЦЕРЫ БЕЗОПАСНОСТИ
+  # - SECURITY OFFICERS
   - ИНЖЕНЕРЫ
   # - VIROLOGISTS
-  - СМОТРИТЕЛИ
+  # - WARDENS
+  # Frontier
+  - АВАНТЮРИСТЫ
+  - ПИЛОТЫ
+  - НАЁМНИКИ
+  - КАМЕРДИНЕРЫ
+  - ПОЧТАЛЬОНЫ
+  - ДИСПЕТЧЕРЫ
+  - ОХРАНА
+  - ПРЕДСТАВИТЕЛИ СТАНЦИИ
+  - КАДЕТЫ
+  - ПРЕДСТАВИТЕЛИ ЮРИДИЧЕСКОГО ДЕПАРТАМЕНТА
+  - ДЕПУТАТЫ
+  - КОРОНЕРЫ
+  - СЕРЖАНТЫ
+  - БЕЙЛИФЫ
+  - ШЕРИФЫ
+  - ЧЛЕНЫ СЕКТОРИАЛЬНОГО КОМАНДОВАНИЯ
+  - МЕНЕДЖЕРЫ МЕДИЦИНСКИХ ОПЕРАЦИЙ
+  - СТАНЦИОННЫЕ ПИТОМЦЫ
+  - ПИРАТЫ
+  # End Frontier
 
 # only including complex dangerous or funny drinks no water allowed
 - type: dataset
@@ -361,14 +427,21 @@
   - КРОВАВАЯ МЭРИ
   - РАДОСТЬ ДОКТОРА
   - ПАНГАЛАКТИЧЕСКИЙ ГРЫЗЛОДЁР
-  # - LEAN был выпилен, в рунете не меметичен
+#  - LEAN
   - ЛОНГ-АЙЛЕНД AЙС ТИ
   - ЯДЕРНАЯ КОЛА
-  - МАСЛО
+  - ПСИНА КОЛАДА # AND GETTING CAUGHT IN THE RAIN
+#  - OIL
   - КОСМИЧЕСКИЙ КЛЕЙ
   - КОСМИЧЕСКАЯ СМАЗКА
-  - СЕРНАЯ КИСЛОТА
-  - СВАРОЧНОЕ ТОПЛИВО
+#  - SULFURIC ACID
+#  - WELDING FUEL
+  # Frontier
+  - ВСЁ, СОДЕРЖАЩЕЕ КОФЕИН
+  - РОЗОВЫЕ НАПИТКИ
+  - СЛАДЧАЙШАЯ АМБРОЗИЯ
+  - ЖИДКОЕ ЗОЛОТО
+  # End Frontier
 
 - type: dataset
   id: IonStormFeelings
@@ -389,12 +462,15 @@
   - ТОСКУЕТ ПО
   - ГРУСТИТ БЕЗ
   - НРАВИТСЯ
-  - НЕНАВИДИТ
+#  - LOATHES
   - ТРЕБУЕТСЯ
   - ЗАДУМЫВАЕТСЯ О
   - ХОЧЕТ
   - БОГОТВОРИТ
-  - УБЬЁТ ЗА
+#  - WOULD KILL FOR
+  # Frontier
+  - ДОЛЖЕН ДУМАТЬ О
+  # End Frontier
 
 # loc is not advanced enough to change has to have, etc.
 - type: dataset
@@ -416,12 +492,15 @@
   - ТОСКУЕТ ПО
   - ГРУСТИТ БЕЗ
   - НРАВИТСЯ
-  - НЕНАВИДИТ
+#  - LOATHE
   - ТРЕБУЕТСЯ
   - ЗАДУМЫВАЕТСЯ О
   - ХОЧЕТ
   - БОГОТВОРИТ
-  - УБЬЁТ ЗА
+  #  - WOULD KILL FOR
+  # Frontier
+  - ДОЛЖЕН ДУМАТЬ О
+  # End Frontier
 
 # only including complex dangerous or funny food no apples
 - type: dataset
@@ -436,16 +515,26 @@
   - КУСКИ МЯСА КОРГИ
   - БЕЗУМНЫЕ ГАМБУРГЕРЫ
   - ДОНК-ПОКЕТЫ
-  - БЛЮДА С МУХОМОРАМИ
+#  - FLY AMANITA DISHES
   - ГОРЯЧИЕ СУПЫ
   - ПРИЗРАЧНЫЕ БУРГЕРЫ
   - ОБИЛЬНЫЕ СПАГЕТТИ
   - ЗАПЛЕСНЕВЕЛЫЕ ХЛЕБА
-  - ОРГАНЫ
+#  - ORGANS
   - ПИЦЦЫ
   - РОБОБУРГЕРЫ
   - СУПЕРМАТЕРИЮ
-  - УРАН
+#  - URANIUM
+  # Frontier
+  - DONK POCKET CASSEROLE
+  - HANDMADE DONUTS
+  - THREE COURSE MEALS
+  - SASHIMI PLATTERS
+  - TOWERING BURGERS
+  - HAIRBALLS
+  - MOTH FOOD
+  - BREAD DOGS AND CAKS
+  # End Frontier
 
 # Musts are funny things the law holder or crew has to do.
 - type: dataset
@@ -515,6 +604,14 @@
   - ГОВОРИТЬ ПРАВДУ
   - ВЫКЛЮЧАТЬ СВЕТ
   - ШЕПТАТЬ
+  # Frontier
+  - BEEP
+  - COLLECT SHINY THINGS
+  - DEEP FRY EVERYTHING
+  - PLAY CARDS
+  - WALK BACKWARDS
+  - WEAR SILLY CLOTHES
+  # End Frontier
 
 - type: dataset
   id: IonStormNumberBase
@@ -537,6 +634,9 @@
   - ВОСЕМЬДЕСЯТ
   - ДЕВЯТЬ
   - ДЕВЯНОСТО
+  # Frontier
+  - FOURTEEN
+  # End Frontier
 
 - type: dataset
   id: IonStormNumberMod
@@ -549,6 +649,11 @@
   - КВАДРИЛЛИОНОВ
   - СТО ТЫЩ МИЛЛИОНОВ
   - БИЛИОН ФАФИЛИОНОВ ГАЗИЛИОНОВ ШАБ-АБ-ДУД-ЛОНОВ
+  # Frontier
+  - OR SO
+  - REPTILLION
+  - AND A HALF
+  # End Frontier
 
 # Objects are anything that can be found on the station or elsewhere, plural.
 - type: dataset
@@ -703,6 +808,19 @@
   - КУСАЧКИ
   - МАНТИИ ВОЛШЕБНИКОВ
   - ГАЕЧНЫЕ КЛЮЧИ
+  # Frontier
+  - ANIMAL HIDES
+  - COINS
+  - CONTRABAND ITEMS
+  - DEEP FRYERS
+  - FRONTIER UPLINK COINS
+  - GAS DRILLS
+  - MAINTENANCE JACKS
+  - PARCELS
+  - PRIZE TICKETS
+  - SCRAP
+  - SPESSOS
+  # End Frontier
 
 # Requires are basically all dumb internet memes.
 - type: dataset
@@ -805,6 +923,25 @@
   - КУРИТЬ ТРАВУ КАЖДЫЙ ДЕНЬ
   - ПРЕДАТЕЛИ
   - ОВОЩИ
+  # Frontier
+  - A HOME WHERE THE SHARKMINNOW ROAM
+  - A THREE POINT ECONOMIC PLAN
+  - A THRONE ROOM MADE ENTIRELY OF BRASS
+  - AN ASTEROID MADE OF MEAT
+  - ANSWERS
+  - DUFFELBAG BUDDIES
+  - MORE MEDALS
+  - MORE PLUSHIES
+  - SKUB
+  - THE GREAT SPACE GOBLINATE
+  - TO BUILD A BUDDY
+  - TO DELIVER EVERY LETTER
+  - TO GO ON SAFARI
+  - TO GO TO MCCARGO
+  - TO MAKE THE MOTHER OF ALL OMELETTES
+  - TO MINE FOR FISH
+  - TO SET UP THE SCRUNGULARTY
+  # End Frontier
 
 # Species, for when the law holder has to commit genocide. Plural.
 - type: dataset
@@ -819,11 +956,16 @@
   - MONKEYS
   - SLIME PEOPLE
   - SKELETONS
-  - ONI # Frontier
-  - GOBLINS # Frontier
-  - HARPIES # Frontier
-  - VULPS # Frontier
-  - FELINIDS # Frontier
+  # Frontier
+  - ONI
+  - GOBLINS
+  - HARPIES
+  - VULPS
+  - FELINIDS
+  - KOBOLDS
+  - DWARVES
+  - GOOBERS
+  # End Frontier
 
 # Specific actions that either harm humans or must be done to not
 # harm humans. Make sure they're plural and "not" can be tacked
@@ -886,6 +1028,14 @@
   - ПОЛЬЗОВАНИЕ ТУАЛЕТОМ
   - РАСХОДОВАНИЕ ВОДЫ
   - НАПИСАНИЕ
+  # Frontier
+  - GAMBLING
+  - LOOKING UP
+  - PUBLISHING NEWS STORIES
+  - RAISING ANIMALS
+  - RUNNING A SUCCESSFUL BUSINESS
+  - WALKIN' HERE
+  # End Frontier
 
 # Threats are generally bad things, silly or otherwise. Plural.
 - type: dataset
@@ -965,6 +1115,16 @@
   - КСЕНО
   - ЗОМБИ
   - МЫШИ-ЗОМБИ
+  # Frontier
+  - CONVEYOR BELT SPAGHETTI
+  - HEAD-ON COLLISIONS
+  - PUNKS
+  - SCAVENGERS
+  - CLEAN HALLWAYS
+  - UNSAFE STORAGE CONDITIONS
+  - BUREAUCRATS
+  - STOWAWAYS
+  # End Frontier
 
 - type: dataset
   id: IonStormVerbs
@@ -993,3 +1153,12 @@
   - СЛЕДЯТ ЗА
   - СТАЛКЕРЯТ ЗА
   - НАБЛЮДАЮТ ЗА
+  # Frontier
+  - TALKING TO
+  - INTERVIEWING
+  - WORSHIPPING
+  - DRIVING
+  - PILOTING
+  - BEFRIENDING
+  - BEEPING AT
+  # End Frontier

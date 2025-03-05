@@ -584,3 +584,6 @@ binds:
   type: State
   key: MouseRight
   canFocus: true
+- function: OfferItem # Corvax-Frontier
+  type: State
+  key: F

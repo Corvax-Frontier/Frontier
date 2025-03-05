@@ -34,3 +34,5 @@
 - type: Tag
   id: Jetpack
   
+- type: Tag
+  id: MercenaryToken

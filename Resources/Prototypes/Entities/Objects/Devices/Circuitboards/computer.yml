@@ -466,6 +466,8 @@
       prototype: ComputerIFF
     - type: ComputerTabletopBoard # Frontier
       prototype: ComputerTabletopIFF # Frontier
+    - type: MercenaryBountyItem # Corvax-Frontier
+      id: IFFCircuitboard
 
 - type: entity
   parent: BaseComputerCircuitboard

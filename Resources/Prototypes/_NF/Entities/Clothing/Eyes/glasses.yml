@@ -12,6 +12,8 @@
   - type: EyeProtection
   - type: VisionCorrection
   - type: IdentityBlocker
+  - type: MercenaryBountyItem # Corvax-Frontier
+    id: ArcadiaVisor
 
 - type: entity
   parent: ClothingEyesBase

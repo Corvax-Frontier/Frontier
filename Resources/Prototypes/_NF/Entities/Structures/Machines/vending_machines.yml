@@ -110,7 +110,7 @@
     sprite: _NF/Structures/Machines/VendingMachines/expeditionaryflatpackvend.rsi
 
 - type: entity
-  parent: [BaseStructureDisableAnchoring, VendingMachine]
+  parent: [BaseStructureDisableAnchoring, VendingMachine, BaseC3Contraband] #Corvax-Frontier КБ
   id: VendingMachineSyndieContraband
   name: ContraVend
   description: Wanted across multiple sectors!
@@ -152,7 +152,7 @@
     access: [["NuclearOperative"], ["SyndicateAgent"]]
 
 - type: entity
-  parent: VendingMachine
+  parent: [ VendingMachine, BaseC1Contraband ] #Corvax-Frontier КБ
   id: VendingMachineBountyVend
   name: BountyVend
   description: Essential gear for the bounty hunter on the go.
@@ -191,7 +191,7 @@
 - type: entity
   id: VendingMachineArcadia
   name: ArcadiaDrobe
-  parent: [ VendingMachine, BaseC3Contraband ]
+  parent: [ VendingMachine, BaseC1Contraband ]
   description: Selling clothes from another reality for cheap prices!
   components:
     - type: VendingMachine
@@ -377,7 +377,7 @@
     color: "#EEEEFF"
 
 - type: entity
-  parent: [BaseStructureDisableAnchoring, VendingMachine]
+  parent: [BaseStructureDisableAnchoring, VendingMachine, BaseC2ContrabandUnredeemable] #Corvax-Frontier КБ
   id: VendingMachineNfsdDrobe
   name: NFSDDrobe
   description: A vending machine for NFSD and NFSD clothing!
@@ -477,6 +477,7 @@
 # Punk stuff
 - type: entity
   parent:
+  - BaseC1Contraband #Corvax-Frontier КБ
   - VendingMachine
   - PunkHoloGraffitiOverlay # Prototype can be located at \Resources\Prototypes\_NF\Entities\Structures\Holographic\graffiti.yml
   id: VendingMachineClothingPunk

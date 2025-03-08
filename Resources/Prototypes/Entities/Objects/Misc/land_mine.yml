@@ -54,7 +54,7 @@
 - type: entity
   name: modular mine
   description: This bad boy could be packing any number of dangers. Or a bike horn.
-  parent: BaseLandMine
+  parent: [BaseLandMine, BaseC3Contraband] #Corvax-Frontier КБ
   id: LandMineModular
   components:
   - type: PayloadCase
@@ -64,7 +64,7 @@
 
 - type: entity
   name: explosive mine
-  parent: BaseLandMine
+  parent: [BaseLandMine , BaseC3Contraband] #Corvax-Frontier КБ
   id: LandMineExplosive
   components:
   - type: ExplodeOnTrigger

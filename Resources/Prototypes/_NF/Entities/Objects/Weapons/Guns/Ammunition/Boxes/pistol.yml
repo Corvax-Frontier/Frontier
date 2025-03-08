@@ -19,7 +19,7 @@
 
 # Frontier
 - type: entity
-  parent: BaseMagazineBoxPistol
+  parent: [BaseMagazineBoxPistol, BaseC2ContrabandUnredeemable] #Corvax-Frontier КБ
   id: MagazineBoxPistolEmp
   name: ammunition box (.35 auto emp)
   components:

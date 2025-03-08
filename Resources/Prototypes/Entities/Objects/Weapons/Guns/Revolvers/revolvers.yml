@@ -146,7 +146,7 @@
 
 - type: entity
   name: pirate revolver
-  parent: [BaseWeaponRevolver, BaseC3PirateContraband] # Frontier: BaseMinorContraband<BaseC3PirateContraband
+  parent: [BaseWeaponRevolver, BaseC1Contraband] # Frontier: BaseMinorContraband<BaseC3PirateContraband #Crovax-Frontier
   id: WeaponRevolverPirate
   description: An odd, illegal, old-looking revolver, favoured by pirate crews. Uses .45 magnum ammo. # Frontier
   components:

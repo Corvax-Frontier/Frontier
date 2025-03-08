@@ -388,7 +388,7 @@
 
 - type: entity
   name: x-ray cannon
-  parent: [BaseWeaponBattery, BaseGunWieldable, BaseC3Contraband] # Frontier: added BaseSecurityContraband<BaseC3Contraband
+  parent: [BaseWeaponBattery, BaseGunWieldable, BaseC2ContrabandUnredeemable] # Frontier: added BaseSecurityContraband<BaseC3Contraband #Corvax-Frontier КБ
   id: WeaponXrayCannon
   description: An illegal and experimental weapon that uses concentrated x-ray energy against its target.
   components:

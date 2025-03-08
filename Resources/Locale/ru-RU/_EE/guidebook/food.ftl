@@ -14,7 +14,7 @@ guidebook-food-processing-slicing = Разрезать
 guidebook-food-processing-cooking = {CAPITALIZE($processingTypes)} на {$time}с
 # Frontier: deep fryer cook type
 guidebook-food-processing-deep-fry = {CAPITALIZE($processingTypes)} в течение {$time} циклов
-guidebook-food-processing-reaction = Микс
+guidebook-food-processing-reaction = Смешать
 
 guidebook-food-processing-recipe = {$ingredients}
 guidebook-food-ingredient-solid = [bold]{$name}[/bold] \[{$amount}\]

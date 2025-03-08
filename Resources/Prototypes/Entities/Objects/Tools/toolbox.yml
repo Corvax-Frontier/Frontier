@@ -116,7 +116,7 @@
 
 - type: entity
   name: suspicious toolbox
-  parent: [ToolboxBase, BaseC3SyndicateContraband] # Frontier: BaseSyndicateContraband<BaseC3SyndicateContraband
+  parent: [ToolboxBase, BaseC1Contraband] # Frontier: BaseSyndicateContraband<BaseC3SyndicateContraband #Corvax-Frontier КБ
   id: ToolboxSyndicate
   description: A sinister looking toolbox filled with elite syndicate tools.
   components:

@@ -87,7 +87,7 @@
 
 - type: entity
   id: MagazineBoxLightRifleIncendiary
-  parent: BaseMagazineBoxLightRifle
+  parent: [BaseMagazineBoxLightRifle, BaseC2ContrabandUnredeemable] #Corvax-Frontier КБ
   name: ammunition box (.30 rifle incendiary)
   components:
   - type: BallisticAmmoProvider
@@ -104,7 +104,7 @@
     - state: incendiary
 
 - type: entity
-  parent: BaseMagazineBoxLightRifle
+  parent: [BaseMagazineBoxLightRifle, BaseC2ContrabandUnredeemable] #Corvax-Frontier КБ
   id: MagazineBoxLightRifleUranium
   name: ammunition box (.30 rifle uranium)
   components:

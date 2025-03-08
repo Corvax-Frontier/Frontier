@@ -88,7 +88,7 @@
 - type: entity
   id: ShellShotgunIncendiary
   name: shell (.50 incendiary)
-  parent: BaseShellShotgun
+  parent: [BaseShellShotgun, BaseC2ContrabandUnredeemable] #Corvax-Frontier КБ
   components:
   - type: Sprite
     layers:
@@ -167,7 +167,7 @@
 - type: entity
   id: ShellShotgunUranium
   name: uranium shotgun shell
-  parent: BaseShellShotgun
+  parent: [BaseShellShotgun, BaseC2ContrabandUnredeemable] #Corvax-Frontier КБ
   components:
     - type: Sprite
       layers:

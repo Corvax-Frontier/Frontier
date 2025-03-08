@@ -46,7 +46,7 @@
 - type: entity
   id: CartridgeLightRifleIncendiary
   name: cartridge (.30 rifle incendiary)
-  parent: BaseCartridgeLightRifle
+  parent: [BaseCartridgeLightRifle, BaseC2ContrabandUnredeemable] #Corvax-Frontier КБ
   components:
   - type: CartridgeAmmo
     proto: BulletLightRifleIncendiary
@@ -61,7 +61,7 @@
 - type: entity
   id: CartridgeLightRifleUranium
   name: cartridge (.30 rifle uranium)
-  parent: BaseCartridgeLightRifle
+  parent: [BaseCartridgeLightRifle, BaseC2ContrabandUnredeemable] #Corvax-Frontier КБ
   components:
   - type: CartridgeAmmo
     proto: BulletLightRifleUranium

@@ -153,7 +153,7 @@
 
 - type: entity
   name: flintlock pistol
-  parent: [BaseWeaponSniper, BaseC3PirateContraband] # Frontier: BaseMinorContraband<BaseC3PirateContraband
+  parent: [BaseWeaponSniper, BaseC1Contraband] # Frontier: BaseMinorContraband<BaseC3PirateContraband #Corvax-Frontier КБ
   id: WeaponPistolFlintlock
   description: A pirate's companion. Yarrr! Uses .60 anti-materiel ammo. An illegal weapon often used by pirates.
   components:

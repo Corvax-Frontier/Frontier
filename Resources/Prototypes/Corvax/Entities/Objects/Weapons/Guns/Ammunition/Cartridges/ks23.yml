@@ -1,7 +1,7 @@
 - type: entity
   id: BaseShellKS23
   name: shell (.90)
-  parent: BaseCartridge
+  parent: [BaseCartridge, BaseC1Contraband] #Corvax-Frontier КБ
   abstract: true
   components:
   - type: Tag

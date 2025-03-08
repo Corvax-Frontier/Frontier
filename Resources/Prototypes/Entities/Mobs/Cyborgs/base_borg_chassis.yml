@@ -300,7 +300,7 @@
 
 - type: entity
   id: BaseBorgChassisSyndicate
-  parent: BaseBorgChassis
+  parent: [BaseBorgChassis, BaseC3Contraband] #Corvax-Frontier КБ
   abstract: true
   components:
   - type: NpcFactionMember

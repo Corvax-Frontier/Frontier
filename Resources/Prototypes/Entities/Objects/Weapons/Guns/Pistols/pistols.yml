@@ -70,7 +70,7 @@
 
 - type: entity
   name: viper
-  parent: [BaseWeaponPistol, BaseC3SyndicateContraband] # Frontier: BaseSyndicateContraband<BaseC3SyndicateContraband
+  parent: [BaseWeaponPistol, BaseC1Contraband] # Frontier: BaseSyndicateContraband<BaseC3SyndicateContraband #Corvax-Frontier
   id: WeaponPistolViper
   description: A small, easily concealable, but somewhat underpowered gun. Retrofitted with a fully automatic receiver. Uses .35 auto ammo. An illegal firearm often used by Syndicate agents.
   components:
@@ -189,7 +189,7 @@
 
 - type: entity
   name: mk 58
-  parent: [BaseWeaponPistol, BaseC1Contraband] # Frontier: BaseRestrictedContraband<BaseC2ContrabandUnredeemable<BaseC1Contraband to match weapon description
+  parent: [BaseWeaponPistol, BaseC2ContrabandUnredeemable] # Frontier: BaseRestrictedContraband<BaseC2ContrabandUnredeemable<BaseC1Contraband to match weapon description #Corvax-Frontier КБ
   id: WeaponPistolMk58
   description: A cheap, civilian grade, ubiquitous sidearm, produced by a NanoTrasen subsidiary. Uses .35 auto ammo.
   components:

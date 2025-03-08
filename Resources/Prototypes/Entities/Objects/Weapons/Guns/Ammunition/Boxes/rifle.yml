@@ -24,7 +24,7 @@
   - type: Appearance
   - type: StaticPrice #CorvaxFrontier
     price: 125
-    
+
 # Boxes
 - type: entity
   parent: BaseMagazineBoxRifle
@@ -104,7 +104,7 @@
 
 - type: entity
   id: MagazineBoxRifleUranium
-  parent: BaseMagazineBoxRifle
+  parent: [BaseMagazineBoxRifle, BaseC2ContrabandUnredeemable] #Corvax-Frontier КБ
   name: ammunition box (.20 rifle uranium)
   components:
   - type: BallisticAmmoProvider

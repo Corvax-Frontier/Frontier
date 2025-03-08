@@ -20,3 +20,11 @@ comp-stack-becomes-full = Стопка теперь заполнена.
 comp-stack-split = Вы разделили стопку.
 comp-stack-split-halve = Разделить пополам
 comp-stack-split-too-small = Стопка слишком мала для разделения.
+
+# Cherry-picked from space-station-14#32938 courtesy of Ilya246
+comp-stack-split-size = Максимум: {$size}
+
+ui-custom-stack-split-title = Разделить сумму
+ui-custom-stack-split-line-edit-placeholder = Количество
+ui-custom-stack-split-apply = Разделить
+# End cherry-pick from ss14#32938

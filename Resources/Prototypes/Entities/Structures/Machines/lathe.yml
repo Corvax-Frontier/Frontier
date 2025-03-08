@@ -1106,7 +1106,7 @@
 
 - type: entity
   id: AmmoTechFab
-  parent: [BlueprintReceiverBase, BaseLatheLube] # Frontier: added BlueprintReceiverBase
+  parent: [BlueprintReceiverBase, BaseLatheLube, BaseC1Contraband] # Frontier: added BlueprintReceiverBase #Corvax-Frontier КБ
   name: ammo techfab
   description: Prints the bare minimum of bullets that any budget military or armory could need. Nothing fancy.
   components:

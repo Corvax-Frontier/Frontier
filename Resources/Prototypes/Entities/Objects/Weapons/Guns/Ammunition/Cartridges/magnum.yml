@@ -46,7 +46,7 @@
 - type: entity
   id: CartridgeMagnumIncendiary
   name: cartridge (.45 magnum incendiary)
-  parent: BaseCartridgeMagnum
+  parent: [BaseCartridgeMagnum, BaseC2ContrabandUnredeemable] #Corvax-Frontier КБ
   components:
   - type: CartridgeAmmo
     proto: BulletMagnumIncendiary
@@ -76,7 +76,7 @@
 - type: entity
   id: CartridgeMagnumUranium
   name: cartridge (.45 magnum uranium)
-  parent: BaseCartridgeMagnum
+  parent: [BaseCartridgeMagnum, BaseC2ContrabandUnredeemable] #Corvax-Frontier КБ
   components:
   - type: CartridgeAmmo
     proto: BulletMagnumUranium

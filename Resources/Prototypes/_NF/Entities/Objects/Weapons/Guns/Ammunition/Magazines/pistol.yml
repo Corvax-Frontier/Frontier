@@ -31,7 +31,7 @@
 - type: entity
   id: MagazinePistolSubMachineGunEmp
   name: SMG magazine (.35 auto emp)
-  parent: BaseMagazinePistolSubMachineGun
+  parent: [BaseMagazinePistolSubMachineGun, BaseC2ContrabandUnredeemable] #Corvax-Frontier КБ
   components:
   - type: BallisticAmmoProvider
     proto: CartridgePistolEmp

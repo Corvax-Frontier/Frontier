@@ -53,7 +53,7 @@
 
 - type: entity
   id: ShuttleShotgun
-  parent: [VShuttleGunBase, ConstructibleMachine]
+  parent: [VShuttleGunBase, ConstructibleMachine, BaseC2ContrabandUnredeemable]
   name: Trophy-50
   description: A stationary shuttle gun that fires a .50 caliber. Designed to suppress the enemy.
   components:
@@ -113,7 +113,7 @@
 
 - type: entity
   id: ShuttleGunAntiMaterial
-  parent: [VShuttleGunBase, ConstructibleMachine]
+  parent: [VShuttleGunBase, ConstructibleMachine, BaseC2ContrabandUnredeemable]
   name: BOFROG-60/B
   description: An impressive - sized shuttle weapon, firing a large caliber .60. Breaks through most types of armored walls.
   components:
@@ -161,7 +161,7 @@
 
 - type: entity
   id: ShuttleLightRifleGun
-  parent: [VShuttleGunBase, ConstructibleMachine]
+  parent: [VShuttleGunBase, ConstructibleMachine, BaseC2ContrabandUnredeemable]
   name: АК-6.30
   description: A stationary shuttle rifle on .30 rifle cartridges with a VERY large supply of ammunition.
   components:
@@ -221,7 +221,7 @@
 
 - type: entity
   id: ShuttleSMGRifle
-  parent: [VShuttleGunBase, ConstructibleMachine]
+  parent: [VShuttleGunBase, ConstructibleMachine, BaseC2ContrabandUnredeemable]
   name: NVT-35
   description: A stationary small-caliber weapon with an increased rate of fire, unlike other shuttle`s weapons.
   components:
@@ -281,7 +281,7 @@
 
 - type: entity
   id: ShuttleMagnumRifle
-  parent: [VShuttleGunBase, ConstructibleMachine]
+  parent: [VShuttleGunBase, ConstructibleMachine, BaseC2ContrabandUnredeemable]
   name: 2А42-45
   description: The nightmare of the syndicate that liked to hide behind doors. Double-barreled .45 caliber gun.
   components:

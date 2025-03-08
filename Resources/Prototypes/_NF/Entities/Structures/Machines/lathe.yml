@@ -476,7 +476,7 @@
 
 - type: entity
   id: NfsdTechFab
-  parent: [ BlueprintReceiverBase, SecurityTechFab ]
+  parent: [ BlueprintReceiverBase, SecurityTechFab, BaseC2ContrabandUnredeemable] #Corvax-Frontier КБ
   name: NFSD techfab
   description: Prints equipment for use by NFSD.
   components:
@@ -762,7 +762,7 @@
       - MagazineShotgunBeanbag
       - MagazineVector45 #CorvaxFrontier
       - MagazineVector22 #CorvaxFrontier
-      
+
     dynamicRecipes:
     # Shared lathe recipes
     ## Advanced tools

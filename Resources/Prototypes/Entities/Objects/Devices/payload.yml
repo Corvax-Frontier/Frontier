@@ -21,7 +21,7 @@
 
 - type: entity
   name: explosive payload
-  parent: BasePayload
+  parent: [BasePayload, BaseC2ContrabandUnredeemable] #Corvax-Frontier КБ
   id: ExplosivePayload
   components:
   - type: Sprite

@@ -1,5 +1,5 @@
 - type: entity
-  parent: BaseWeaponShotgun
+  parent: [ BaseWeaponShotgun, BaseC1Contraband ]
   id: WeaponShotgunKS23
   name: Shotgun KS23
   components:

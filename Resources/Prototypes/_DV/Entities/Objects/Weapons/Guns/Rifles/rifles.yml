@@ -1,6 +1,6 @@
 - type: entity
   name: Vulcan
-  parent: [BaseWeaponRifle, BaseGunWieldable, BaseC1Contraband] # Frontier: add BaseC1Contraband
+  parent: [BaseWeaponRifle, BaseGunWieldable, BaseC2ContrabandUnredeemable] # Frontier: add BaseC1Contraband #Corvax-Frontier КБ
   id: WeaponRifleVulcan
   description: One of the heaviest small arms to grace Security's armory, this rifle is a modern take on a classic, informally dubbed the "Right Arm of the Free World". Uses .30 rifle ammo.
   components:

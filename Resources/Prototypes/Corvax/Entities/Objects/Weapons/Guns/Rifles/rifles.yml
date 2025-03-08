@@ -1,6 +1,6 @@
 - type: entity
   name: Scar12
-  parent: BaseWeaponRifle
+  parent: [BaseWeaponRifle, BaseC2ContrabandUnredeemable]
   id: WeaponRifleScar12
   description: Scar-12 боевая винтовка созданная TechnicLogistic, для нужд собственной армии благодаря эффективности и точности является одним из часто встречающихся образцов на черном рынке, на текущий момент поставляется силам дсбф по спец заказу НТ.
   components:

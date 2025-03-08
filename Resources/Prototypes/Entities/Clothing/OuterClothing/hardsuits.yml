@@ -280,7 +280,7 @@
 
 #Captain's Hardsuit
 - type: entity
-  parent: ClothingOuterHardsuitBase # Removed BaseCommandContraband
+  parent: [ClothingOuterHardsuitBase, BaseC1Contraband] # Removed BaseCommandContraband #Corvax-Frontier КБ
   id: ClothingOuterHardsuitCap
   name: captain's armored spacesuit
   description: A formal armored spacesuit, made for the station's captain.
@@ -703,7 +703,7 @@
 #Pirate EVA Suit (Deep Space EVA Suit)
 #Despite visually appearing like a softsuit, it functions exactly like a hardsuit would (parents off of base hardsuit, has resistances and toggleable clothing, etc.) so it goes here.
 - type: entity
-  parent: [ClothingOuterHardsuitBase, BaseC3PirateContraband, ContrabandClothing] # Frontier: added BaseC3PirateContraband, ContrabandClothing as parent
+  parent: [ClothingOuterHardsuitBase, BaseC1Contraband, ContrabandClothing] # Frontier: added BaseC3PirateContraband, ContrabandClothing as parent #Corvax-Frontier КБ
   id:  ClothingOuterHardsuitPirateEVA
   name: deep space EVA suit
   suffix: Pirate

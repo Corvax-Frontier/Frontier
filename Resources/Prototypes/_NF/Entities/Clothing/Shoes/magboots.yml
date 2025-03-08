@@ -5,10 +5,10 @@
   description: Combat magnetic boots, often used during extravehicular activity to ensure the user remains safely attached to the vehicle.
   components:
   - type: Sprite
-    sprite: _NF/Clothing/Shoes/Boots/magboots-combat.rsi
+    sprite: Corvax/Clothing/Shoes/Boots/magboots-combat.rsi #Corvax-Frontier респрайт
     state: icon
   - type: Clothing
-    sprite: _NF/Clothing/Shoes/Boots/magboots-combat.rsi
+    sprite: Corvax/Clothing/Shoes/Boots/magboots-combat.rsi #Corvax-Frontier респрайт
   - type: Magboots
     magbootsAlert: MagbootsCombat
   - type: ClothingSpeedModifier
@@ -16,7 +16,7 @@
     sprintModifier: 0.9
 
 - type: entity
-  parent: ClothingShoesBootsMagCombat
+  parent: [ClothingShoesBootsMagCombat, BaseC2ContrabandUnredeemable] #Corvax-Frontier КБ
   id: ClothingShoesBootsMagNfsd
   name: NFSD magboots
   components:
@@ -29,7 +29,7 @@
     magbootsAlert: MagbootsNfsd
 
 - type: entity
-  parent: [BaseC3PirateContraband, ClothingShoesBootsMagCombat]
+  parent: [BaseC1Contraband, ClothingShoesBootsMagCombat] #Corvax-Frontier КБ
   id: ClothingShoesBootsMagPirate
   name: pirate magboots
   description: Pirate magnetic boots, often used during extravehicular activity to ensure the user remains safely attached to the vehicle.

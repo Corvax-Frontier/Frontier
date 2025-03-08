@@ -1,6 +1,6 @@
 ﻿- type: entity
   id: ShuttleShotgunMachineCircuitboard
-  parent: BaseMachineCircuitboard
+  parent: [BaseMachineCircuitboard, BaseC2ContrabandUnredeemable]
   name: Trophy-50
   description: Machine Board from the shuttle`s gun "Trophy-50"
   components:
@@ -21,7 +21,7 @@
 
 - type: entity
   id: ShuttleGunAntiMaterialMachineCircuitboard
-  parent: BaseMachineCircuitboard
+  parent: [BaseMachineCircuitboard, BaseC2ContrabandUnredeemable]
   name: BOFROG-60/B
   description: Machine Board from the shuttle`s gun "BOFROG-60/B"
   components:
@@ -42,7 +42,7 @@
 
 - type: entity
   id: ShuttleLightRifleGunMachineCircuitboard
-  parent: BaseMachineCircuitboard
+  parent: [BaseMachineCircuitboard, BaseC2ContrabandUnredeemable]
   name: АК-6.30
   description: Machine Board from the shuttle`s gun "АК-6.30"
   components:
@@ -63,7 +63,7 @@
 
 - type: entity
   id: ShuttleSMGRifleMachineCircuitboard
-  parent: BaseMachineCircuitboard
+  parent: [BaseMachineCircuitboard, BaseC2ContrabandUnredeemable]
   name: NVT-35
   description: Machine Board from the shuttle`s gun "NVT-35"
   components:
@@ -84,7 +84,7 @@
 
 - type: entity
   id: ShuttleMagnumRifleMachineCircuitboard
-  parent: BaseMachineCircuitboard
+  parent: [BaseMachineCircuitboard, BaseC2ContrabandUnredeemable]
   name: 2А42-45
   description: Machine Board from the shuttle`s gun "2А42-45"
   components:

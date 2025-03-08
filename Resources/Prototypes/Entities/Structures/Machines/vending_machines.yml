@@ -904,7 +904,7 @@
     color: "#326e3f"
 
 - type: entity
-  parent: VendingMachine
+  parent: [VendingMachine, BaseC2ContrabandUnredeemable] #Corvax-Frontier КБ
   id: VendingMachineSec
   name: SecTech
   description: A vending machine containing Security equipment. A label reads SECURITY PERSONNEL ONLY.
@@ -1926,7 +1926,7 @@
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
 
 - type: entity
-  parent: [BaseStructureDisableAnchoring, VendingMachine] # Frontier
+  parent: [BaseStructureDisableAnchoring, VendingMachine, BaseC1Contraband] # Corvax-Frontier КБ
   id: VendingMachineSyndieDrobe
   name: SyndieDrobe
   description: Wardrobe machine encoded by the syndicate, contains elite outfits for various operations.

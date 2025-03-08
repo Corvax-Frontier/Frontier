@@ -87,7 +87,7 @@
 # TechFab
 - type: entity
   id: NfsdTechFabCircuitboard
-  parent: SecurityTechFabCircuitboard
+  parent: [SecurityTechFabCircuitboard, BaseC2ContrabandUnredeemable] #Corvax-Frontier КБ
   name: NFSD techfab machine board
   description: A machine printed circuit board for an NFSD techfab.
   components:
@@ -351,7 +351,7 @@
 
 - type: entity
   id: CondimentDispenserCircuitboard
-  parent: BaseMachineCircuitboard  
+  parent: BaseMachineCircuitboard
   name: condiment dispenser machine board
   description: A machine printed circuit board for a condiment dispenser.
   components:

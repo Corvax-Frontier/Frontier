@@ -816,7 +816,7 @@
     price: 2000
 
 - type: entity
-  parent: UniformPrinterFlatpack
+  parent: [UniformPrinterFlatpack, BaseC2ContrabandUnredeemable] #Corvax-Frontier КБ
   id: NfsdTechFabFlatpack
   name: NFSD techfab flatpack
   description: A flatpack used for constructing an NFSD techfab.
@@ -867,7 +867,7 @@
     price: 75
 
 - type: entity
-  parent: HoverbikeFlatpack
+  parent: [HoverbikeFlatpack, BaseC2ContrabandUnredeemable] #Corvax-Frontier КБ
   id: HoverbikeNfsdFlatpack
   name: NFSD hoverbike flatpack
   description: A flatpack used for constructing a hoverbike. Keys already slotted in the ignition.
@@ -878,7 +878,7 @@
     price: 750
 
 - type: entity
-  parent: HoverbikeFlatpack
+  parent: [HoverbikeFlatpack, BaseC3Contraband] #Corvax-Frontier КБ
   id: HoverbikeSyndicateFlatpack
   name: syndicate hoverbike flatpack
   description: A flatpack used for constructing a hoverbike. Keys already slotted in the ignition.
@@ -968,7 +968,7 @@
     price: 500
 
 - type: entity
-  parent: VendingMachineBoozeFlatpack
+  parent: [VendingMachineBoozeFlatpack, BaseC3Contraband] #Corvax-Frontier КБ
   id: VendingMachineSyndieContrabandFlatpack
   name: contravend flatpack
   description: A flatpack used for constructing a contravend vendomat.

@@ -53,7 +53,7 @@
     sprite: Clothing/OuterClothing/Bio/scientist.rsi
 
 - type: entity
-  parent: ClothingOuterBioGeneral
+  parent: [ClothingOuterBioGeneral, BaseC2ContrabandUnredeemable] #Corvax-Frontier КБ
   id: ClothingOuterBioSecurity
   name: bio suit
   suffix: Security

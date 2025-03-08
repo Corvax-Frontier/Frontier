@@ -8,3 +8,14 @@
       sprite: Corvax/Clothing/Uniforms/Jumpskirts/elegantmaid.rsi
     - type: Clothing
       sprite: Corvax/Clothing/Uniforms/Jumpskirts/elegantmaid.rsi
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtSchool
+  name: school skirt
+  description: Stylish and comfortable school skirt.
+  components:
+    - type: Sprite
+      sprite: Corvax/Clothing/Uniforms/Jumpskirts/schoolskirt.rsi
+    - type: Clothing
+      sprite: Corvax/Clothing/Uniforms/Jumpskirts/schoolskirt.rsi

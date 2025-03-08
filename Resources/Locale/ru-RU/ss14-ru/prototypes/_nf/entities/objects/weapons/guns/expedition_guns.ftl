@@ -67,3 +67,5 @@ ent-WeaponPistolUniversalExpedition = { ent-WeaponPistolUniversal }
     .desc = { ent-WeaponPistolUniversal.desc }
 ent-WeaponPistolPollockExpedition = { ent-WeaponPistolPollock }
     .desc = { ent-WeaponPistolPollock.desc }
+ent-SubMachineGunVector22Expedition = { ent-WeaponSubMachineGunVector22 }
+    .desc = { ent-WeaponSubMachineGunVector22.desc }

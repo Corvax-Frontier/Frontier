@@ -3,7 +3,7 @@
 
 #Basic armor vest
 - type: entity
-  parent: [RecyclableItemClothArmor, ClothingOuterBaseMedium, AllowSuitStorageClothing, BaseC1Contraband] # Frontier: BaseRestrictedContraband<BaseC1Contraband, added RecyclableItemClothArmor
+  parent: [RecyclableItemClothArmor, ClothingOuterBaseMedium, AllowSuitStorageClothing] #Corvax-Frontier удалена строка КБ
   id: ClothingOuterArmorBasic
   name: armor vest
   description: A standard Type I armored vest that provides decent protection against most types of damage.
@@ -37,7 +37,7 @@
     sprite: Clothing/OuterClothing/Armor/security_slim.rsi
 
 - type: entity
-  parent: [ClothingOuterBaseLarge, AllowSuitStorageClothing, BaseC2ContrabandUnredeemable] # Frontier: BaseRestrictedContraband<BaseC2ContrabandUnredeemable
+  parent: [ClothingOuterBaseLarge, AllowSuitStorageClothing, BaseC1Contraband] # Frontier: BaseRestrictedContraband<BaseC2ContrabandUnredeemable #Corvax-Frontier КБ
   id: ClothingOuterArmorRiot
   name: riot suit
   description: A suit of semi-flexible polycarbonate body armor with heavy padding to protect against melee attacks. Perfect for fighting delinquents around the station.
@@ -192,7 +192,7 @@
   - type: GroupExamine
 
 - type: entity
-  parent: [ClothingOuterBaseLarge, AllowSuitStorageClothing]
+  parent: [ClothingOuterBaseLarge, AllowSuitStorageClothing, BaseC1Contraband] #Corvax-Frontier КБ
   id: ClothingOuterArmorHeavy
   name: heavy armor suit
   description: A heavily armored suit that protects against excessive damage.
@@ -260,7 +260,7 @@
     sprite: Clothing/OuterClothing/Armor/magusred.rsi
 
 - type: entity
-  parent: [ClothingOuterBaseLarge, AllowSuitStorageClothing, BaseC1Contraband] # Frontier: BaseCommandContraband<BaseC1Contraband
+  parent: [ClothingOuterBaseLarge, AllowSuitStorageClothing] #Corvax-Frontier удалена строка КБ
   id: ClothingOuterArmorCaptainCarapace
   name: "captain's carapace"
   description: "An armored chestpiece that provides protection whilst still offering maximum mobility and flexibility. Issued only to the captains of luxury vessels." # Frontier
@@ -313,7 +313,7 @@
     slots: WITHOUT_POCKET
 
 - type: entity
-  parent: [ ClothingOuterBaseLarge, BaseC1Contraband, AllowSuitStorageClothing ] # Frontier: BaseMajorContraband<BaseC1Contraband
+  parent: [ ClothingOuterBaseLarge, AllowSuitStorageClothing ] # Frontier: BaseMajorContraband<BaseC1Contraband #Corvax-Frontier удалена строка КБ
   id: ClothingOuterArmorBone
   name: bone armor
   description: Sits on you like a second skin.
@@ -341,7 +341,7 @@
     slots: WITHOUT_POCKET
 
 - type: entity
-  parent: [ ClothingOuterBaseLarge, BaseC1Contraband, AllowSuitStorageClothing ] # Frontier: BaseMajorContraband<BaseC1Contraband
+  parent: [ ClothingOuterBaseLarge, AllowSuitStorageClothing ] # Frontier: BaseMajorContraband<BaseC1Contraband #Corvax-Frontier удалена строка КБ
   id: ClothingOuterArmorPodWars
   name: ironclad II armor
   description: A repurposed suit of ironclad II armor, a relic of the pod wars.

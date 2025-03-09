@@ -4626,6 +4626,16 @@ entities:
       rot: 3.141592653589793 rad
       pos: -0.5,7.5
       parent: 1
+- proto: ComputerTabletopAdvancedRadar
+  entities:
+  - uid: 598
+    components:
+    - type: Transform
+      pos: -2.5,11.5
+      parent: 1
+    missingComponents:
+    - Anchorable
+    - Construction
 - proto: ComputerTabletopCrewMonitoring
   entities:
   - uid: 637
@@ -4643,11 +4653,6 @@ entities:
       parent: 1
 - proto: ComputerTabletopRadar
   entities:
-  - uid: 601
-    components:
-    - type: Transform
-      pos: -2.5,11.5
-      parent: 1
   - uid: 1518
     components:
     - type: Transform

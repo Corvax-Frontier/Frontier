@@ -266,6 +266,8 @@
     solutions:
       beaker:
         maxVol: 1000
+  - type: MercenaryBountyItem # Corvax-Frontier
+    id: BluespaceBeaker
 
 - type: entity
   name: dropper
@@ -497,6 +499,8 @@
     tags:
     - Syringe
     - Trash
+  - type: MercenaryBountyItem # Corvax-Frontier
+    id: SyringeBluespace
 
 - type: entity
   id: SyringeCryostasis

@@ -2,7 +2,7 @@
   name: Scar12
   parent: [BaseWeaponRifle, BaseC2ContrabandUnredeemable]
   id: WeaponRifleScar12
-  description: Scar-12 боевая винтовка созданная TechnicLogistic, для нужд собственной армии благодаря эффективности и точности является одним из часто встречающихся образцов на черном рынке, на текущий момент поставляется силам дсбф по спец заказу НТ.
+  description: The Scar-12 battle rifle, developed by TechnicLogistic for its own army, is one of the most commonly found models on the black market due to its efficiency and accuracy. Currently, it is supplied to DSBF forces under a special order from NT.
   components:
   - type: Sprite
     sprite: Corvax/Objects/Weapons/Guns/Rifles/scar12.rsi
@@ -53,8 +53,8 @@
       gun_magazine: !type:ContainerSlot
       gun_chamber: !type:ContainerSlot
   - type: GunWieldBonus
-    minAngle: -20
-    maxAngle: -25
+    minAngle: -17
+    maxAngle: -22
   - type: MagazineVisuals
     magState: mag
     steps: 1

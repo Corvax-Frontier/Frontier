@@ -109,6 +109,13 @@
   categories: [ HideSpawnMenu ]
   id: WeaponShotgunEnforcerExpedition
 
+- type: entity #CorvaxFrontier
+  parent:
+  - BaseC3ExpeditionContraband
+  - WeaponShotgunKD12
+  categories: [ HideSpawnMenu ]
+  id: WeaponShotgunKD12Expedition #CorvaxFrontier
+
 # Rifles
 - type: entity
   parent:
@@ -166,6 +173,13 @@
   - WeaponSubMachineGunTypewriter
   categories: [ HideSpawnMenu ]
   id: WeaponSubMachineGunTypewriterExpedition
+
+- type: entity #CorvaxFrontier
+  parent:
+  - BaseC3ExpeditionContraband
+  - WeaponSubMachineP90LRK
+  categories: [ HideSpawnMenu ]
+  id: WeaponSubMachineP90LRKExpedition #CorvaxFrontier
 
 # Energy
 - type: entity

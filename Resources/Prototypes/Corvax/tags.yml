@@ -11,6 +11,9 @@
   id: MagazineVector45
 
 - type: Tag
+  id: MagazineP90LRK
+
+- type: Tag
   id: ShuttleShotgunShellsBox
 
 - type: Tag

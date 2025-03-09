@@ -156,6 +156,7 @@
     - WeaponCaseLongEnergyGunExpedition
     - WeaponCaseLongRepeaterExpedition
     - WeaponCaseLongSVTExpedition
+    - WeaponCaseLongKD12 #CorvaxFrontier
     chance: 1.0
     offset: 0.0
     rarePrototypes:
@@ -245,6 +246,7 @@
     - WeaponCaseShortSvalinnExpedition
     - WeaponCaseShortAdvancedLaserExpedition
     - WeaponCaseSubMachineGunVector22 #CorvaxFrontier
+    - WeaponCaseWeaponSubMachineP90LRK #CorvaxFrontier
     #- WeaponCaseLongMusketExpedition
     chance: 1.0
     offset: 0.0

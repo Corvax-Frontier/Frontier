@@ -1,7 +1,7 @@
 # Harpy
 - type: emote
   id: Ring
-  name: Ring
+  name: chat-emote-name-ring # Corvax-Localization
   category: Vocal
   icon: Interface/Actions/scream.png
   available: false
@@ -11,7 +11,7 @@
   blacklist:
     components:
     - BorgChassis
-  chatMessages: ["rings."]
+  chatMessages: ["chat-emote-name-harpy-rings"] # Corvax-Localization
   chatTriggers:
     - ring
     - rings
@@ -20,7 +20,7 @@
 
 - type: emote
   id: Pew
-  name: Pew
+  name: chat-emote-name-pew # Corvax-Localization
   category: Vocal
   icon: Interface/Actions/scream.png
   available: false
@@ -30,7 +30,7 @@
   blacklist:
     components:
     - BorgChassis
-  chatMessages: ["pews."]
+  chatMessages: ["chat-emote-name-harpy-pews"] # Corvax-Localization
   chatTriggers:
     - pew
     - pews
@@ -39,7 +39,7 @@
 
 - type: emote
   id: Bang
-  name: Bang
+  name: chat-emote-name-bang # Corvax-Localization
   category: Vocal
   icon: Interface/Actions/scream.png
   available: false
@@ -49,7 +49,7 @@
   blacklist:
     components:
     - BorgChassis
-  chatMessages: ["bangs."]
+  chatMessages: ["chat-emote-name-harpy-bangs"] # Corvax-Localization
   chatTriggers:
     - bang
     - bangs
@@ -58,7 +58,7 @@
 
 - type: emote
   id: Rev
-  name: Rev
+  name: chat-emote-name-rev # Corvax-Localization
   category: Vocal
   icon: Interface/Actions/scream.png
   available: false
@@ -68,7 +68,7 @@
   blacklist:
     components:
     - BorgChassis
-  chatMessages: ["revs."]
+  chatMessages: ["chat-emote-name-harpy-revs"] # Corvax-Localization
   chatTriggers:
     - revs
     - rev
@@ -77,7 +77,7 @@
 
 - type: emote
   id: Caw
-  name: Caw
+  name: chat-emote-name-caw # Corvax-Localization
   category: Vocal
   icon: Interface/Actions/scream.png
   available: false
@@ -87,7 +87,7 @@
   blacklist:
     components:
     - BorgChassis
-  chatMessages: ["caws."]
+  chatMessages: ["chat-emote-name-harpy-caws"] # Corvax-Localization
   chatTriggers:
     - caws
     - caw
@@ -97,7 +97,7 @@
 #Vulpkanin
 - type: emote
   id: Bark
-  name: Bark
+  name: chat-emote-name-bark # Corvax-Localization
   category: Vocal
   icon: Interface/Actions/scream.png
   available: false
@@ -107,7 +107,7 @@
   blacklist:
     components:
     - BorgChassis
-  chatMessages: ["barks."]
+  chatMessages: ["chat-emote-name-vulpkanin-barks"] # Corvax-Localization
   chatTriggers:
     - bark
     - barks
@@ -116,7 +116,7 @@
 
 - type: emote
   id: Snarl
-  name: Snarl
+  name: chat-emote-name-snarl # Corvax-Localization
   category: Vocal
   icon: Interface/Actions/scream.png
   available: false
@@ -126,7 +126,7 @@
   blacklist:
     components:
     - BorgChassis
-  chatMessages: ["snarls."]
+  chatMessages: ["chat-emote-name-vulpkanin-snarls"] # Corvax-Localization
   chatTriggers:
     - snarl
     - snarls
@@ -135,7 +135,7 @@
 
 - type: emote
   id: Whine
-  name: Whine
+  name: chat-emote-name-whine # Corvax-Localization
   category: Vocal
   icon: Interface/Actions/scream.png
   available: false
@@ -145,7 +145,7 @@
   blacklist:
     components:
     - BorgChassis
-  chatMessages: ["whines."]
+  chatMessages: ["chat-emote-name-vulpkanin-whines"] # Corvax-Localization
   chatTriggers:
     - whine
     - whines
@@ -154,7 +154,7 @@
 
 - type: emote
   id: Howl
-  name: Howl
+  name: chat-emote-name-howl # Corvax-Localization
   category: Vocal
   icon: Interface/Actions/scream.png
   available: false
@@ -164,7 +164,7 @@
   blacklist:
     components:
     - BorgChassis
-  chatMessages: ["howls."]
+  chatMessages: ["chat-emote-name-vulpkanin-howls"] # Corvax-Localization
   chatTriggers:
     - howl
     - howls
@@ -173,7 +173,7 @@
 
 - type: emote
   id: Awoo
-  name: Awoo
+  name: chat-emote-name-awoo # Corvax-Localization
   category: Vocal
   icon: Interface/Actions/scream.png
   available: false
@@ -183,7 +183,7 @@
   blacklist:
     components:
     - BorgChassis
-  chatMessages: ["awoos."]
+  chatMessages: ["chat-emote-name-vulpkanin-awoo"] # Corvax-Localization
   chatTriggers:
     - awoo
     - awoos

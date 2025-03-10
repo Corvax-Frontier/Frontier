@@ -1,0 +1,13 @@
+- type: latheRecipe
+  id: ColiseumCoinExchangerRecipe
+  result: SpaceCash25000
+  completetime: 1
+  materials:
+    ColiseumCoin: 1
+
+- type: latheRecipe
+  id: HolyPlushieOrangeFoxRecipe
+  result: HolyPlushieOrangeFox
+  completetime: 1
+  materials:
+    ColiseumCoin: 5

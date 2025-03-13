@@ -6145,6 +6145,9 @@ entities:
     - type: Transform
       pos: -0.5,-14.5
       parent: 1
+    missingComponents:
+    - Construction
+    - Anchorable
 - proto: ComputerFrame
   entities:
   - uid: 587
@@ -11678,20 +11681,6 @@ entities:
     - type: Transform
       pos: 20.5,4.5
       parent: 1
-    - type: ContainerContainer
-      containers:
-        machine_board: !type:Container
-          showEnts: False
-          occludes: True
-          ents: []
-        machine_parts: !type:Container
-          showEnts: False
-          occludes: True
-          ents: []
-        blueprint: !type:Container
-          showEnts: False
-          occludes: True
-          ents: []
 - proto: NitrogenCanister
   entities:
   - uid: 744
@@ -12608,7 +12597,7 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -3.5,8.5
       parent: 1
-- proto: PoweredlightColoredFrostyBlue
+- proto: PoweredlightCyan
   entities:
   - uid: 2109
     components:
@@ -16872,7 +16861,7 @@ entities:
     - type: Transform
       pos: -10.5,1.5
       parent: 1
-- proto: WarpPointShip
+- proto: WarpPoint
   entities:
   - uid: 2563
     components:

@@ -175,14 +175,14 @@
   inhand:
     - DawInstrumentFlatpack
 
-- type: loadout
-  id: ContractorHoverbikeFlatpack
-  effects:
-  - !type:GroupLoadoutEffect
-    proto: ContractorT3
-  price: 35000
-  inhand:
-    - HoverbikeFlatpack
+#- type: loadout # Corvax-Frontier
+#  id: ContractorHoverbikeFlatpack
+#  effects:
+#  - !type:GroupLoadoutEffect
+#    proto: ContractorT3
+#  price: 35000
+#  inhand:
+#    - HoverbikeFlatpack
 
 - type: loadout
   id: ContractorEmotionalPetCarrier

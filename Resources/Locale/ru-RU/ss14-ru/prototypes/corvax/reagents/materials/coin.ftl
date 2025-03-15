@@ -1,0 +1,1 @@
+materials-mercenary-token = квантовый кристалл

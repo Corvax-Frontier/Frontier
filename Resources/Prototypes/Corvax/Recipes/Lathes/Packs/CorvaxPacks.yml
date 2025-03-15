@@ -61,3 +61,28 @@
   id: CorvaxMaterialsStatic
   recipes:
   - SheetMagmite1
+
+#Обменники
+
+- type: latheRecipePack
+  id: MercenaryExchangerStatic
+  recipes:
+  - ClothingOuterHardsuitScafExchangeRecipe
+  - WeaponMagmiteCrusherGlaiveExchangeRecipe
+  - WeaponAntiqueLaserExchangeRecipe
+  - ClothingOuterArmorRiotExchangeRecipe
+  - HoverbikeFlatpackExchangeRecipe
+  - NFBlueprintJawsOfLifeExchangeRecipe
+  - TelescopicShieldExchangeRecipe
+  - MedkitCombatExchangeRecipe
+  - AmmoTechFabCircuitboardExchangeRecipe
+  - SpaceCash2500ExchangeRecipe
+  - ResearchDisk5000ExchangeRecipe
+  - BruteAutoInjectorExchangeRecipe
+  - BurnAutoInjectorExchangeRecipe
+  - BoxSmokeGrenadesExchangeRecipe
+  - CrateChemistryPExchangeRecipe
+  - CrateChemistrySExchangeRecipe
+  - CrateChemistryDExchangeRecipe
+  - HolofanProjectorExchangeRecipe
+  - MedkitExchangeRecipe

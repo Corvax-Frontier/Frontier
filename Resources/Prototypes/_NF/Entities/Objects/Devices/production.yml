@@ -65,6 +65,8 @@
         GlassBeaker:
           amount: 2
           defaultPrototype: Beaker
+    - type: MercenaryBountyItem # Corvax-Frontier
+      id: MercenaryFabHackedCircuitboard
 
 - type: entity
   id: NFScrapProcessorCircuitboard

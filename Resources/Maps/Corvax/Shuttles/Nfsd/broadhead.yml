@@ -2176,6 +2176,9 @@ entities:
     - type: Transform
       pos: 6.5,-0.5
       parent: 2
+    missingComponents:
+    - Anchorable
+    - Construction
 - proto: ComputerTabletopCriminalRecords
   entities:
   - uid: 252
@@ -5526,6 +5529,16 @@ entities:
     - type: Transform
       pos: -3.5,0.5
       parent: 2
+<<<<<<< HEAD
+- proto: WardrobePrisonFilled
+  entities:
+  - uid: 699
+    components:
+    - type: Transform
+      pos: -0.5,-5.5
+      parent: 2
+=======
+>>>>>>> master
 - proto: WarpPoint
   entities:
   - uid: 700

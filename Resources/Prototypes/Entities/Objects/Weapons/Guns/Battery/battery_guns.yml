@@ -244,6 +244,8 @@
   - type: HitscanBatteryAmmoProvider
     proto: RedLaser
     fireCost: 62.5
+  - type: MercenaryBountyItem # Corvax-Frontier
+    id: WeaponLaserCarbine
 
 - type: entity
   name: pulse pistol

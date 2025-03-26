@@ -384,6 +384,10 @@
   components:
   - type: Pda
     id: PirateNFIDCard
+    bookSlot: #corvax frontier
+      startingItem: HyperlinkBookPirateCode #corvax frontier
+    penSlot: #corvax frontier
+      startingItem: LuxuryPen #corvax frontier
   - type: Appearance
     appearanceDataInit:
       enum.PdaVisuals.PdaType:
@@ -397,6 +401,10 @@
   components:
   - type: Pda
     id: PirateCaptainNFIDCard
+    bookSlot: #corvax frontier
+      startingItem: HyperlinkBookPirateCode #corvax frontier
+    penSlot: #corvax frontier
+      startingItem: LuxuryPen #corvax frontier
   - type: Appearance
     appearanceDataInit:
       enum.PdaVisuals.PdaType:
@@ -410,6 +418,10 @@
   components:
   - type: Pda
     id: PirateFirstMateNFIDCard
+    bookSlot: #corvax frontier
+      startingItem: HyperlinkBookPirateCode #corvax frontier
+    penSlot: #corvax frontier
+      startingItem: LuxuryPen #corvax frontier
   - type: Appearance
     appearanceDataInit:
       enum.PdaVisuals.PdaType:

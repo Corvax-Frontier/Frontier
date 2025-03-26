@@ -6146,6 +6146,9 @@ entities:
     - type: Transform
       pos: -0.5,-14.5
       parent: 1
+    missingComponents:
+    - Construction
+    - Anchorable
 - proto: ComputerFrame
   entities:
   - uid: 587
@@ -16885,6 +16888,21 @@ entities:
       rot: 3.141592653589793 rad
       pos: -16.5,1.5
       parent: 1
+<<<<<<< HEAD
+- proto: WardrobePrisonFilled
+  entities:
+  - uid: 609
+    components:
+    - type: Transform
+      pos: -12.5,1.5
+      parent: 1
+  - uid: 610
+    components:
+    - type: Transform
+      pos: -10.5,1.5
+      parent: 1
+=======
+>>>>>>> master
 - proto: WarpPoint
   entities:
   - uid: 2563

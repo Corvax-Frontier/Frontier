@@ -4909,6 +4909,9 @@ entities:
     - type: Transform
       pos: 1.5,22.5
       parent: 3
+    missingComponents:
+    - Anchorable
+    - Construction
 - proto: ComputerTabletopComms
   entities:
   - uid: 1694

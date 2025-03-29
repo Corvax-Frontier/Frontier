@@ -18,11 +18,11 @@
   category: Small
   access: Security
   mapchecker_group_override: Security
-  shuttlePath: /Maps/Corvax/Shuttles/Nfsd/Gast.yml
+  shuttlePath: /Maps/Corvax/Shuttles/Nfsd/gast.yml
 - type: gameMap
   id: Gast
   mapName: 'NSF Гаст'
-  mapPath: /Maps/Corvax/Shuttles/Nfsd/Gast.yml
+  mapPath: /Maps/Corvax/Shuttles/Nfsd/gast.yml
   minPlayers: 0
   stations:
     Gast:

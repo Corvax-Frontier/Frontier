@@ -1,6 +1,17 @@
 meta:
-  format: 6
-  postmapinit: false
+  format: 7
+  category: Grid
+  engineVersion: 247.2.0
+  forkId: ""
+  forkVersion: ""
+  time: 03/26/2025 08:47:13
+  entityCount: 1770
+maps: []
+grids:
+- 1
+orphans:
+- 1
+nullspace: []
 tilemap:
   0: Space
   14: FloorBar
@@ -4228,6 +4239,16 @@ entities:
       rot: 3.141592653589793 rad
       pos: -0.5,15.5
       parent: 1
+- proto: ComputerAdvancedRadar
+  entities:
+  - uid: 70
+    components:
+    - type: Transform
+      pos: 0.5,16.5
+      parent: 1
+    missingComponents:
+    - Construction
+    - Anchorable
 - proto: ComputerCrewMonitoring
   entities:
   - uid: 650

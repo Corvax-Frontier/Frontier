@@ -22,6 +22,9 @@
   - Pirate
   engine:
   - Plasma
+  addComponents:
+  - type: IFF
+    flags: [HideLabel]
 
 - type: gameMap
   id: Menace

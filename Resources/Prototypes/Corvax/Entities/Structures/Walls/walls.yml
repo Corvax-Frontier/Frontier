@@ -84,3 +84,46 @@
     proto: WallPlastitaniumDiagonal
   - type: RepeatingTrigger
     delay: 60
+
+- type: entity
+  parent: BaseWall
+  id: WallWoodForced
+  name: укреплённая деревянная стена
+  description: Из более твёрдых сортов дерева.
+  components:
+  - type: Sprite
+    sprite: Structures/Walls/wood.rsi
+  - type: Icon
+    sprite: Structures/Walls/wood.rsi
+  - type: Construction
+    graph: Barricade
+    node: woodWall
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 500
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WoodDestroyHeavy
+    - trigger:
+        !type:DamageTrigger
+        damage: 250
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WoodDestroyHeavy
+      - !type:ChangeConstructionNodeBehavior
+        node: Barricade
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+  - type: IconSmooth
+    key: woods
+    base: wood
+  - type: RCDDeconstructable 
+    cost: 6 
+    delay: 8 
+    fx: EffectRCDDeconstruct8 

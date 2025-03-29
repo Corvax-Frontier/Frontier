@@ -17,6 +17,9 @@
   category: Small
   group: BlackMarket
   shuttlePath: /Maps/Corvax/Shuttles/BlackMarket/SalvationUnion.yml
+  addComponents:
+  - type: IFF
+    flags: [HideLabel]
 
 - type: gameMap
   id: SalvationUnion

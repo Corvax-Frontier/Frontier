@@ -1,6 +1,6 @@
 # Author Info
 # GitHub: -
-# Discord: autsaider_m
+# Discord: alexmactep
 # License: CC-BY-NC-ND-3.0
 # Corvax_frontier
 
@@ -11,29 +11,29 @@
 # Shuttle Notes:
 
 - type: vessel
-  id: hog
+  id: scurvy
   parent: BaseVessel
-  name: Боров
-  description: Среднегабаритный пиратский шаттл. Рекомендованный состав команды 2-4 человека.
-  price: 80000
-  category: Medium
+  name: Цинга
+  description: Малый пиратский шаттл. Рекомендованный состав команды 1-2 человека.
+  price: 39000
+  category: Small
   group: BlackMarket
-  shuttlePath: /Maps/Corvax/Shuttles/BlackMarket/hog.yml
+  shuttlePath: /Maps/Corvax/Shuttles/BlackMarket/scurvy.yml
   addComponents:
   - type: IFF
     flags: [HideLabel]
 
 - type: gameMap
-  id: hog
-  mapName: 'Боров'
-  mapPath: /Maps/Corvax/Shuttles/BlackMarket/hog.yml
+  id: scurvy
+  mapName: 'scurvy'
+  mapPath: /Maps/Corvax/Shuttles/BlackMarket/scurvy.yml
   minPlayers: 0
   stations:
-    hog:
+    scurvy:
       stationProto: StandardFrontierVessel
       components:
         - type: StationNameSetup
-          mapNameTemplate: 'Межзвёздный {1}' #Fake name
+          mapNameTemplate: 'Апотекарий {1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: '14'

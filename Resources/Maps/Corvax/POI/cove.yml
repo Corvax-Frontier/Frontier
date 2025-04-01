@@ -2292,18 +2292,6 @@ entities:
     - type: Transform
       pos: -6.5784426,7.7413363
       parent: 1
-- proto: BoxMRE
-  entities:
-  - uid: 1136
-    components:
-    - type: Transform
-      pos: -5.3925104,5.652456
-      parent: 1
-  - uid: 1137
-    components:
-    - type: Transform
-      pos: -5.600844,5.8334475
-      parent: 1
 - proto: BrokenBottle
   entities:
   - uid: 1127
@@ -4013,6 +4001,16 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 22.61162,23.304857
       parent: 1
+  - uid: 2108
+    components:
+    - type: Transform
+      pos: -8.678465,7.2758613
+      parent: 1
+  - uid: 2131
+    components:
+    - type: Transform
+      pos: -8.38159,7.2758613
+      parent: 1
 - proto: CannonBallEmp
   entities:
   - uid: 2068
@@ -4991,6 +4989,8 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -3.5,-4.5
       parent: 1
+    missingComponents:
+    - Anchorable
 - proto: ComputerPalletConsoleNFHighMarket
   entities:
   - uid: 560
@@ -5016,6 +5016,8 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -8.5,-4.5
       parent: 1
+    missingComponents:
+    - Anchorable
 - proto: ComputerPowerMonitoring
   entities:
   - uid: 76
@@ -5043,6 +5045,8 @@ entities:
     - type: Transform
       pos: -6.5,10.5
       parent: 1
+    missingComponents:
+    - Anchorable
 - proto: ComputerTabletopRadar
   entities:
   - uid: 51
@@ -5050,6 +5054,8 @@ entities:
     - type: Transform
       pos: -8.5,1.5
       parent: 1
+    missingComponents:
+    - Anchorable
 - proto: ComputerTabletopStationRecords
   entities:
   - uid: 2083
@@ -5057,6 +5063,8 @@ entities:
     - type: Transform
       pos: -5.5,10.5
       parent: 1
+    missingComponents:
+    - Anchorable
 - proto: ComputerTabletopSurveillanceCameraMonitor
   entities:
   - uid: 1082
@@ -5064,6 +5072,8 @@ entities:
     - type: Transform
       pos: -7.5,10.5
       parent: 1
+    missingComponents:
+    - Anchorable
 - proto: ComputerWallmountBlackMarketBankATM
   entities:
   - uid: 61
@@ -5103,6 +5113,13 @@ entities:
     - type: Transform
       pos: -6.5,-2.5
       parent: 1
+- proto: CrateFoodCooking
+  entities:
+  - uid: 2061
+    components:
+    - type: Transform
+      pos: -5.5,5.5
+      parent: 1
 - proto: CrateFreezer
   entities:
   - uid: 858
@@ -5116,8 +5133,8 @@ entities:
         immutable: False
         temperature: 234.99934
         moles:
-        - 1.8968438
-        - 7.1357465
+        - 1.8977377
+        - 7.139109
         - 0
         - 0
         - 0
@@ -5134,20 +5151,15 @@ entities:
           showEnts: False
           occludes: True
           ents:
-          - 252
-          - 283
           - 287
+          - 283
+          - 252
+          - 684
+          - 834
         paper_label: !type:ContainerSlot
           showEnts: False
           occludes: True
           ent: null
-- proto: CrateFunHoverbikeNFPirate
-  entities:
-  - uid: 684
-    components:
-    - type: Transform
-      pos: 0.5,11.5
-      parent: 1
 - proto: CrateFunParty
   entities:
   - uid: 125
@@ -5189,13 +5201,6 @@ entities:
     components:
     - type: Transform
       pos: -12.5,14.5
-      parent: 1
-- proto: CratePirateChest
-  entities:
-  - uid: 834
-    components:
-    - type: Transform
-      pos: -8.5,7.5
       parent: 1
 - proto: CratePirateChestCaptain
   entities:
@@ -5595,11 +5600,6 @@ entities:
     - type: Transform
       pos: 10.402694,21.702908
       parent: 1
-  - uid: 2061
-    components:
-    - type: Transform
-      pos: 10.652694,21.650824
-      parent: 1
 - proto: DoubleEmergencyNitrogenTankFilled
   entities:
   - uid: 2065
@@ -5609,6 +5609,11 @@ entities:
       parent: 1
 - proto: DoubleEmergencyOxygenTankFilled
   entities:
+  - uid: 1137
+    components:
+    - type: Transform
+      pos: 10.682665,21.616762
+      parent: 1
   - uid: 2066
     components:
     - type: Transform
@@ -6118,7 +6123,7 @@ entities:
   - uid: 756
     components:
     - type: Transform
-      pos: -5.899738,7.826929
+      pos: -6.133609,7.7289863
       parent: 1
 - proto: FloorDrain
   entities:
@@ -7013,7 +7018,7 @@ entities:
     - type: Transform
       pos: -2.401156,25.481426
       parent: 1
-- proto: FoodMeatHuman
+- proto: FoodMeat
   entities:
   - uid: 252
     components:
@@ -7030,6 +7035,20 @@ entities:
       canCollide: False
     - type: InsideEntityStorage
   - uid: 287
+    components:
+    - type: Transform
+      parent: 858
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 684
+    components:
+    - type: Transform
+      parent: 858
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 834
     components:
     - type: Transform
       parent: 858
@@ -7968,6 +7987,21 @@ entities:
     - type: Transform
       pos: 24.342058,24.552223
       parent: 1
+  - uid: 2132
+    components:
+    - type: Transform
+      pos: -5.789859,7.5414863
+      parent: 1
+  - uid: 2141
+    components:
+    - type: Transform
+      pos: -5.539859,7.7602363
+      parent: 1
+  - uid: 2142
+    components:
+    - type: Transform
+      pos: -5.789859,7.7289863
+      parent: 1
 - proto: MagazineNovaliteC1Empty
   entities:
   - uid: 1605
@@ -8530,11 +8564,6 @@ entities:
       parent: 1
 - proto: Rack
   entities:
-  - uid: 23
-    components:
-    - type: Transform
-      pos: -5.5,5.5
-      parent: 1
   - uid: 64
     components:
     - type: Transform
@@ -8600,6 +8629,11 @@ entities:
     components:
     - type: Transform
       pos: -3.5,11.5
+      parent: 1
+  - uid: 1136
+    components:
+    - type: Transform
+      pos: -8.5,7.5
       parent: 1
   - uid: 2056
     components:
@@ -9724,35 +9758,13 @@ entities:
     - type: Transform
       pos: 3.5,-3.5
       parent: 1
-- proto: StructurePistolRackWallmounted
+- proto: StructurePistolRackPiratesFilled
   entities:
   - uid: 2106
     components:
     - type: Transform
       pos: -15.5,24.5
       parent: 1
-    - type: ContainerContainer
-      containers:
-        weapon1: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: 2107
-        weapon2: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: 2108
-        weapon3: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: 2131
-        weapon4: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: 2132
-        weapon5: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
 - proto: Stunbaton
   entities:
   - uid: 2090
@@ -13017,40 +13029,24 @@ entities:
     - type: Transform
       pos: -3.5,7.5
       parent: 1
-- proto: WeaponDisabler
+- proto: WeaponGrapplingGun
+  entities:
+  - uid: 23
+    components:
+    - type: Transform
+      pos: 1.2717471,-4.389432
+      parent: 1
+  - uid: 2063
+    components:
+    - type: Transform
+      pos: 0.2755611,-4.561307
+      parent: 1
+- proto: WeaponLauncherPirateCannon
   entities:
   - uid: 2107
     components:
     - type: Transform
-      parent: 2106
-    - type: Physics
-      canCollide: False
-  - uid: 2108
-    components:
-    - type: Transform
-      parent: 2106
-    - type: Physics
-      canCollide: False
-  - uid: 2131
-    components:
-    - type: Transform
-      parent: 2106
-    - type: Physics
-      canCollide: False
-- proto: WeaponDisablerPractice
-  entities:
-  - uid: 2132
-    components:
-    - type: Transform
-      parent: 2106
-    - type: Physics
-      canCollide: False
-- proto: WeaponGrapplingGun
-  entities:
-  - uid: 2063
-    components:
-    - type: Transform
-      pos: 0.49590623,-4.4579954
+      pos: -8.60034,7.6821113
       parent: 1
 - proto: WeaponRevolverArgentiNonlethal
   entities:

@@ -145,6 +145,8 @@
     state: icon
   - type: Item
     sprite: Objects/Tools/Toolboxes/toolbox_gold.rsi
+  - type: MercenaryBountyItem # Corvax-Frontier
+    id: ToolboxGold
 
 - type: entity
   id: ToolboxThief

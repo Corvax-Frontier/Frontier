@@ -1,0 +1,79 @@
+- type: entity
+  name: набор для улучшения двигателей
+  parent: BoxCardboard
+  id: BoxT2SuperCapacitor
+  description: Коробка модифицированных конденсаторов.
+  components:
+  - type: StorageFill
+    contents:
+      - id: AdvancedCapacitorStockPart
+        amount: 9
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,2,3
+    whitelist:
+      tags:
+        - CapacitorStockPart
+  - type: Sprite
+    sprite: Corvax/Boxes/pirate.rsi
+    state: boxpirat
+    layers:
+      - state: boxpirat
+      - state: capacitor
+
+- type: entity
+  name: набор стяжек
+  parent: BoxZiptie
+  id: BoxZiptiePirat
+  description: Коробка стяжек
+  components:
+  - type: Sprite
+    sprite: Corvax/Boxes/pirate.rsi
+    state: boxpirat
+    layers:
+      - state: boxpirat
+      - state: ziptie
+
+- type: entity
+  name: набор растворения
+  parent: BoxCardboard
+  id: BoxDeathRattleImplantsPirat
+  description: Нажми на место укола рукой с случае захвата корпоративными крысами и мы отправим тебе помощь!
+  components:
+  - type: Sprite
+    layers:
+      - state: box_of_doom
+      - state: syringe
+  - type: Storage
+    grid:
+    - 0,0,5,3
+  - type: StorageFill
+    contents:
+      - id: DeathAcidifierImplanter
+        amount: 5
+
+- type: entity
+  name: набор для абордажа
+  parent: BoxCardboard
+  id: BoxPirateAssault
+  description: набор из крюка, сканера и батарейки для начинающих абордажных групп.
+  components:
+  - type: StorageFill
+    contents:
+      - id: WeaponGrapplingGun
+        amount: 1
+      - id: PowerCellSmallPrinted
+        amount: 1
+      - id: HandHeldMassScannerEmpty
+        amount: 1
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,2,3
+  - type: Sprite
+    sprite: Corvax/Boxes/pirate.rsi
+    state: boxpirat
+    layers:
+      - state: boxpirat
+      - state: capacitor

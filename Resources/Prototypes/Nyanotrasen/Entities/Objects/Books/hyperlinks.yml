@@ -23,7 +23,7 @@
     layers:
     - state: law_space
   - type: HyperlinkBook
-    url: https://frontierstation.wiki.gg/wiki/Space_Law  #Frontier
+    url: https://station14.ru/wiki/%D0%9A%D0%97_(Frontier)  #CorvaxFrontier
   - type: Tag
     tags:
     - Book
@@ -40,7 +40,7 @@
     layers:
     - state: nfsd_sop
   - type: HyperlinkBook
-    url: https://frontierstation.wiki.gg/wiki/NFSDSOP  #Frontier
+    url: https://station14.ru/wiki/%D0%A1%D0%A0%D0%9F_%D0%94%D0%A1%D0%91%D0%A4_(Frontier) #CorvaxFrontier
   - type: Tag
     tags:
     - Book

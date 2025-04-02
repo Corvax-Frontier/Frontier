@@ -1,6 +1,17 @@
 meta:
-  format: 6
-  postmapinit: false
+  format: 7
+  category: Grid
+  engineVersion: 247.2.0
+  forkId: ""
+  forkVersion: ""
+  time: 03/27/2025 07:56:15
+  entityCount: 572
+maps: []
+grids:
+- 3
+orphans:
+- 3
+nullspace: []
 tilemap:
   0: Space
   12: FloorBar
@@ -345,6 +356,9 @@ entities:
           - 0
         chunkSize: 4
     - type: GasTileOverlay
+    - type: IFF
+      color: '#FFC000FF'
+      flags: HideLabel
     - type: RadiationGridResistance
 - proto: AirlockCaptainGlassLocked
   entities:
@@ -1799,14 +1813,6 @@ entities:
     components:
     - type: Transform
       pos: 0.5,1.5
-      parent: 3
-- proto: ComputerTabletopStationRecords
-  entities:
-  - uid: 452
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 7.5,-11.5
       parent: 3
 - proto: CratePirateGrey
   entities:

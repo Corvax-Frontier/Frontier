@@ -19,6 +19,9 @@
   category: Medium
   group: BlackMarket
   shuttlePath: /Maps/Corvax/Shuttles/BlackMarket/QueenAnnesRevenge.yml
+  addComponents:
+  - type: IFF
+    flags: [HideLabel]
 
 - type: gameMap
   id: QueenAnnesRevenge

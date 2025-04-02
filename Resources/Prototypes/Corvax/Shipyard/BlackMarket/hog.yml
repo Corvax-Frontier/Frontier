@@ -1,10 +1,12 @@
-# Author -
+# Author Info
 # GitHub: -
-# Discord: -
+# Discord: autsaider_m
+# License: CC-BY-NC-ND-3.0
+# Corvax_frontier
 
 # Maintainer Info
-# GitHub: -
-# Discord: -
+# GitHub: https://github.com/mersen-tyn
+# Discord: mersen 
 
 # Shuttle Notes:
 
@@ -17,6 +19,9 @@
   category: Medium
   group: BlackMarket
   shuttlePath: /Maps/Corvax/Shuttles/BlackMarket/hog.yml
+  addComponents:
+  - type: IFF
+    flags: [HideLabel]
 
 - type: gameMap
   id: hog

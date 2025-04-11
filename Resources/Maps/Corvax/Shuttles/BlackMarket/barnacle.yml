@@ -144,6 +144,9 @@ entities:
     - type: RadiationGridResistance
     - type: BecomesStation
       id: Barnacle
+    - type: IFF
+      color: '#FFC000FF'
+      flags: HideLabel
     - type: SpreaderGrid
     - type: NavMap
 - proto: AirAlarm

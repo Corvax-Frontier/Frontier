@@ -1,6 +1,17 @@
 meta:
-  format: 6
-  postmapinit: false
+  format: 7
+  category: Grid
+  engineVersion: 247.2.0
+  forkId: ""
+  forkVersion: ""
+  time: 03/28/2025 06:52:10
+  entityCount: 1261
+maps: []
+grids:
+- 1
+orphans:
+- 1
+nullspace: []
 tilemap:
   0: Space
   2: FloorAstroIce
@@ -1023,8 +1034,7 @@ entities:
           -3,0:
             2: 2048
           -2,2:
-            0: 45294
-            5: 16384
+            0: 61678
           -2,3:
             0: 65535
           -2,1:
@@ -1049,8 +1059,8 @@ entities:
         - volume: 2500
           temperature: 235
           moles:
-          - 21.824879
-          - 82.10312
+          - 27.225372
+          - 102.419266
           - 0
           - 0
           - 0
@@ -1096,21 +1106,6 @@ entities:
           moles:
           - 0
           - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-        - volume: 2500
-          temperature: 293.15
-          moles:
-          - 21.67492
-          - 81.53899
           - 0
           - 0
           - 0
@@ -1673,16 +1668,6 @@ entities:
     - type: Transform
       pos: 3.5,-11.5
       parent: 1
-- proto: AmmoTechFab
-  entities:
-  - uid: 120
-    components:
-    - type: Transform
-      pos: -2.5,1.5
-      parent: 1
-    missingComponents:
-    - Anchorable
-    - Construction
 - proto: APCBasic
   entities:
   - uid: 121
@@ -4826,7 +4811,7 @@ entities:
       pos: 4.5,-0.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -9878.336
+      secondsUntilStateChange: -9924.803
       state: Opening
 - proto: CurtainsPurple
   entities:
@@ -6642,6 +6627,12 @@ entities:
       parent: 1
 - proto: Gyroscope
   entities:
+  - uid: 9
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 8.5,-5.5
+      parent: 1
   - uid: 877
     components:
     - type: Transform
@@ -8017,63 +8008,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 5.5,0.5
       parent: 1
-- proto: StructureGunRack
-  entities:
-  - uid: 1043
-    components:
-    - type: Transform
-      pos: -2.5,0.5
-      parent: 1
-    - type: ContainerContainer
-      containers:
-        storagebase: !type:Container
-          showEnts: False
-          occludes: True
-          ents: []
-        weapon1_slot: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: 1044
-        weapon2_slot: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: 1045
-        weapon3_slot: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: 1046
-        weapon4_slot: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: 1047
-        weapon5_slot: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: 1048
-        weapon6_slot: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
-        weapon1: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: 1051
-        weapon2: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: 1065
-        weapon3: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: 1283
-        weapon4: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: 1284
-        weapon5: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: 1285
 - proto: SubstationBasic
   entities:
   - uid: 1049
@@ -8330,6 +8264,16 @@ entities:
       parent: 1
 - proto: Table
   entities:
+  - uid: 3
+    components:
+    - type: Transform
+      pos: -2.5,1.5
+      parent: 1
+  - uid: 4
+    components:
+    - type: Transform
+      pos: -2.5,0.5
+      parent: 1
   - uid: 1067
     components:
     - type: Transform
@@ -8435,6 +8379,30 @@ entities:
       parent: 1
 - proto: Thruster
   entities:
+  - uid: 5
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 7.5,-5.5
+      parent: 1
+  - uid: 6
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 9.5,-5.5
+      parent: 1
+  - uid: 7
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 8.5,7.5
+      parent: 1
+  - uid: 8
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 8.5,8.5
+      parent: 1
   - uid: 1084
     components:
     - type: Transform
@@ -9654,68 +9622,6 @@ entities:
     - type: Transform
       pos: 6.572636,10.698942
       parent: 1
-- proto: WeaponShotgunBlunderbuss
-  entities:
-  - uid: 1044
-    components:
-    - type: Transform
-      parent: 1043
-    - type: Physics
-      canCollide: False
-  - uid: 1045
-    components:
-    - type: Transform
-      parent: 1043
-    - type: Physics
-      canCollide: False
-  - uid: 1046
-    components:
-    - type: Transform
-      parent: 1043
-    - type: Physics
-      canCollide: False
-  - uid: 1047
-    components:
-    - type: Transform
-      parent: 1043
-    - type: Physics
-      canCollide: False
-  - uid: 1048
-    components:
-    - type: Transform
-      parent: 1043
-    - type: Physics
-      canCollide: False
-  - uid: 1051
-    components:
-    - type: Transform
-      parent: 1043
-    - type: Physics
-      canCollide: False
-  - uid: 1065
-    components:
-    - type: Transform
-      parent: 1043
-    - type: Physics
-      canCollide: False
-  - uid: 1283
-    components:
-    - type: Transform
-      parent: 1043
-    - type: Physics
-      canCollide: False
-  - uid: 1284
-    components:
-    - type: Transform
-      parent: 1043
-    - type: Physics
-      canCollide: False
-  - uid: 1285
-    components:
-    - type: Transform
-      parent: 1043
-    - type: Physics
-      canCollide: False
 - proto: WindoorSecure
   entities:
   - uid: 1267
@@ -9755,7 +9661,7 @@ entities:
       lastSignals:
         DoorStatus: True
     - type: Door
-      secondsUntilStateChange: -11694.062
+      secondsUntilStateChange: -11740.528
       state: Opening
 - proto: WindowReinforcedDirectional
   entities:

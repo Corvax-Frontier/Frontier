@@ -1,6 +1,17 @@
 meta:
-  format: 6
-  postmapinit: false
+  format: 7
+  category: Grid
+  engineVersion: 247.2.0
+  forkId: ""
+  forkVersion: ""
+  time: 03/26/2025 08:42:26
+  entityCount: 1550
+maps: []
+grids:
+- 1
+orphans:
+- 1
+nullspace: []
 tilemap:
   0: Space
   33: FloorDark
@@ -4626,6 +4637,17 @@ entities:
       rot: 3.141592653589793 rad
       pos: -0.5,7.5
       parent: 1
+- proto: ComputerTabletopAdvancedRadar
+  entities:
+  - uid: 598
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -0.5,10.5
+      parent: 1
+    missingComponents:
+    - Anchorable
+    - Construction
 - proto: ComputerTabletopCrewMonitoring
   entities:
   - uid: 637
@@ -7126,6 +7148,13 @@ entities:
     components:
     - type: Transform
       pos: 10.813744,-5.5386505
+      parent: 1
+- proto: NFHolopadShip
+  entities:
+  - uid: 613
+    components:
+    - type: Transform
+      pos: 0.5,9.5
       parent: 1
 - proto: NfsdTechFab
   entities:

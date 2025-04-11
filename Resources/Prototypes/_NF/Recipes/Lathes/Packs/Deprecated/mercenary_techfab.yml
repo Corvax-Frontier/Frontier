@@ -4,8 +4,8 @@
 - type: latheRecipePack
   id: NFMercenaryTechfabDeprecatedStatic
   recipes:
-# Shared lathe recipes
-## Basic tools
+# Shared lathe recipes #CorvaxFrontier
+## Basic tools #CorvaxFrontier
   - Wirecutter
   - Screwdriver
   - Welder
@@ -17,12 +17,12 @@
   - HandLabeler
   - Signaller
   - ClothingMaskWeldingGas
-## Basic storage
+## Basic storage #CorvaxFrontier
   - ToolboxArtisticNF
   - ToolboxElectricalNF
   - ToolboxMechanicalNF
   - ToolboxEmergencyNF
-## Basic parts
+## Basic parts #CorvaxFrontier
   - CableStack
   - LightTube
   - LedLightTube
@@ -35,14 +35,14 @@
   - ConveyorBeltAssembly
   - PowerCellSmall
   - PowerCellMedium
-## Basic electronics
+## Basic electronics #CorvaxFrontier
   - SignalTimerElectronics
   - CellRechargerCircuitboard
   - BorgChargerCircuitboard
   - WeaponCapacitorRechargerCircuitboard
   - AirTank
-# Mercenary techfab
-## Clothing / Armor
+# Mercenary techfab #CorvaxFrontier
+## Clothing / Armor #CorvaxFrontier
   - RiotShield
   - ClothingNeckIFFNeutral
   - ClothingNeckIFFGreen
@@ -67,17 +67,17 @@
   - ClothingMaskBreathMedicalSecurity
   - ClothingMaskGasSecurity
   - ClothingBeltBandolier
-## EVA / Hardsuits
+## EVA / Hardsuits #CorvaxFrontier
   - ClothingOuterEVASuitMercenary
   - ClothingOuterEVASuitPrivateSec
-## Storage
+## Storage #CorvaxFrontier
   - MedkitCombat
   - WeaponCaseShort
   - WeaponCaseLong
   - WeaponCaseHeavy
   - WeaponCaseShortAmmo
   - WeaponCaseShortExplosives
-## Weapons
+## Weapons #CorvaxFrontier
   - CombatKnife
   - WeaponLaserSvalinn # After the changes made to windows shouldn't be that much of an issue now if it's widely available
   - WeaponLaserPistolNF # After the changes made to windows shouldn't be that much of an issue now if it's widely available
@@ -89,56 +89,56 @@
   - BaseBallBatNF
   - CrossbowModern
   - WeaponPistolPollock
-## Ammo boxes
-  - BoxLethalshot
-  - MagazineBoxLightRifle
-  - MagazineBoxPistol
-  - MagazineBoxRifle
+## Ammo boxes #CorvaxFrontier
+#  - BoxLethalshot #CorvaxFrontier
+#  - MagazineBoxLightRifle #CorvaxFrontier
+#  - MagazineBoxPistol #CorvaxFrontier
+#  - MagazineBoxRifle #CorvaxFrontier
   - CrossbowBolt
   - CrossbowBoltBroadhead
   - BoxBeanbag
   - BoxShotgunSlug
-  - MagazineBoxLightRifleRubber
-  - MagazineBoxMagnumRubber
-  - MagazineBoxPistolRubber
-  - MagazineBoxRifleRubber
-## Mags / Speedloaders / Clips
-  - MagazineNovaliteC1Empty
-  - MagazineNovaliteC1
-  - MagazineNovaliteC1Rubber
-  - MagazineLightRifleLowCapacityEmpty
-  - MagazineLightRifleLowCapacity
-  - MagazineLightRifleLowCapacityRubber
-  - MagazineLightRifle
-  - MagazineLightRifleEmpty
-  - MagazineRifle
-  - MagazineRifleEmpty
-  - MagazinePistol
-  - MagazinePistolEmpty
-  - SpeedLoaderRifleHeavy
-  - SpeedLoaderRifleHeavyEmpty
-  - SpeedLoaderRifleHeavyRubber
-  - SpeedLoaderMagnumRubber
-  - MagazineRifleRubber
-  - MagazineShotgunSlug
-  - MagazinePistolRubber
-  - MagazineLightRifleRubber
-  - MagazineShotgunBeanbag
+  - MagazineBoxLightRifleRubber #CorvaxFrontier
+#  - MagazineBoxMagnumRubber #CorvaxFrontier
+#  - MagazineBoxPistolRubber #CorvaxFrontier
+  - MagazineBoxRifleRubber #CorvaxFrontier
+# Mags / Speedloaders / Clips #CorvaxFrontier
+#  - MagazineNovaliteC1Empty #CorvaxFrontier
+#  - MagazineNovaliteC1 #CorvaxFrontier
+#  - MagazineNovaliteC1Rubber #CorvaxFrontier
+# - MagazineLightRifleLowCapacityEmpty #CorvaxFrontier
+#  - MagazineLightRifleLowCapacity #CorvaxFrontier
+#  - MagazineLightRifleLowCapacityRubber #CorvaxFrontier
+#  - MagazineLightRifle #CorvaxFrontier
+#  - MagazineLightRifleEmpty #CorvaxFrontier
+#  - MagazineRifle #CorvaxFrontier
+#  - MagazineRifleEmpty #CorvaxFrontier
+#  - MagazinePistol #CorvaxFrontier
+#  - MagazinePistolEmpty #CorvaxFrontier
+#  - SpeedLoaderRifleHeavy #CorvaxFrontier
+#  - SpeedLoaderRifleHeavyEmpty #CorvaxFrontier
+#  - SpeedLoaderRifleHeavyRubber #CorvaxFrontier 
+#  - SpeedLoaderMagnumRubber #CorvaxFrontier 
+#  - MagazineRifleRubber #CorvaxFrontier 
+#  - MagazineShotgunSlug #CorvaxFrontier 
+#  - MagazinePistolRubber #CorvaxFrontier 
+#  - MagazineLightRifleRubber #CorvaxFrontier
+#  - MagazineShotgunBeanbag #CorvaxFrontier
 
 - type: latheRecipePack
   id: NFMercenaryTechfabDeprecated
   recipes:
-# Shared lathe recipes
-## Advanced tools
-  - WelderExperimental
-  - JawsOfLife
-  - PowerDrill
-  - JetpackVoid
-  - PowerCellHigh
-  # - PowerCellHyperNF
-  - PowerCellMicroreactor
-# Mercenary techfab
-## Armor
+# Shared lathe recipes #CorvaxFrontier
+## Advanced tools #CorvaxFrontier
+#  - WelderExperimental #CorvaxFrontier
+#  - JawsOfLife #CorvaxFrontier
+#  - PowerDrill #CorvaxFrontier
+#  - JetpackVoid #CorvaxFrontier
+#  - PowerCellHigh #CorvaxFrontier
+#  - PowerCellHyperNF #CorvaxFrontier
+#  - PowerCellMicroreactor #CorvaxFrontier
+# Mercenary techfab #CorvaxFrontier
+## Armor #CorvaxFrontier
   - TelescopicShield
   - ClothingOuterArmorBulletproofNF
   - ClothingOuterCoatBHTrench
@@ -158,14 +158,14 @@
   - ClothingUniformRandomPunkCroptopShorts
   - ClothingOuterCoatLettermanRandomized
   - ClothingOuterCoatBomberRandomized
-## EVA / Hardsuits
+## EVA / Hardsuits #CorvaxFrontier
   - ClothingOuterHardsuitCap
   - ClothingOuterHardsuitMercenary
   - ClothingOuterHardsuitPrivateSecurity
   - ClothingOuterHardsuitScaf
   - ClothingShoesBootsMagSecurity
   - ClothingShoesBootsMagMercenary
-## Utilities
+## Utilities #CorvaxFrontier
   - ForensicPad
   - ClothingEyesHudBountyHunter
   - ClothingEyesPunkInfoShades
@@ -176,10 +176,10 @@
   - TimerTrigger
   - VoiceTrigger
   - TurboItemRechargerCircuitboard
-  - ClothingBackpackHolding
-  - ClothingBackpackSatchelHolding
-  - ClothingBackpackDuffelHolding
-  - ClothingBackpackMessengerHolding
+#  - ClothingBackpackHolding #CorvaxFrontier
+#  - ClothingBackpackSatchelHolding #CorvaxFrontier
+#  - ClothingBackpackDuffelHolding #CorvaxFrontier
+#  - ClothingBackpackMessengerHolding #CorvaxFrontier
   - FlashlightSecliteNF
 ## Weapons
   - WeaponGrapplingGun
@@ -196,15 +196,15 @@
   - WeaponLaserCarbine
   - WeaponDisabler
   - WeaponDisablerSMG
-  - WeaponLaserCannon
+#  - WeaponLaserCannon #CorvaxFrontier
   - WeaponXrayCannon
 ## Ammo boxes
   - BoxBeanbag
   - BoxShellTranquilizer
-  - MagazineBoxLightRifleRubber
+  - MagazineBoxLightRifleRubber #CorvaxFrontier
   - MagazineBoxMagnumRubber
   - MagazineBoxPistolRubber
-  - MagazineBoxRifleRubber
+  - MagazineBoxRifleRubber #CorvaxFrontier
   - MagazineShotgunBeanbag
 
 - type: latheRecipePack

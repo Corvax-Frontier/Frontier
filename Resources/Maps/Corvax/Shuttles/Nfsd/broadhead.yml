@@ -1,6 +1,17 @@
 meta:
-  format: 6
-  postmapinit: false
+  format: 7
+  category: Grid
+  engineVersion: 247.2.0
+  forkId: ""
+  forkVersion: ""
+  time: 03/26/2025 08:36:11
+  entityCount: 757
+maps: []
+grids:
+- 2
+orphans:
+- 2
+nullspace: []
 tilemap:
   0: Space
   30: FloorDark
@@ -2176,6 +2187,9 @@ entities:
     - type: Transform
       pos: 6.5,-0.5
       parent: 2
+    missingComponents:
+    - Anchorable
+    - Construction
 - proto: ComputerTabletopCriminalRecords
   entities:
   - uid: 252

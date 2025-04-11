@@ -1,6 +1,17 @@
 meta:
-  format: 6
-  postmapinit: false
+  format: 7
+  category: Grid
+  engineVersion: 247.2.0
+  forkId: ""
+  forkVersion: ""
+  time: 03/26/2025 08:35:06
+  entityCount: 1859
+maps: []
+grids:
+- 3
+orphans:
+- 3
+nullspace: []
 tilemap:
   0: Space
   18: FloorBlueCircuit
@@ -4909,6 +4920,9 @@ entities:
     - type: Transform
       pos: 1.5,22.5
       parent: 3
+    missingComponents:
+    - Anchorable
+    - Construction
 - proto: ComputerTabletopComms
   entities:
   - uid: 1694
@@ -8283,6 +8297,13 @@ entities:
     components:
     - type: Transform
       pos: -6.506191,10.561307
+      parent: 3
+- proto: NFHolopadShip
+  entities:
+  - uid: 1859
+    components:
+    - type: Transform
+      pos: 0.5,20.5
       parent: 3
 - proto: NitrogenCanister
   entities:

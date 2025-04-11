@@ -766,8 +766,8 @@
         Heat: 0.4
         Caustic: 0.75
   - type: ClothingSpeedModifier
-    walkModifier: 0.6
-    sprintModifier: 0.6
+    walkModifier: 0.93 #Corvax-Frontier
+    sprintModifier: 0.93 #Corvax-Frontier
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitPirateEVA

@@ -1,6 +1,17 @@
 meta:
-  format: 6
-  postmapinit: false
+  format: 7
+  category: Grid
+  engineVersion: 247.2.0
+  forkId: ""
+  forkVersion: ""
+  time: 03/26/2025 08:43:20
+  entityCount: 2556
+maps: []
+grids:
+- 1
+orphans:
+- 1
+nullspace: []
 tilemap:
   0: Space
   30: FloorDark
@@ -1315,8 +1326,8 @@ entities:
         - volume: 2500
           temperature: 235
           moles:
-          - 21.824879
-          - 82.10312
+          - 27.225372
+          - 102.419266
           - 0
           - 0
           - 0
@@ -6146,6 +6157,9 @@ entities:
     - type: Transform
       pos: -0.5,-14.5
       parent: 1
+    missingComponents:
+    - Construction
+    - Anchorable
 - proto: ComputerFrame
   entities:
   - uid: 587
@@ -11668,28 +11682,6 @@ entities:
     - type: Transform
       pos: -0.5,-13.5
       parent: 1
-- proto: NfsdDeployableBarrier
-  entities:
-  - uid: 611
-    components:
-    - type: Transform
-      pos: -16.5,-1.5
-      parent: 1
-  - uid: 612
-    components:
-    - type: Transform
-      pos: 3.5,-1.5
-      parent: 1
-  - uid: 668
-    components:
-    - type: Transform
-      pos: -12.5,-1.5
-      parent: 1
-  - uid: 2660
-    components:
-    - type: Transform
-      pos: -10.5,-1.5
-      parent: 1
 - proto: NFPrisonerClosetWallOrangeFilled
   entities:
   - uid: 609
@@ -11721,6 +11713,28 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -20.5,5.5
+      parent: 1
+- proto: NfsdDeployableBarrier
+  entities:
+  - uid: 611
+    components:
+    - type: Transform
+      pos: -16.5,-1.5
+      parent: 1
+  - uid: 612
+    components:
+    - type: Transform
+      pos: 3.5,-1.5
+      parent: 1
+  - uid: 668
+    components:
+    - type: Transform
+      pos: -12.5,-1.5
+      parent: 1
+  - uid: 2660
+    components:
+    - type: Transform
+      pos: -10.5,-1.5
       parent: 1
 - proto: NfsdTechFab
   entities:

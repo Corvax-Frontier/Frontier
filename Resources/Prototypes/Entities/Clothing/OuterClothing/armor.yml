@@ -223,6 +223,8 @@
     slots: WITHOUT_POCKET
   - type: ExplosionResistance
     damageCoefficient: 0.7
+  - type: MercenaryBountyItem # Corvax-Frontier
+    id: ArmorHeavy
 
 - type: entity
   parent: ClothingOuterArmorHeavy

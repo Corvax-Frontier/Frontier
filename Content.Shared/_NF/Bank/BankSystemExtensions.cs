@@ -1,4 +1,4 @@
-﻿using System.Globalization;
+using System.Globalization;
 
 namespace Content.Shared._NF.Bank;
 
@@ -75,6 +75,11 @@ public static class BankSystemExtensions
     public static string ToFUCString(int amount, CultureInfo? culture = null)
     {
         return ToCurrencyString(amount, culture, symbolOverride: "ТК", symbolLocation: CurrencySymbolLocation.Suffix);
+    }
+
+    public static string ToMercenaryTokenString(int amount, CultureInfo? culture = null) //Corvax-Frontier
+    {
+        return ToCurrencyString(amount, culture, symbolOverride: "КК", symbolLocation: CurrencySymbolLocation.Suffix);
     }
 }
 

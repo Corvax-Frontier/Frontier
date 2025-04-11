@@ -396,6 +396,8 @@
     sprite: Clothing/OuterClothing/Coats/syndicate/coatsyndiecaparmored.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Coats/syndicate/coatsyndiecaparmored.rsi
+  - type: MercenaryBountyItem # Corvax-Frontier
+    id: CoatSyndieArmored
 
 - type: entity
   parent: ClothingOuterStorageBase

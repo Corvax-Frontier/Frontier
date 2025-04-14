@@ -1,0 +1,16 @@
+- type: loadout
+  id: SmugglerClothingEyes1
+  equipment:
+    eyes: ClothingEyesHudBountyHunter
+
+- type: loadout
+  id: ClothingEyesHudSyndicateAgent
+  price: 7500
+  equipment:
+    eyes: ClothingEyesGlassesCheapSunglasses
+
+- type: loadout
+  id: ClothingEyesHudSyndicate
+  price: 7500
+  equipment:
+    eyes: ClothingEyesGlassesCheapSunglasses

@@ -42,7 +42,7 @@
         - type: StationJobs
           availableJobs:
             PirateCaptain: [ 1, 1 ]
-            PirateFirstMate: [ 1, 1 ]
+            PirateFirstMate: [ 0, 0 ] #corvax frontier
             Pirate: [ 0, 0 ]
         - type: StationDeadDropReporting
           messageSet: Pirate

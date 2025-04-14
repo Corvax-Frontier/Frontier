@@ -1,0 +1,7 @@
+- type: entity
+  id: SpawnPointSmuggler
+  parent: SpawnPointPassenger
+  name: контрабандист
+  components:
+  - type: SpawnPoint
+    job_id: smuggler

@@ -1,0 +1,47 @@
+- type: job
+  id: smuggler
+  name: Контрабандист
+  description: Торговец контрабанды.
+  playTimeTracker: Jobsmuggler
+  requirements:
+    - !type:OverallPlaytimeRequirement
+      time: 1 # 48 hours
+ # whitelisted: true
+  startingGear: SmugglerGear
+  alwaysUseSpawner: true
+  hideConsoleVisibility: true
+  canBeAntag: true
+  icon: "JobIconSyndicate"
+  supervisors: job-supervisors-nobody
+  weight: 40
+  displayWeight: 40
+  setPreference: true
+  access:
+  - GeneraSyndicatelAccess
+  accessGroups:
+  - GeneraSyndicatelAccess
+  special:
+  - !type:AddComponentSpecial
+    components:
+    - type: MailDisabled
+    - type: SpecialSectorStationRecord
+      recordGeneration: FalseRecord
+    - type: NpcFactionMember
+      factions:
+      - SyndicateNF
+  - !type:AddImplantSpecial
+    implants: [ DeathRattleImplanter ]
+
+- type: startingGear
+  id: SmugglerGear
+  equipment:
+    ears: ClothingHeadsetAltSyndicate
+    id: SyndiPDA
+    belt: ClothingBeltSyndieHolster
+    pocket1: WeaponPistolViper
+    pocket2: BaseUplinkRadio
+    mask: ClothingMaskNeckGaiter
+  storage:
+    back:
+    - BoxSurvivalNFOxygenExtended
+    - RubberStampSyndicate

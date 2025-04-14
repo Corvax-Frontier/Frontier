@@ -1,0 +1,23 @@
+- type: roleLoadout
+  id: Jobsmuggler
+  groups:
+  - SmugglerCaptainHead
+  - SmugglerJumpsuit
+  - SmugglerBags
+  - SmugglerGloves
+  - SmugglerGlasses
+  - SmugglerShoes
+  - SmugglerNeck
+  - SmugglerOuterclothing
+
+- type: roleLoadout
+  id: JobMedSyn
+  groups:
+  - SmugglerCaptainHead
+  - SmugglerJumpsuit
+  - SmugglerBags
+  - SmugglerGloves
+  - SmugglerGlasses
+  - SmugglerShoes
+  - SmugglerNeck
+  - SmugglerOuterclothing

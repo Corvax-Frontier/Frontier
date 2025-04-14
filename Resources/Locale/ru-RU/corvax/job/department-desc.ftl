@@ -1,0 +1,1 @@
+department-Syndicate-description = Подорвать усилия Nanotrasen в этом секторе и в целом создать неудобства для общества.

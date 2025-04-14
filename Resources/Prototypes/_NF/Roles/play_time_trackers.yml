@@ -30,3 +30,9 @@
 
 - type: playTimeTracker
   id: JobDirectorOfCare
+
+- type: playTimeTracker #CorvaxFrontier
+  id: Jobsmuggler
+
+- type: playTimeTracker #CorvaxFrontier
+  id: JobsMedSyn

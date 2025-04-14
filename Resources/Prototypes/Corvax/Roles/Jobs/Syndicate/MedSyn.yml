@@ -1,0 +1,47 @@
+- type: job
+  id: MedSyn
+  name: Медик Синдиката
+  description: Специально подготовленный синдикатом медик для работы в зонах боевых действий
+  playTimeTracker: JobMedSyn
+  requirements:
+    - !type:OverallPlaytimeRequirement
+      time: 1 # 48 hours
+ # whitelisted: true
+  startingGear: MedSynGear
+  alwaysUseSpawner: true
+  hideConsoleVisibility: true
+  canBeAntag: true
+  icon: "JobIconBrigmedic"
+  supervisors: job-supervisors-nobody
+  weight: 40
+  displayWeight: 40
+  setPreference: true
+  access:
+  - GeneraSyndicatelAccess
+  accessGroups:
+  - GeneraSyndicatelAccess
+  special:
+  - !type:AddComponentSpecial
+    components:
+    - type: MailDisabled
+    - type: SpecialSectorStationRecord
+      recordGeneration: FalseRecord
+    - type: NpcFactionMember
+      factions:
+      - SyndicateNF
+  - !type:AddImplantSpecial
+    implants: [ DeathRattleImplanter ]
+
+- type: startingGear
+  id: MedSynGear
+  equipment:
+    ears: ClothingHeadsetAltSyndicate
+    id: SyndiAgentPDA
+    belt: ClothingBeltMilitaryWebbingMedFilled
+    pocket1: WeaponPistolViper
+    mask: ClothingMaskNeckGaiterRed
+  storage:
+    back:
+    - BoxSurvivalNFOxygenExtended
+    - HypoBrigmedic
+    - PillCanisterTricordrazine

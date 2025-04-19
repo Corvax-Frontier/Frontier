@@ -8,35 +8,34 @@
 # GitHub: https://github.com/mersen-tyn
 # Discord: mersen
 
-# Shuttle Notes:
+# Notes:
 
 - type: pointOfInterest
-  id: Bunkeralfa
-  name: Бункер Альфа 
-  minimumDistance: 6000
-  maximumDistance: 9000
-  gridPath: /Maps/Corvax/POI/Bunkeralfa.yml
+  id: shipyardUtilizers
+  name: Заброшенная Верфь
+  minimumDistance: 2000
+  maximumDistance: 3000
+  gridPath: /Maps/Corvax/Events/Elementary/AbandonedBuildings/shipyardUtilizers.yml
   addComponents:
   - type: IFF
-    color: "#850d09"
+    color: "#a88732"
     flags: [HideLabel]
     readOnly: true
   - type: Shuttle
     angularDamping: 999999
     linearDamping: 999999
-  - type: SyndicateFOB # For pinpointer
 
 - type: gameMap
-  id: Bunkeralfa
-  mapName: Бункер Альфа
-  mapPath: /Maps/Corvax/POI/Bunkeralfa.yml
+  id: shipyardUtilizers
+  mapName: Заброшенная Верфь
+  mapPath: /Maps/Corvax/Events/Elementary/AbandonedBuildings/shipyardUtilizers.yml
   minPlayers: 0
   stations:
-    Bunkeralfa:
+    shipyardUtilizers:
       stationProto: StandardFrontierOutpost
       components:
         - type: StationNameSetup
-          mapNameTemplate: 'Бункер Альфа'
+          mapNameTemplate: 'Лаборатория'
         - type: StationJobs
           availableJobs: {}
         - type: StationDeadDropHintExempt

@@ -8,11 +8,11 @@
       path: /Audio/Announcements/attention.ogg
     warningAnnouncement: station-event-bluespace-cache-warning-announcement
     endAnnouncement: station-event-bluespace-cache-end-announcement
-    earliestStart: 100
-    weight: 5
+    earliestStart: 30
+    weight: 2 #Corvax-Frontier
     duration: 1350
     maxDuration: 1560
-    reoccurrenceDelay: 480 # 8 hours
+    reoccurrenceDelay: 340 #Corvax-Frontier
     requiredJobs:
       Sheriff: 1
   - type: BluespaceErrorRule
@@ -20,8 +20,8 @@
       grid: !type:GridSpawnGroup
         nameLoc:
         - station-event-bluespace-name-SyndicateWeaponsCache
-        minimumDistance: 1500
-        maximumDistance: 2500
+        minimumDistance: 2500 #Corvax-Frontier
+        maximumDistance: 3500 #Corvax-Frontier
         addComponents:
         - type: Gravity
           enabled: true
@@ -35,7 +35,7 @@
         - type: PreventPilot
         - type: ForceAnchor # Added post-FTL, so anchoring is fine.
         paths:
-        - /Maps/Corvax/Bluespace/cache.yml #Corvax-Frontier
+        - /Maps/Corvax/Events/Periodic/Syndicate/syndicateVault.yml #Corvax-Frontier
     rewardAccounts:
       Nfsd: 1.0
 
@@ -49,11 +49,11 @@
       path: /Audio/Announcements/attention.ogg
     warningAnnouncement: station-event-bluespace-vault-warning-announcement
     endAnnouncement: station-event-bluespace-vault-end-announcement
-    earliestStart: 100
-    weight: 5
+    earliestStart: 30 #Corvax-Frontier
+    weight: 2 #Corvax-Frontier
     duration: 1020
     maxDuration: 1350
-    reoccurrenceDelay: 480 # 8 hours
+    reoccurrenceDelay: 340 #Corvax-Frontier
     requiredJobs:
       Sheriff: 1
   - type: BluespaceErrorRule
@@ -61,8 +61,8 @@
       grid: !type:GridSpawnGroup
         nameLoc:
         - station-event-bluespace-name-SecureNTVault
-        minimumDistance: 1500
-        maximumDistance: 2500
+        minimumDistance: 2500 #Corvax-Frontier
+        maximumDistance: 3500 #Corvax-Frontier
         addComponents:
         - type: Gravity
           enabled: true
@@ -75,7 +75,7 @@
         - type: PreventPilot
         - type: ForceAnchor
         paths:
-        - /Maps/Corvax/Bluespace/vault.yml #Corvax-Frontier
+        - /Maps/Corvax/Events/Periodic/NanoTrasen/storageNt.yml #Corvax-Frontier
     rewardAccounts:
       Nfsd: 1.0
 
@@ -89,9 +89,9 @@
       path: /Audio/Announcements/attention.ogg
     warningAnnouncement: station-event-bluespace-vault-warning-announcement
     endAnnouncement: station-event-bluespace-vault-end-announcement
-    earliestStart: 100
-    maximumPlayers: 30
-    weight: 5
+    earliestStart: 30 #Corvax-Frontier
+    maximumPlayers: 30 #Corvax-Frontier
+    weight: 2 #Corvax-Frontier
     duration: 590
     maxDuration: 780
     reoccurrenceDelay: 480 # 8 hours
@@ -116,7 +116,7 @@
         - type: PreventPilot
         - type: ForceAnchor
         paths:
-        - /Maps/Corvax/Bluespace/vaultsmall.yml #Corvax-Frontier
+        - /Maps/Corvax/Events/Periodic/NanoTrasen/storageNtSmall.yml #Corvax-Frontier
     rewardAccounts:
       Nfsd: 1.0
 
@@ -130,19 +130,19 @@
       path: /Audio/Misc/notice1.ogg
     warningAnnouncement: station-event-bluespace-generic-ftl-warning-announcement
     endAnnouncement: station-event-bluespace-generic-ftl-end-announcement
-    earliestStart: 80
-    minimumPlayers: 15
-    weight: 1
+    earliestStart: 30
+    minimumPlayers: 10 #Corvax-Frontier
+    weight: 2 #Corvax-Frontier
     duration: 1800
     maxDuration: 2400
-    reoccurrenceDelay: 480 # Only once per shift possible
+    reoccurrenceDelay: 340 # Only once per shift possible
   - type: BluespaceErrorRule
     groups:
       grid: !type:GridSpawnGroup
         nameLoc:
         - station-event-bluespace-name-UnidentifiedVessel
-        minimumDistance: 1500
-        maximumDistance: 2500
+        minimumDistance: 2500
+        maximumDistance: 3500
         addComponents:
         - type: Gravity
           enabled: true
@@ -155,7 +155,7 @@
         - type: PreventPilot
         - type: ForceAnchor
         paths:
-        - /Maps/Corvax/Bluespace/syndieftlintercept.yml #Corvax-Frontier
+        - /Maps/Corvax/Events/Periodic/Syndicate/syndieftlintercept.yml #Corvax-Frontier
 
 - type: entity
   id: BluespaceWizardFederationScout
@@ -167,19 +167,19 @@
       path: /Audio/Misc/notice1.ogg
     warningAnnouncement: station-event-bluespace-generic-ftl-warning-announcement
     endAnnouncement: station-event-bluespace-generic-ftl-end-announcement
-    earliestStart: 100
-    minimumPlayers: 15
-    weight: 1
+    earliestStart: 30 #Corvax-Frontier
+    minimumPlayers: 10 #Corvax-Frontier
+    weight: 2 #Corvax-Frontier
     duration: 900
     maxDuration: 1200
-    reoccurrenceDelay: 480 # 8 hours
+    reoccurrenceDelay: 340 #Corvax-Frontier
   - type: BluespaceErrorRule
     groups:
       grid: !type:GridSpawnGroup
         nameLoc:
         - station-event-bluespace-name-UnidentifiedVessel
-        minimumDistance: 1500
-        maximumDistance: 2500
+        minimumDistance: 2500 #Corvax-Frontier
+        maximumDistance: 3500 #Corvax-Frontier
         addComponents:
         - type: Gravity
           enabled: true
@@ -192,7 +192,7 @@
         - type: PreventPilot
         - type: ForceAnchor
         paths:
-        - /Maps/Corvax/Bluespace/wizardprobealt.yml #Corvax-Frontier
+        - /Maps/Corvax/Events/Periodic/Magic/shuttleFederationMages.yml #Corvax-Frontier
 
 - type: entity
   id: BluespaceBloodMoon
@@ -204,19 +204,19 @@
       path: /Audio/Misc/notice1.ogg
     warningAnnouncement: station-event-bluespace-generic-ftl-warning-announcement
     endAnnouncement: station-event-bluespace-generic-ftl-end-announcement
-    earliestStart: 80
-    minimumPlayers: 15
-    weight: 1
+    earliestStart: 40 #Corvax-Frontier
+    minimumPlayers: 10 #Corvax-Frontier
+    weight: 2 #Corvax-Frontier
     duration: 1800
     maxDuration: 2400
-    reoccurrenceDelay: 480 # 8 hours
+    reoccurrenceDelay: 340 # 8 hours
   - type: BluespaceErrorRule
     groups:
       grid: !type:GridSpawnGroup
         nameLoc:
         - station-event-bluespace-name-UnidentifiedVessel
-        minimumDistance: 1500
-        maximumDistance: 2500
+        minimumDistance: 2500 #Corvax-Frontier
+        maximumDistance: 3500 #Corvax-Frontier
         addComponents:
         - type: Gravity
           enabled: true
@@ -229,7 +229,7 @@
         - type: PreventPilot
         - type: ForceAnchor
         paths:
-        - /Maps/Corvax/Bluespace/bloodmoon.yml #Corvax-Frontier
+        - /Maps/Corvax/Events/Periodic/Cult/bloodmoon.yml #Corvax-Frontier
 
 - type: entity
   id: BluespaceCave
@@ -241,8 +241,8 @@
       path: /Audio/Misc/notice1.ogg
     warningAnnouncement: station-event-bluespace-generic-ftl-warning-announcement
     endAnnouncement: station-event-bluespace-generic-ftl-end-announcement
-    earliestStart: 20
-    weight: 1
+    earliestStart: 50 #Corvax-Frontier
+    weight: 1 #Corvax-Frontier
     duration: 1800
     maxDuration: 2400
     maxOccurrences: 1
@@ -264,38 +264,38 @@
         - type: PreventPilot
         - type: ForceAnchor
         paths:
-        - /Maps/Corvax/Bluespace/cave.yml #Corvax-Frontier
+        - /Maps/Corvax/Events/Periodic/Caves/cave.yml #Corvax-Frontier
 
-- type: entity
-  id: BluespaceBrokenMcDelivery
-  parent: BaseStationEventShortDelay
-  components:
-  - type: StationEvent
-    startAnnouncement: station-event-bluespace-generic-ftl-start-announcement
-    startAudio:
-      path: /Audio/Misc/notice1.ogg
-    warningAnnouncement: station-event-bluespace-generic-ftl-warning-announcement
-    endAnnouncement: station-event-bluespace-generic-ftl-end-announcement
-    earliestStart: 20
-    maximumPlayers: 20
-    weight: 5
-    duration: 900
-    maxDuration: 1800
-    reoccurrenceDelay: 240 # once per 4 hours
-  - type: BluespaceErrorRule
-    groups:
-      grid: !type:GridSpawnGroup
-        nameLoc:
-        - station-event-bluespace-name-BrokenMcDelivery
-        minCount: 2
-        maxCount: 3
-        minimumDistance: 1500
-        maximumDistance: 2500
-        addComponents:
-        - type: IFF
-        - type: LinkedLifecycleGridParent
-        - type: ProtectedGrid
-          preventArtifactTriggers: true
-        - type: PreventPilot
-        paths:
-        - /Maps/Corvax/Bluespace/mcevent.yml #Corvax-Frontier
+#- type: entity #Corvax-Frontier
+#  id: BluespaceBrokenMcDelivery
+#  parent: BaseStationEventShortDelay
+#  components:
+#  - type: StationEvent
+#    startAnnouncement: station-event-bluespace-generic-ftl-start-announcement
+#    startAudio:
+#      path: /Audio/Misc/notice1.ogg
+#    warningAnnouncement: station-event-bluespace-generic-ftl-warning-announcement
+#    endAnnouncement: station-event-bluespace-generic-ftl-end-announcement
+#    earliestStart: 20
+#    maximumPlayers: 15 #Corvax-Frontier
+#    weight: 5
+#    duration: 900
+#    maxDuration: 1800
+#    reoccurrenceDelay: 240 # once per 4 hours
+#  - type: BluespaceErrorRule
+#    groups:
+#      grid: !type:GridSpawnGroup
+#        nameLoc:
+#        - station-event-bluespace-name-BrokenMcDelivery
+#        minCount: 2
+#        maxCount: 3
+#        minimumDistance: 1500
+#        maximumDistance: 2500
+#        addComponents:
+#        - type: IFF
+#        - type: LinkedLifecycleGridParent
+#        - type: ProtectedGrid
+#          preventArtifactTriggers: true
+#        - type: PreventPilot
+#        paths:
+#        - /Maps/Corvax/Bluespace/mcevent.yml #Corvax-Frontier

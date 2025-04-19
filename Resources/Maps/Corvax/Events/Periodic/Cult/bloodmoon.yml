@@ -1,6 +1,17 @@
 meta:
-  format: 6
-  postmapinit: false
+  format: 7
+  category: Grid
+  engineVersion: 247.2.0
+  forkId: ""
+  forkVersion: ""
+  time: 04/19/2025 04:44:02
+  entityCount: 1291
+maps: []
+grids:
+- 1
+orphans:
+- 1
+nullspace: []
 tilemap:
   0: Space
   30: FloorDark
@@ -363,8 +374,8 @@ entities:
         - volume: 2500
           temperature: 235
           moles:
-          - 21.824879
-          - 82.10312
+          - 27.225372
+          - 102.419266
           - 0
           - 0
           - 0
@@ -2985,6 +2996,14 @@ entities:
     components:
     - type: Transform
       pos: -8.527203,7.6776237
+      parent: 1
+- proto: ClothingNeckAmuletBloodCult
+  entities:
+  - uid: 387
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 17.105135,6.625529
       parent: 1
 - proto: ClothingOuterArmorBone
   entities:

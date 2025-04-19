@@ -11,14 +11,14 @@
 # Notes:
 
 - type: pointOfInterest
-  id: Lab
-  name: Лаборатория 
-  minimumDistance: 3500
-  maximumDistance: 4500
-  gridPath: /Maps/Corvax/POI/Lab.yml
+  id: chip
+  name: Обломок
+  minimumDistance: 4500
+  maximumDistance: 6500
+  gridPath: /Maps/Corvax/Events/Elementary/Syndicate/chip.yml
   addComponents:
   - type: IFF
-    color: "#9d1bde"
+    color: "#850d09"
     flags: [HideLabel]
     readOnly: true
   - type: Shuttle
@@ -26,16 +26,16 @@
     linearDamping: 999999
 
 - type: gameMap
-  id: Lab
-  mapName: Лаборатория
-  mapPath: /Maps/Corvax/POI/Lab.yml
+  id: chip
+  mapName: Обломок
+  mapPath: /Maps/Corvax/Events/Elementary/Syndicate/chip.yml
   minPlayers: 0
   stations:
-    Lab:
+    chip:
       stationProto: StandardFrontierOutpost
       components:
         - type: StationNameSetup
-          mapNameTemplate: 'Лаборатория'
+          mapNameTemplate: 'Обломок'
         - type: StationJobs
           availableJobs: {}
         - type: StationDeadDropHintExempt

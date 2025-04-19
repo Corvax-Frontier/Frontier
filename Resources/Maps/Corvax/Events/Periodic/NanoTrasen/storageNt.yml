@@ -1,6 +1,17 @@
 meta:
-  format: 6
-  postmapinit: false
+  format: 7
+  category: Grid
+  engineVersion: 247.2.0
+  forkId: ""
+  forkVersion: ""
+  time: 04/19/2025 05:09:54
+  entityCount: 1517
+maps: []
+grids:
+- 1
+orphans:
+- 1
+nullspace: []
 tilemap:
   0: Space
   30: FloorDark
@@ -25,6 +36,7 @@ entities:
     components:
     - type: MetaData
     - type: Transform
+      parent: invalid
     - type: MapGrid
       chunks:
         0,0:
@@ -2269,8 +2281,6 @@ entities:
     - type: Transform
       pos: 5.5,-11.5
       parent: 1
-    - type: Physics
-      bodyType: Static
 - proto: BenchSofaRight
   entities:
   - uid: 1055
@@ -2278,8 +2288,6 @@ entities:
     - type: Transform
       pos: 4.5,-11.5
       parent: 1
-    - type: Physics
-      bodyType: Static
 - proto: BlastDoor
   entities:
   - uid: 1038
@@ -5333,6 +5341,13 @@ entities:
     - type: Transform
       pos: -3.5755363,-3.463976
       parent: 1
+- proto: ClothingBeltSheathFilled
+  entities:
+  - uid: 1003
+    components:
+    - type: Transform
+      pos: 6.541963,3.583941
+      parent: 1
 - proto: ClothingHandsGlovesCaptain
   entities:
   - uid: 1286
@@ -5405,6 +5420,13 @@ entities:
     components:
     - type: Transform
       pos: 5.5,-13.5
+      parent: 1
+- proto: CrateArmoryLethalNfsd
+  entities:
+  - uid: 358
+    components:
+    - type: Transform
+      pos: 5.5,3.5
       parent: 1
 - proto: CrateServiceJanitorialSupplies
   entities:
@@ -6091,13 +6113,6 @@ entities:
     - type: Transform
       pos: 2.5,12.5
       parent: 1
-- proto: NFLockerSecurityFilled
-  entities:
-  - uid: 1062
-    components:
-    - type: Transform
-      pos: 2.5,-12.5
-      parent: 1
 - proto: MachineFrameDestroyed
   entities:
   - uid: 1101
@@ -6147,6 +6162,13 @@ entities:
     components:
     - type: Transform
       pos: 4.528255,14.64331
+      parent: 1
+- proto: NFLockerSecurityFilled
+  entities:
+  - uid: 1062
+    components:
+    - type: Transform
+      pos: 2.5,-12.5
       parent: 1
 - proto: OrganArachnidStomach
   entities:
@@ -6548,7 +6570,7 @@ entities:
     - type: Transform
       pos: 4.5,-13.5
       parent: 1
-- proto: PoweredlightBlueInterior
+- proto: PoweredlightBlue
   entities:
   - uid: 80
     components:
@@ -6580,7 +6602,22 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 1.5,0.5
       parent: 1
-- proto: PoweredlightColoredRed
+- proto: PoweredlightEmpty
+  entities:
+  - uid: 1205
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -3.5,-14.5
+      parent: 1
+- proto: PoweredlightLED
+  entities:
+  - uid: 1204
+    components:
+    - type: Transform
+      pos: 3.5,14.5
+      parent: 1
+- proto: PoweredlightRed
   entities:
   - uid: 1222
     components:
@@ -6603,21 +6640,6 @@ entities:
     components:
     - type: Transform
       pos: -4.5,-7.5
-      parent: 1
-- proto: PoweredlightEmpty
-  entities:
-  - uid: 1205
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -3.5,-14.5
-      parent: 1
-- proto: PoweredlightLED
-  entities:
-  - uid: 1204
-    components:
-    - type: Transform
-      pos: 3.5,14.5
       parent: 1
 - proto: PoweredlightSodium
   entities:
@@ -6707,8 +6729,7 @@ entities:
   - uid: 372
     components:
     - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 5.5,3.5
+      pos: 6.5,3.5
       parent: 1
   - uid: 1021
     components:
@@ -7523,60 +7544,44 @@ entities:
       rot: 3.141592653589793 rad
       pos: 3.5,-6.5
       parent: 1
-    - type: Thruster
-      originalPowerLoad: 1500
   - uid: 120
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -3.5,-6.5
       parent: 1
-    - type: Thruster
-      originalPowerLoad: 1500
   - uid: 123
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 6.5,-6.5
       parent: 1
-    - type: Thruster
-      originalPowerLoad: 1500
   - uid: 128
     components:
     - type: Transform
       pos: 3.5,6.5
       parent: 1
-    - type: Thruster
-      originalPowerLoad: 1500
   - uid: 131
     components:
     - type: Transform
       pos: 6.5,6.5
       parent: 1
-    - type: Thruster
-      originalPowerLoad: 1500
   - uid: 134
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -6.5,-6.5
       parent: 1
-    - type: Thruster
-      originalPowerLoad: 1500
   - uid: 171
     components:
     - type: Transform
       pos: -6.5,6.5
       parent: 1
-    - type: Thruster
-      originalPowerLoad: 1500
   - uid: 172
     components:
     - type: Transform
       pos: -3.5,6.5
       parent: 1
-    - type: Thruster
-      originalPowerLoad: 1500
 - proto: UnfinishedMachineFrame
   entities:
   - uid: 1102

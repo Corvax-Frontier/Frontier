@@ -1,21 +1,20 @@
 # Author Info
-# GitHub: -
-# Discord: autsaider_m
-# License: CC-BY-NC-ND-3.0
-# Corvax_frontier
+# GitHub: mersen_tyn
+# Discord: kvasen and mersen
 
 # Maintainer Info
-# GitHub: https://github.com/mersen-tyn
-# Discord: mersen
+# GitHub: ???
+# Discord: ???
 
 # Notes:
+# just a little loot n shoot POI. Pretty much the second POI to even exist
 
 - type: pointOfInterest
-  id: Oblomok
-  name: Обломок
+  id: Epsilon
+  name: Ретранслятор Эпсилон
   minimumDistance: 4500
   maximumDistance: 6500
-  gridPath: /Maps/Corvax/POI/Oblomok.yml
+  gridPath: /Maps/Corvax/Events/Elementary/Syndicate/epsilon.yml
   addComponents:
   - type: IFF
     color: "#850d09"
@@ -26,16 +25,16 @@
     linearDamping: 999999
 
 - type: gameMap
-  id: Oblomok
-  mapName: Обломок
-  mapPath: /Maps/Corvax/POI/Oblomok.yml
+  id: Epsilon
+  mapName: Ретранслятор Эпсилон
+  mapPath: /Maps/Corvax/Events/Elementary/Syndicate/epsilon.yml
   minPlayers: 0
   stations:
-    Oblomok:
+    Epsilon:
       stationProto: StandardFrontierOutpost
       components:
         - type: StationNameSetup
-          mapNameTemplate: 'Обломок'
+          mapNameTemplate: 'Ретранслятор Эпсилон'
         - type: StationJobs
           availableJobs: {}
         - type: StationDeadDropHintExempt

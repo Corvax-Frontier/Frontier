@@ -1,6 +1,17 @@
 meta:
-  format: 6
-  postmapinit: false
+  format: 7
+  category: Grid
+  engineVersion: 247.2.0
+  forkId: ""
+  forkVersion: ""
+  time: 04/19/2025 05:06:56
+  entityCount: 1992
+maps: []
+grids:
+- 174
+orphans:
+- 174
+nullspace: []
 tilemap:
   0: Space
   6: FloorAsphalt
@@ -33,7 +44,7 @@ entities:
   - uid: 174
     components:
     - type: MetaData
-      name: Неопознаный Объект
+      name: grid
     - type: Transform
       pos: -29.313948,-10.948314
       parent: invalid
@@ -1331,7 +1342,7 @@ entities:
     - type: GasTileOverlay
     - type: RadiationGridResistance
     - type: BecomesStation
-      id: Arcadia
+      id: arcadiaBase
 - proto: AirAlarm
   entities:
   - uid: 1870
@@ -2155,54 +2166,6 @@ entities:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -24.5,16.5
-      parent: 174
-  - uid: 582
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -14.5,25.5
-      parent: 174
-  - uid: 595
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -14.5,24.5
-      parent: 174
-  - uid: 615
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -32.5,25.5
-      parent: 174
-  - uid: 625
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -32.5,23.5
-      parent: 174
-  - uid: 652
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -32.5,24.5
-      parent: 174
-  - uid: 656
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -14.5,18.5
-      parent: 174
-  - uid: 657
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -14.5,23.5
-      parent: 174
-  - uid: 761
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -15.5,18.5
       parent: 174
   - uid: 788
     components:
@@ -6910,6 +6873,23 @@ entities:
     - type: Transform
       pos: -27.5,10.5
       parent: 174
+- proto: NFSpawnMobXenoT2
+  entities:
+  - uid: 2506
+    components:
+    - type: Transform
+      pos: -20.5,13.5
+      parent: 174
+  - uid: 2684
+    components:
+    - type: Transform
+      pos: -20.5,15.5
+      parent: 174
+  - uid: 2686
+    components:
+    - type: Transform
+      pos: -17.5,10.5
+      parent: 174
 - proto: NitrogenCanister
   entities:
   - uid: 2312
@@ -7645,13 +7625,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -39.5,27.5
       parent: 174
-- proto: PoweredlightColoredRed
-  entities:
-  - uid: 745
-    components:
-    - type: Transform
-      pos: -23.5,18.5
-      parent: 174
 - proto: PoweredlightRed
   entities:
   - uid: 189
@@ -7677,6 +7650,11 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -17.5,43.5
+      parent: 174
+  - uid: 745
+    components:
+    - type: Transform
+      pos: -23.5,18.5
       parent: 174
 - proto: PoweredSmallLight
   entities:
@@ -8508,8 +8486,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -38.5,20.5
       parent: 174
-    - type: Drink
-      solution: tank
 - proto: SinkStemlessWater
   entities:
   - uid: 2211
@@ -8518,8 +8494,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -34.5,11.5
       parent: 174
-    - type: Drink
-      solution: tank
 - proto: SodaDispenser
   entities:
   - uid: 2216
@@ -9392,6 +9366,11 @@ entities:
     - type: Transform
       pos: -17.5,21.5
       parent: 174
+  - uid: 595
+    components:
+    - type: Transform
+      pos: -35.5,25.5
+      parent: 174
   - uid: 596
     components:
     - type: Transform
@@ -9482,6 +9461,11 @@ entities:
     - type: Transform
       pos: -35.5,12.5
       parent: 174
+  - uid: 765
+    components:
+    - type: Transform
+      pos: -29.5,12.5
+      parent: 174
   - uid: 766
     components:
     - type: Transform
@@ -9517,6 +9501,11 @@ entities:
     - type: Transform
       pos: -34.5,23.5
       parent: 174
+  - uid: 774
+    components:
+    - type: Transform
+      pos: -11.5,23.5
+      parent: 174
   - uid: 775
     components:
     - type: Transform
@@ -9528,6 +9517,11 @@ entities:
     components:
     - type: Transform
       pos: -9.5,20.5
+      parent: 174
+  - uid: 566
+    components:
+    - type: Transform
+      pos: -21.5,34.5
       parent: 174
   - uid: 567
     components:
@@ -9604,6 +9598,11 @@ entities:
     - type: Transform
       pos: -39.5,7.5
       parent: 174
+  - uid: 582
+    components:
+    - type: Transform
+      pos: -29.5,6.5
+      parent: 174
   - uid: 583
     components:
     - type: Transform
@@ -9649,6 +9648,11 @@ entities:
     - type: Transform
       pos: -9.5,15.5
       parent: 174
+  - uid: 777
+    components:
+    - type: Transform
+      pos: -10.5,11.5
+      parent: 174
 - proto: SpawnMobArcIndShredder
   entities:
   - uid: 607
@@ -9665,6 +9669,11 @@ entities:
     components:
     - type: Transform
       pos: -22.5,29.5
+      parent: 174
+  - uid: 615
+    components:
+    - type: Transform
+      pos: -22.5,36.5
       parent: 174
   - uid: 616
     components:
@@ -9710,6 +9719,11 @@ entities:
     components:
     - type: Transform
       pos: -15.5,22.5
+      parent: 174
+  - uid: 625
+    components:
+    - type: Transform
+      pos: -23.5,20.5
       parent: 174
   - uid: 626
     components:
@@ -9836,6 +9850,11 @@ entities:
     - type: Transform
       pos: -18.5,25.5
       parent: 174
+  - uid: 652
+    components:
+    - type: Transform
+      pos: -9.5,25.5
+      parent: 174
   - uid: 653
     components:
     - type: Transform
@@ -9845,6 +9864,16 @@ entities:
     components:
     - type: Transform
       pos: -14.5,17.5
+      parent: 174
+  - uid: 656
+    components:
+    - type: Transform
+      pos: -27.5,20.5
+      parent: 174
+  - uid: 657
+    components:
+    - type: Transform
+      pos: -32.5,25.5
       parent: 174
   - uid: 658
     components:
@@ -9865,6 +9894,11 @@ entities:
     components:
     - type: Transform
       pos: -16.5,8.5
+      parent: 174
+  - uid: 761
+    components:
+    - type: Transform
+      pos: -19.5,7.5
       parent: 174
   - uid: 762
     components:
@@ -10056,30 +10090,6 @@ entities:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -4.5,4.5
-      parent: 174
-- proto: SpawnMobXenoPraetorianExpeditions
-  entities:
-  - uid: 2619
-    components:
-    - type: Transform
-      pos: -6.5,16.5
-      parent: 174
-- proto: SpawnMobXenoT2
-  entities:
-  - uid: 2506
-    components:
-    - type: Transform
-      pos: -20.5,13.5
-      parent: 174
-  - uid: 2684
-    components:
-    - type: Transform
-      pos: -20.5,15.5
-      parent: 174
-  - uid: 2686
-    components:
-    - type: Transform
-      pos: -17.5,10.5
       parent: 174
 - proto: SpiderWeb
   entities:
@@ -10405,13 +10415,6 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-- proto: VendingMachineRestockSyndieContraband
-  entities:
-  - uid: 514
-    components:
-    - type: Transform
-      pos: -43.515495,24.619152
-      parent: 174
 - proto: VendingMachineSeeds
   entities:
   - uid: 2214
@@ -12656,8 +12659,6 @@ entities:
     - type: Transform
       pos: -42.5,15.5
       parent: 174
-    - type: Drink
-      solution: tank
 - proto: WeaponTurretSyndicateBroken
   entities:
   - uid: 137

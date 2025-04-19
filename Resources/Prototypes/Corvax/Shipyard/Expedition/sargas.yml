@@ -1,0 +1,42 @@
+# Author Info
+# GitHub: SergeantEcho
+# Discord: Mayr0s
+
+# Maintainer Info
+# GitHub:
+# Discord:
+
+# Shuttle Notes:
+#
+- type: vessel
+  id: Sargas
+  parent: BaseVessel
+  name: NCV Саргас
+  description: Бывший тяжёлый грузовой шаттл, переделанный под длительные и автономные экспедиции. Рекомендованный размер команды 6-8 человек.
+  price: 75200
+  category: Medium
+  group: Expedition
+  shuttlePath: /Maps/Corvax/Shuttles/Expedition/sargas.yml
+  class:
+  - Expedition
+  - Civilian
+
+- type: gameMap
+  id: Sargas
+  mapName: 'NCV Саргас'
+  mapPath: /Maps/Corvax/Shuttles/Expedition/sargas.yml
+  minPlayers: 0
+  stations:
+    Sargas:
+      stationProto: StandardFrontierExpeditionVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Саргас {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            Contractor: [ 0, 0 ]
+            Pilot: [ 0, 0 ]
+            Mercenary: [ 0, 0 ]

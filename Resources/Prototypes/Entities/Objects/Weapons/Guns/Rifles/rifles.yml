@@ -101,6 +101,7 @@
   - type: Appearance
   - type: PirateBountyItem # Frontier
     id: AKMS # Frontier
+  - type: Craftable
 
 - type: entity
   name: M-90gl

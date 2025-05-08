@@ -1,0 +1,64 @@
+- type: Tag
+  id: FrontierWorkbench
+
+- type: entity
+  parent: BaseStructure
+  id: FrontierWorkbenchBase
+  name: workbench
+  description: A workbench with metal working tools for crafting.
+  abstract: true
+  components:
+    - type: InteractionOutline
+    - type: Appearance
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PhysShapeAabb
+            bounds: "-0.1,-0.1,1,0.3"
+          density: 190
+          mask:
+            - MachineMask
+          layer:
+            - MachineLayer
+    - type: Sprite
+      sprite: /Textures/Corvax/Structures/workbenches.rsi
+      state: workbench
+      offset: 0.5, 0
+    - type: MaterialStorage
+    - type: UserInterface
+      interfaces:
+        enum.StorageUiKey.Key:
+          type: StorageBoundUserInterface
+        enum.LatheUiKey.Key:
+          type: LatheBoundUserInterface
+    - type: ExtensionCableReceiver
+    - type: ApcPowerReceiver
+      needsPower: false
+    - type: Tag
+      tags:
+        - FrontierWorkbench
+
+- type: entity
+  parent: FrontierWorkbenchBase
+  id: FrontierWorkbench
+  name: weapon workbench
+  description: A workbench with weapon working tools for crafting.
+  components:
+    - type: Sprite
+      state: weaponbench
+    - type: ContainerContainer
+      containers:
+        storagebase: !type:Container
+    - type: UserInterface
+      interfaces:
+        enum.StorageUiKey.Key:
+          type: StorageBoundUserInterface
+        enum.LatheUiKey.Key:
+          type: LatheBoundUserInterface
+    - type: Craftable
+    - type: Storage
+      craft: true
+      maxItemSize: Ginormous
+      grid:
+        - 0,0,12,9
+

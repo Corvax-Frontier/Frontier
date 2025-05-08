@@ -97,7 +97,7 @@
         startingItem: CartridgeLightRifle
         priority: 1
         whitelist:
-          tags: 
+          tags:
             - CartridgeLightRifle
   - type: ContainerContainer
     containers:
@@ -108,6 +108,7 @@
     steps: 1
     zeroVisible: true
   - type: Appearance
+  - type: Craftable
 
 - type: entity
   parent: WeaponRifleGestio

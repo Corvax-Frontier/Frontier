@@ -1,0 +1,8 @@
+- type: lightCraftingRecipe
+  id: AKMSupgrade
+  results:
+    - WeaponRifleAk
+  steps:
+    firstIngredient: WeaponRifleGestio
+    secondIngredient: WeaponRifleGestio
+    time: 5

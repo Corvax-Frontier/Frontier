@@ -1,0 +1,9 @@
+- type: craftRecipe
+  id: AKMSRECIPE
+  resultProtos:
+    - WeaponRifleAk
+  requiredWorkbench: FrontierWorkbench
+  craftTime: 10
+  items:
+    WeaponRifleGestio:
+      amount: 1

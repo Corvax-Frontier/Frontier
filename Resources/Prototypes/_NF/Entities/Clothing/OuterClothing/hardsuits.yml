@@ -405,3 +405,26 @@
   - type: ClothingSpeedModifier
     walkModifier: 0.85
     sprintModifier: 0.75
+
+- type: entity
+  parent: ClothingOuterHardsuitNfsdBronze
+  id: ClothingOuterHardsuitNfsdSheriffPhase
+  name: NFSD sheriff patrol suit
+  description: The standard-issue NFSD space proof suit for patrol duty. This gold variant has sheriff rank markings.
+  components:
+  - type: Sprite
+    sprite: _NF/Clothing/OuterClothing/Hardsuits/nfsd_sheriff.rsi
+  - type: Clothing
+    sprite: _NF/Clothing/OuterClothing/Hardsuits/nfsd_sheriff.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetHardsuitNfsdSheriff
+  - type: ToggleClothing
+    action: ActionTogglePhaseCloak
+  - type: ComponentToggler
+    parent: true
+    components:
+    - type: Stealth
+      minVisibility: 0.1
+      lastVisibility: 0.1
+  - type: ItemToggle
+    onUse: false # can't really wear it like that

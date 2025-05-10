@@ -5,3 +5,4 @@ shuttle-console-iff-search = Поиск IFF
 shuttle-console-inertia-dampener-off = Дрейф
 shuttle-console-inertia-dampener-dampen = Ход
 shuttle-console-inertia-dampener-anchor = Стоп
+shuttle-console-inertia-dampener-Dash = БС-рывок

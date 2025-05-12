@@ -1,0 +1,128 @@
+- type: Tag
+  id: FrontierWorkbench
+
+- type: entity
+  parent: BaseStructure
+  id: FrontierWorkbenchBase
+  name: workbench
+  description: A workbench with metal working tools for crafting.
+  abstract: true
+  components:
+    - type: InteractionOutline
+    - type: Appearance
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PhysShapeAabb
+            bounds: "-0.1,-0.1,1,0.3"
+          density: 190
+          mask:
+            - MachineMask
+          layer:
+            - MachineLayer
+    - type: Sprite
+      sprite: /Textures/Corvax/Structures/workbenches.rsi
+      state: tinkerbench
+      offset: 0.5, 0
+    - type: UserInterface
+      interfaces:
+        enum.StorageUiKey.Key:
+          type: StorageBoundUserInterface
+        enum.LatheUiKey.Key:
+          type: LatheBoundUserInterface
+    - type: Tag
+      tags:
+        - FrontierWorkbench
+
+- type: entity
+  parent: FrontierWorkbenchBase
+  id: Workbench
+  name: Utility Workbench
+  description: A durable, industrial-grade workbench built for crafting, repairs, and assembly of all kinds of gear and machinery.
+  components:
+    - type: Sprite
+      state: tinkerbench
+    - type: ContainerContainer
+      containers:
+        storagebase: !type:Container
+    - type: UserInterface
+      interfaces:
+        enum.StorageUiKey.Key:
+          type: StorageBoundUserInterface
+        enum.LatheUiKey.Key:
+          type: LatheBoundUserInterface
+    - type: Craftable
+    - type: Storage
+      craft: true
+      maxItemSize: Ginormous
+      grid:
+        - 0,0,12,9
+    - type: Damageable
+      damageContainer: StructuralInorganic
+      damageModifierSet: Metallic
+    - type: Destructible
+      thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 100
+        behaviors:
+        - !type:PlaySoundBehavior
+          sound:
+            collection: MetalBreak
+        - !type:DoActsBehavior
+          acts: ["Destruction"]
+    - type: Construction
+      graph: Workbench
+      node: workbench
+
+- type: constructionGraph
+  id: Workbench
+  start: start
+  graph:
+    - node: start
+      actions:
+        - !type:SpawnPrototype
+          prototype: SheetSteel1
+        - !type:DeleteEntity
+      edges:
+        - to: workbench
+          steps:
+            - material: Steel
+              amount: 5
+              doAfter: 2.5
+            - material: Cable
+              amount: 1
+              doAfter: 1
+
+    - node: workbench
+      entity: Workbench
+      edges:
+        - to: start
+          steps:
+            - tool: Welding
+              doAfter: 3
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetSteel1
+              amount: 5
+            - !type:SpawnPrototype
+              prototype: CableApcStack1
+              amount: 1
+            - !type:DeleteEntity {}
+
+- type: construction
+  id: Workbench
+  name: Utility Workbench
+  description: A durable, industrial-grade workbench built for crafting, repairs, and assembly of all kinds of gear and machinery.
+  graph: Workbench
+  startNode: start
+  targetNode: workbench
+  category: construction-category-machines
+  icon:
+    sprite: /Textures/Corvax/Structures/workbenches.rsi
+    state: tinkerbench
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked

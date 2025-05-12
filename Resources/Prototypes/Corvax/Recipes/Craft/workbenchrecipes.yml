@@ -1,0 +1,17 @@
+- type: craftRecipe
+  id: WeaponMakeshiftLaserCraft
+  resultProtos:
+  - WeaponMakeshiftLaser
+  requiredWorkbench: Workbench
+  craftTime: 15
+  items:
+    SheetGlass:
+      amount: 5
+    SheetSteel:
+      amount: 5
+    Welder:
+      amount: 1
+      catalyzer: true
+    Wirecutter:
+      amount: 1
+      catalyzer: true

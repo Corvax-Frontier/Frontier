@@ -5,6 +5,7 @@ using Content.Client.Hands.Systems;
 using Content.Client.Interaction;
 using Content.Client.Storage;
 using Content.Client.Storage.Systems;
+using Content.Shared.Crafting.Events; // Corvax-Change
 using Content.Client.UserInterface.Systems.Hotbar.Widgets;
 using Content.Client.UserInterface.Systems.Info;
 using Content.Client.UserInterface.Systems.Storage.Controls;
@@ -42,7 +43,7 @@ public sealed class StorageUIController : UIController, IOnSystemChanged<Storage
     [Dependency] private readonly CloseRecentWindowUIController _closeRecentWindowUIController = default!;
     [UISystemDependency] private readonly StorageSystem _storage = default!;
     [UISystemDependency] private readonly UserInterfaceSystem _ui = default!;
-
+    private StorageWindow? _activeStorageWindow; // Corvax-Change
     private readonly DragDropHelper<ItemGridPiece> _menuDragHelper;
 
     public ItemGridPiece? DraggingGhost => _menuDragHelper.Dragged;
@@ -96,6 +97,9 @@ public sealed class StorageUIController : UIController, IOnSystemChanged<Storage
     public StorageWindow CreateStorageWindow(StorageBoundUserInterface sBui)
     {
         var window = new StorageWindow();
+        _activeStorageWindow = window; // Corvax-Change
+        window.OnCraftButtonPressed -= OnCraftButtonPressed; // Corvax-Change
+        window.OnCraftButtonPressed += OnCraftButtonPressed; // Corvax-Change
         window.MouseFilter = Control.MouseFilterMode.Pass;
 
         window.OnPiecePressed += (args, piece) =>
@@ -416,4 +420,14 @@ public sealed class StorageUIController : UIController, IOnSystemChanged<Storage
         base.FrameUpdate(args);
         _menuDragHelper.Update(args.DeltaSeconds);
     }
+    // Corvax-Change-Start
+    private void OnCraftButtonPressed()
+    {
+        if (_activeStorageWindow?.StorageEntity is not { } storageEnt)
+            return;
+
+        EntityManager.RaisePredictiveEvent(new CraftStartedEvent(
+            EntityManager.GetNetEntity(storageEnt)));
+    }
+    // Corvax-Change-End
 }

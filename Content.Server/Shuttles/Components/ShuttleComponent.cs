@@ -70,5 +70,7 @@ namespace Content.Server.Shuttles.Components
 
         [DataField("angularDamping"), ViewVariables(VVAccess.ReadWrite)]
         public float AngularDamping = 0.05f;
+        
+        public TImeSpan BSDashCooldown = default!;
     }
 }

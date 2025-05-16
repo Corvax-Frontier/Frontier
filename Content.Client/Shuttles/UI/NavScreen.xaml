@@ -76,6 +76,9 @@
                             Text="{controls:Loc 'shuttle-console-dock-toggle'}"
                             TextAlign="Center"
                             ToggleMode="True"/>
+                    <controls:Button Name="BSDash"
+                        Text="{controls:Loc 'shuttle-console-inertia-dampener-Dash'}"
+                        TextAlign="Center"/>
                     <!-- Frontier - Inertia dampener controls-->
                     <controls:BoxContainer Name="DampenerModeButtons"
                                   Orientation="Horizontal"
